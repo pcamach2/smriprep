@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>smriprep.interfaces.reports &mdash; smriprep 0.8.0rc2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/banner.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> smriprep
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.8.0rc2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/smriprep.html">smriprep package</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">smriprep</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../interfaces.html">smriprep.interfaces</a> &raquo;</li>
+        
+      <li>smriprep.interfaces.reports</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for an old version of smriprep.</p>
+<h1>Source code for smriprep.interfaces.reports</h1><div class="highlight"><pre>
+<span></span><span class="c1"># emacs: -*- mode: python; py-indent-offset: 4; indent-tabs-mode: nil -*-</span>
+<span class="c1"># vi: set ft=python sts=4 ts=4 sw=4 et:</span>
+<span class="sd">&quot;&quot;&quot;Interfaces to generate reportlets.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="kn">from</span> <span class="nn">nipype.interfaces.base</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">TraitedSpec</span><span class="p">,</span>
+    <span class="n">BaseInterfaceInputSpec</span><span class="p">,</span>
+    <span class="n">File</span><span class="p">,</span>
+    <span class="n">Directory</span><span class="p">,</span>
+    <span class="n">InputMultiObject</span><span class="p">,</span>
+    <span class="n">Str</span><span class="p">,</span>
+    <span class="n">isdefined</span><span class="p">,</span>
+    <span class="n">SimpleInterface</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">nipype.interfaces</span> <span class="kn">import</span> <span class="n">freesurfer</span> <span class="k">as</span> <span class="n">fs</span>
+<span class="kn">from</span> <span class="nn">nipype.interfaces.io</span> <span class="kn">import</span> <span class="n">FSSourceInputSpec</span> <span class="k">as</span> <span class="n">_FSSourceInputSpec</span>
+<span class="kn">from</span> <span class="nn">nipype.interfaces.mixins</span> <span class="kn">import</span> <span class="n">reporting</span>
+
+<span class="kn">from</span> <span class="nn">niworkflows.interfaces.reportlets.base</span> <span class="kn">import</span> <span class="n">_SVGReportCapableInputSpec</span>
+
+
+<span class="n">SUBJECT_TEMPLATE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="se">\t</span><span class="s2">&lt;ul class=&quot;elem-desc&quot;&gt;</span>
+<span class="se">\t\t</span><span class="s2">&lt;li&gt;Subject ID: </span><span class="si">{subject_id}</span><span class="s2">&lt;/li&gt;</span>
+<span class="se">\t\t</span><span class="s2">&lt;li&gt;Structural images: </span><span class="si">{n_t1s:d}</span><span class="s2"> T1-weighted </span><span class="si">{t2w}</span><span class="s2">&lt;/li&gt;</span>
+<span class="se">\t\t</span><span class="s2">&lt;li&gt;Standard spaces: </span><span class="si">{output_spaces}</span><span class="s2">&lt;/li&gt;</span>
+<span class="se">\t\t</span><span class="s2">&lt;li&gt;FreeSurfer reconstruction: </span><span class="si">{freesurfer_status}</span><span class="s2">&lt;/li&gt;</span>
+<span class="se">\t</span><span class="s2">&lt;/ul&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">ABOUT_TEMPLATE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span><span class="se">\t</span><span class="s2">&lt;ul&gt;</span>
+<span class="se">\t\t</span><span class="s2">&lt;li&gt;sMRIPrep version: </span><span class="si">{version}</span><span class="s2">&lt;/li&gt;</span>
+<span class="se">\t\t</span><span class="s2">&lt;li&gt;sMRIPrep command: &lt;code&gt;</span><span class="si">{command}</span><span class="s2">&lt;/code&gt;&lt;/li&gt;</span>
+<span class="se">\t\t</span><span class="s2">&lt;li&gt;Date preprocessed: </span><span class="si">{date}</span><span class="s2">&lt;/li&gt;</span>
+<span class="se">\t</span><span class="s2">&lt;/ul&gt;</span>
+<span class="s2">&lt;/div&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">_SummaryOutputSpec</span><span class="p">(</span><span class="n">TraitedSpec</span><span class="p">):</span>
+    <span class="n">out_report</span> <span class="o">=</span> <span class="n">File</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;HTML segment containing summary&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="SummaryInterface"><a class="viewcode-back" href="../../../api/smriprep.interfaces.reports.html#smriprep.interfaces.reports.SummaryInterface">[docs]</a><span class="k">class</span> <span class="nc">SummaryInterface</span><span class="p">(</span><span class="n">SimpleInterface</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Base Nipype interface for html summaries.&quot;&quot;&quot;</span>
+
+    <span class="n">output_spec</span> <span class="o">=</span> <span class="n">_SummaryOutputSpec</span>
+
+    <span class="k">def</span> <span class="nf">_run_interface</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">runtime</span><span class="p">):</span>
+        <span class="n">segment</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generate_segment</span><span class="p">()</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">runtime</span><span class="o">.</span><span class="n">cwd</span><span class="p">)</span> <span class="o">/</span> <span class="s2">&quot;report.html&quot;</span>
+        <span class="n">path</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">segment</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_results</span><span class="p">[</span><span class="s2">&quot;out_report&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">runtime</span>
+
+    <span class="k">def</span> <span class="nf">_generate_segment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span></div>
+
+
+<span class="k">class</span> <span class="nc">_SubjectSummaryInputSpec</span><span class="p">(</span><span class="n">BaseInterfaceInputSpec</span><span class="p">):</span>
+    <span class="n">t1w</span> <span class="o">=</span> <span class="n">InputMultiObject</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;T1w structural images&quot;</span><span class="p">)</span>
+    <span class="n">t2w</span> <span class="o">=</span> <span class="n">InputMultiObject</span><span class="p">(</span><span class="n">File</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;T2w structural images&quot;</span><span class="p">)</span>
+    <span class="n">subjects_dir</span> <span class="o">=</span> <span class="n">Directory</span><span class="p">(</span><span class="n">desc</span><span class="o">=</span><span class="s2">&quot;FreeSurfer subjects directory&quot;</span><span class="p">)</span>
+    <span class="n">subject_id</span> <span class="o">=</span> <span class="n">Str</span><span class="p">(</span><span class="n">desc</span><span class="o">=</span><span class="s2">&quot;Subject ID&quot;</span><span class="p">)</span>
+    <span class="n">output_spaces</span> <span class="o">=</span> <span class="n">InputMultiObject</span><span class="p">(</span><span class="n">Str</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;list of standard spaces&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">_SubjectSummaryOutputSpec</span><span class="p">(</span><span class="n">_SummaryOutputSpec</span><span class="p">):</span>
+    <span class="c1"># This exists to ensure that the summary is run prior to the first ReconAll</span>
+    <span class="c1"># call, allowing a determination whether there is a pre-existing directory</span>
+    <span class="n">subject_id</span> <span class="o">=</span> <span class="n">Str</span><span class="p">(</span><span class="n">desc</span><span class="o">=</span><span class="s2">&quot;FreeSurfer subject ID&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="SubjectSummary"><a class="viewcode-back" href="../../../api/smriprep.interfaces.reports.html#smriprep.interfaces.reports.SubjectSummary">[docs]</a><span class="k">class</span> <span class="nc">SubjectSummary</span><span class="p">(</span><span class="n">SummaryInterface</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Subject html summary reportlet.&quot;&quot;&quot;</span>
+
+    <span class="n">input_spec</span> <span class="o">=</span> <span class="n">_SubjectSummaryInputSpec</span>
+    <span class="n">output_spec</span> <span class="o">=</span> <span class="n">_SubjectSummaryOutputSpec</span>
+
+    <span class="k">def</span> <span class="nf">_run_interface</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">runtime</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">isdefined</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subject_id</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_results</span><span class="p">[</span><span class="s2">&quot;subject_id&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subject_id</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">SubjectSummary</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">_run_interface</span><span class="p">(</span><span class="n">runtime</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_generate_segment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">isdefined</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subjects_dir</span><span class="p">):</span>
+            <span class="n">freesurfer_status</span> <span class="o">=</span> <span class="s2">&quot;Not run&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">recon</span> <span class="o">=</span> <span class="n">fs</span><span class="o">.</span><span class="n">ReconAll</span><span class="p">(</span>
+                <span class="n">subjects_dir</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subjects_dir</span><span class="p">,</span>
+                <span class="n">subject_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subject_id</span><span class="p">,</span>
+                <span class="n">T1_files</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">t1w</span><span class="p">,</span>
+                <span class="n">flags</span><span class="o">=</span><span class="s2">&quot;-noskullstrip&quot;</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="n">recon</span><span class="o">.</span><span class="n">cmdline</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;echo&quot;</span><span class="p">):</span>
+                <span class="n">freesurfer_status</span> <span class="o">=</span> <span class="s2">&quot;Pre-existing directory&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">freesurfer_status</span> <span class="o">=</span> <span class="s2">&quot;Run by sMRIPrep&quot;</span>
+
+        <span class="n">t2w_seg</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">t2w</span><span class="p">:</span>
+            <span class="n">t2w_seg</span> <span class="o">=</span> <span class="s2">&quot;(+ </span><span class="si">{:d}</span><span class="s2"> T2-weighted)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">t2w</span><span class="p">))</span>
+
+        <span class="n">output_spaces</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">output_spaces</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">isdefined</span><span class="p">(</span><span class="n">output_spaces</span><span class="p">):</span>
+            <span class="n">output_spaces</span> <span class="o">=</span> <span class="s2">&quot;&amp;lt;none given&amp;gt;&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output_spaces</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_spaces</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">SUBJECT_TEMPLATE</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">subject_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subject_id</span><span class="p">,</span>
+            <span class="n">n_t1s</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">t1w</span><span class="p">),</span>
+            <span class="n">t2w</span><span class="o">=</span><span class="n">t2w_seg</span><span class="p">,</span>
+            <span class="n">output_spaces</span><span class="o">=</span><span class="n">output_spaces</span><span class="p">,</span>
+            <span class="n">freesurfer_status</span><span class="o">=</span><span class="n">freesurfer_status</span><span class="p">,</span>
+        <span class="p">)</span></div>
+
+
+<span class="k">class</span> <span class="nc">_AboutSummaryInputSpec</span><span class="p">(</span><span class="n">BaseInterfaceInputSpec</span><span class="p">):</span>
+    <span class="n">version</span> <span class="o">=</span> <span class="n">Str</span><span class="p">(</span><span class="n">desc</span><span class="o">=</span><span class="s2">&quot;sMRIPrep version&quot;</span><span class="p">)</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="n">Str</span><span class="p">(</span><span class="n">desc</span><span class="o">=</span><span class="s2">&quot;sMRIPrep command&quot;</span><span class="p">)</span>
+    <span class="c1"># Date not included - update timestamp only if version or command changes</span>
+
+
+<div class="viewcode-block" id="AboutSummary"><a class="viewcode-back" href="../../../api/smriprep.interfaces.reports.html#smriprep.interfaces.reports.AboutSummary">[docs]</a><span class="k">class</span> <span class="nc">AboutSummary</span><span class="p">(</span><span class="n">SummaryInterface</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;About section reportlet.&quot;&quot;&quot;</span>
+
+    <span class="n">input_spec</span> <span class="o">=</span> <span class="n">_AboutSummaryInputSpec</span>
+
+    <span class="k">def</span> <span class="nf">_generate_segment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">ABOUT_TEMPLATE</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">version</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">version</span><span class="p">,</span>
+            <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">command</span><span class="p">,</span>
+            <span class="n">date</span><span class="o">=</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S %z&quot;</span><span class="p">),</span>
+        <span class="p">)</span></div>
+
+
+<span class="k">class</span> <span class="nc">_FSSurfaceReportInputSpec</span><span class="p">(</span><span class="n">_SVGReportCapableInputSpec</span><span class="p">,</span> <span class="n">_FSSourceInputSpec</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<span class="k">class</span> <span class="nc">_FSSurfaceReportOutputSpec</span><span class="p">(</span><span class="n">reporting</span><span class="o">.</span><span class="n">ReportCapableOutputSpec</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<div class="viewcode-block" id="FSSurfaceReport"><a class="viewcode-back" href="../../../api/smriprep.interfaces.reports.html#smriprep.interfaces.reports.FSSurfaceReport">[docs]</a><span class="k">class</span> <span class="nc">FSSurfaceReport</span><span class="p">(</span><span class="n">SimpleInterface</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Replaces ``ReconAllRPT``, without need of calling recon-all.&quot;&quot;&quot;</span>
+
+    <span class="n">input_spec</span> <span class="o">=</span> <span class="n">_FSSurfaceReportInputSpec</span>
+    <span class="n">output_spec</span> <span class="o">=</span> <span class="n">_FSSurfaceReportOutputSpec</span>
+
+    <span class="k">def</span> <span class="nf">_run_interface</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">runtime</span><span class="p">):</span>
+        <span class="kn">from</span> <span class="nn">niworkflows.viz.utils</span> <span class="kn">import</span> <span class="p">(</span>
+            <span class="n">plot_registration</span><span class="p">,</span>
+            <span class="n">cuts_from_bbox</span><span class="p">,</span>
+            <span class="n">compose_view</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="kn">from</span> <span class="nn">nibabel</span> <span class="kn">import</span> <span class="n">load</span>
+
+        <span class="n">rootdir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subjects_dir</span><span class="p">)</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subject_id</span>
+        <span class="n">_anat_file</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">rootdir</span> <span class="o">/</span> <span class="s2">&quot;mri&quot;</span> <span class="o">/</span> <span class="s2">&quot;brain.mgz&quot;</span><span class="p">)</span>
+        <span class="n">_contour_file</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">rootdir</span> <span class="o">/</span> <span class="s2">&quot;mri&quot;</span> <span class="o">/</span> <span class="s2">&quot;ribbon.mgz&quot;</span><span class="p">)</span>
+
+        <span class="n">anat</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">_anat_file</span><span class="p">)</span>
+        <span class="n">contour_nii</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">_contour_file</span><span class="p">)</span>
+
+        <span class="n">n_cuts</span> <span class="o">=</span> <span class="mi">7</span>
+        <span class="n">cuts</span> <span class="o">=</span> <span class="n">cuts_from_bbox</span><span class="p">(</span><span class="n">contour_nii</span><span class="p">,</span> <span class="n">cuts</span><span class="o">=</span><span class="n">n_cuts</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_results</span><span class="p">[</span><span class="s2">&quot;out_report&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">runtime</span><span class="o">.</span><span class="n">cwd</span><span class="p">)</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">out_report</span><span class="p">)</span>
+
+        <span class="c1"># Call composer</span>
+        <span class="n">compose_view</span><span class="p">(</span>
+            <span class="n">plot_registration</span><span class="p">(</span>
+                <span class="n">anat</span><span class="p">,</span>
+                <span class="s2">&quot;fixed-image&quot;</span><span class="p">,</span>
+                <span class="n">estimate_brightness</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="n">cuts</span><span class="o">=</span><span class="n">cuts</span><span class="p">,</span>
+                <span class="n">contour</span><span class="o">=</span><span class="n">contour_nii</span><span class="p">,</span>
+                <span class="n">compress</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">compress_report</span><span class="p">,</span>
+            <span class="p">),</span>
+            <span class="p">[],</span>
+            <span class="n">out_file</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_results</span><span class="p">[</span><span class="s2">&quot;out_report&quot;</span><span class="p">],</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">runtime</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright Copyright 2019, Center for Reproducible Neuroscience, Stanford University.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: 0.4.0rc3
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Tags</dt>
+            <dd><a href="../../../../0.4.0/index.html">0.4.0</a></dd>
+            <dd><a href="../../../../0.4.0rc1/index.html">0.4.0rc1</a></dd>
+            <dd><a href="../../../../0.4.0rc2/index.html">0.4.0rc2</a></dd>
+            <dd><a href="reports.html">0.4.0rc3</a></dd>
+            <dd><a href="../../../../0.4.0rc4/index.html">0.4.0rc4</a></dd>
+            <dd><a href="../../../../0.4.0rc5/index.html">0.4.0rc5</a></dd>
+            <dd><a href="../../../../0.4.1-1/index.html">0.4.1-1</a></dd>
+            <dd><a href="../../../../0.4.2/index.html">0.4.2</a></dd>
+            <dd><a href="../../../../0.5.0/index.html">0.5.0</a></dd>
+            <dd><a href="../../../../0.5.1/index.html">0.5.1</a></dd>
+            <dd><a href="../../../../0.5.2/index.html">0.5.2</a></dd>
+            <dd><a href="../../../../0.5.3/index.html">0.5.3</a></dd>
+            <dd><a href="../../../../0.6.0/index.html">0.6.0</a></dd>
+            <dd><a href="../../../../0.6.0rc1/index.html">0.6.0rc1</a></dd>
+            <dd><a href="../../../../0.6.0rc2/index.html">0.6.0rc2</a></dd>
+            <dd><a href="../../../../0.6.0rc3/index.html">0.6.0rc3</a></dd>
+            <dd><a href="../../../../0.6.0rc4/index.html">0.6.0rc4</a></dd>
+            <dd><a href="../../../../0.6.0rc5/index.html">0.6.0rc5</a></dd>
+            <dd><a href="../../../../0.6.1/index.html">0.6.1</a></dd>
+            <dd><a href="../../../../0.6.2/index.html">0.6.2</a></dd>
+            <dd><a href="../../../../0.7.0/index.html">0.7.0</a></dd>
+            <dd><a href="../../../../0.7.0rc1/index.html">0.7.0rc1</a></dd>
+            <dd><a href="../../../../0.7.0rc2/index.html">0.7.0rc2</a></dd>
+            <dd><a href="../../../../0.7.1/index.html">0.7.1</a></dd>
+            <dd><a href="../../../../0.8.0rc0/index.html">0.8.0rc0</a></dd>
+            <dd><a href="../../../../0.8.0rc1/index.html">0.8.0rc1</a></dd>
+            <dd><a href="../../../../0.8.0rc2/index.html">0.8.0rc2</a></dd>
+        </dl>
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../../../maint_0.4.x/index.html">maint/0.4.x</a></dd>
+            <dd><a href="../../../../maint_0.5.x/index.html">maint/0.5.x</a></dd>
+            <dd><a href="../../../../maint_0.6.x/index.html">maint/0.6.x</a></dd>
+            <dd><a href="../../../../maint_0.7.x/index.html">maint/0.7.x</a></dd>
+            <dd><a href="../../../../master/index.html">master</a></dd>
+            <dd><a href="../../../../rel_0.8.0rc1/index.html">rel/0.8.0rc1</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

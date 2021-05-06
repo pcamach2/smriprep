@@ -1,0 +1,17 @@
+smriprep package
+================
+
+.. automodule:: smriprep
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+   smriprep.cli
+   smriprep.interfaces
+   smriprep.utils
+   smriprep.workflows
