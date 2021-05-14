@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Usage &mdash; smriprep 0.8.0rc2 documentation</title>
@@ -194,9 +195,9 @@
 
 
     <p class="scv-banner scv-sphinx_rtd_theme"><a href="../master/usage.html"><b>Warning:</b> This document is for an old version of smriprep. The main version is master.</a></p>
-<div class="section" id="usage">
+<section id="usage">
 <span id="id1"></span><h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="execution-and-the-bids-format">
+<section id="execution-and-the-bids-format">
 <h2>Execution and the BIDS format<a class="headerlink" href="#execution-and-the-bids-format" title="Permalink to this headline">¶</a></h2>
 <p>The <em>sMRIPrep</em> workflow takes as principal input the path of the dataset
 that is to be processed.
@@ -210,8 +211,8 @@ Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smriprep</span> <span class="n">data</span><span class="o">/</span><span class="n">bids_root</span><span class="o">/</span> <span class="n">out</span><span class="o">/</span> <span class="n">participant</span> <span class="o">-</span><span class="n">w</span> <span class="n">work</span><span class="o">/</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="command-line-arguments">
+</section>
+<section id="command-line-arguments">
 <h2>Command-Line Arguments<a class="headerlink" href="#command-line-arguments" title="Permalink to this headline">¶</a></h2>
 <p><p>sMRIPrep: Structural MRI PREProcessing workflows</p>
 </p>
@@ -250,7 +251,7 @@ Example:</p>
        <span class="p">{</span><span class="n">participant</span><span class="p">}</span>
 </pre></div>
 </div>
-<div class="section" id="Positional Arguments">
+<section id="Positional Arguments">
 <h3>Positional Arguments<a class="headerlink" href="#Positional Arguments" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>bids_dir</kbd></dt>
@@ -264,16 +265,16 @@ Example:</p>
 <p>processing stage to be run, only “participant” in the case of sMRIPrep (see BIDS-Apps specification).</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Named Arguments">
+</section>
+<section id="Named Arguments">
 <h3>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>--version</kbd></dt>
 <dd><p>show program’s version number and exit</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Options for filtering BIDS queries">
+</section>
+<section id="Options for filtering BIDS queries">
 <h3>Options for filtering BIDS queries<a class="headerlink" href="#Options for filtering BIDS queries" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>--participant-label, --participant_label</kbd></dt>
@@ -283,8 +284,8 @@ Example:</p>
 <dd><p>a JSON file describing custom BIDS input filters using pybids {&lt;suffix&gt;:{&lt;entity&gt;:&lt;filter&gt;,…},…} (<a class="reference external" href="https://github.com/bids-standard/pybids/blob/master/bids/layout/config/bids.json">https://github.com/bids-standard/pybids/blob/master/bids/layout/config/bids.json</a>)</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Options to handle performance">
+</section>
+<section id="Options to handle performance">
 <h3>Options to handle performance<a class="headerlink" href="#Options to handle performance" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>--nprocs, --ncpus, --nthreads, --n_cpus, -n-cpus</kbd></dt>
@@ -309,8 +310,8 @@ Example:</p>
 <dd><p>increases log verbosity for each occurence, debug level is -vvv</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Workflow configuration">
+</section>
+<section id="Workflow configuration">
 <h3>Workflow configuration<a class="headerlink" href="#Workflow configuration" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>--output-spaces</kbd></dt>
@@ -320,8 +321,8 @@ Example:</p>
 <dd><p>treat dataset as longitudinal - may increase runtime</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Specific options for ANTs registrations">
+</section>
+<section id="Specific options for ANTs registrations">
 <h3>Specific options for ANTs registrations<a class="headerlink" href="#Specific options for ANTs registrations" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>--skull-strip-template</kbd></dt>
@@ -335,8 +336,8 @@ Example:</p>
 <p>determiner for T1-weighted skull stripping (force ensures skull stripping, skip ignores skull stripping, and auto automatically ignores skull stripping if pre-stripped brains are detected).</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Specific options for FreeSurfer preprocessing">
+</section>
+<section id="Specific options for FreeSurfer preprocessing">
 <h3>Specific options for FreeSurfer preprocessing<a class="headerlink" href="#Specific options for FreeSurfer preprocessing" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>--fs-license-file</kbd></dt>
@@ -346,8 +347,8 @@ Example:</p>
 <dd><p>Path to existing FreeSurfer subjects directory to reuse. (default: OUTPUT_DIR/freesurfer)</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Surface preprocessing options">
+</section>
+<section id="Surface preprocessing options">
 <h3>Surface preprocessing options<a class="headerlink" href="#Surface preprocessing options" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>--no-submm-recon</kbd></dt>
@@ -357,8 +358,8 @@ Example:</p>
 <dd><p>disable FreeSurfer surface preprocessing.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Other options">
+</section>
+<section id="Other options">
 <h3>Other options<a class="headerlink" href="#Other options" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>-w, --work-dir</kbd></dt>
@@ -389,9 +390,9 @@ Example:</p>
 <dd><p>Use low-quality tools for speed - TESTING ONLY</p>
 </dd>
 </dl>
-</div>
-</div>
-<div class="section" id="the-command-line-interface-of-the-docker-wrapper">
+</section>
+</section>
+<section id="the-command-line-interface-of-the-docker-wrapper">
 <h2>The command-line interface of the docker wrapper<a class="headerlink" href="#the-command-line-interface-of-the-docker-wrapper" title="Permalink to this headline">¶</a></h2>
 <p><p>The sMRIPrep on Docker wrapper.</p>
 <p>This is a lightweight Python wrapper to run sMRIPrep.
@@ -426,7 +427,7 @@ individual reports).</p>
        <span class="p">[{</span><span class="n">participant</span><span class="p">}]</span>
 </pre></div>
 </div>
-<div class="section" id="Positional Arguments">
+<section id="Positional Arguments">
 <h3>Positional Arguments<a class="headerlink" href="#Positional Arguments" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>bids_dir</kbd></dt>
@@ -437,8 +438,8 @@ individual reports).</p>
 <dd><p>Possible choices: participant</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Named Arguments">
+</section>
+<section id="Named Arguments">
 <h3>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h3>
 <dl class="option-list">
 <dt><kbd>-h, --help</kbd></dt>
@@ -451,8 +452,8 @@ individual reports).</p>
 <dd><p>image name</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Wrapper options">
+</section>
+<section id="Wrapper options">
 <h3>Wrapper options<a class="headerlink" href="#Wrapper options" title="Permalink to this headline">¶</a></h3>
 <p>Standard options that require mapping files into the container</p>
 <dl class="option-list">
@@ -466,8 +467,8 @@ individual reports).</p>
 <dd><p>nipype plugin configuration file</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="Developer options">
+</section>
+<section id="Developer options">
 <h3>Developer options<a class="headerlink" href="#Developer options" title="Permalink to this headline">¶</a></h3>
 <p>Tools for testing and debugging sMRIPrep</p>
 <dl class="option-list">
@@ -496,9 +497,9 @@ individual reports).</p>
 <dd><p>Run docker without TTY flag -it</p>
 </dd>
 </dl>
-</div>
-</div>
-<div class="section" id="the-freesurfer-license">
+</section>
+</section>
+<section id="the-freesurfer-license">
 <span id="fs-license"></span><h2>The FreeSurfer license<a class="headerlink" href="#the-freesurfer-license" title="Permalink to this headline">¶</a></h2>
 <p><em>sMRIPrep</em> uses FreeSurfer tools, which require a license to run.</p>
 <p>To obtain a FreeSurfer license, simply register for free at
@@ -544,8 +545,8 @@ RUNNING: docker run --rm -it -v /path/to/data/dir:/data:ro \
 ...
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>smriprep.workflows.anatomical module &mdash; smriprep 0.8.0rc2 documentation</title>
@@ -185,13 +186,10 @@
   
 
 
-    
-    
 
 
 
-    <p class="scv-banner scv-sphinx_rtd_theme"><a href="../master/api/smriprep.workflows.anatomical.html"><b>Warning:</b> This document is for an old version of smriprep. The main version is master.</a></p>
-<div class="section" id="module-smriprep.workflows.anatomical">
+<section id="module-smriprep.workflows.anatomical">
 <span id="smriprep-workflows-anatomical-module"></span><h1>smriprep.workflows.anatomical module<a class="headerlink" href="#module-smriprep.workflows.anatomical" title="Permalink to this headline">¶</a></h1>
 <p>Anatomical reference preprocessing workflows.</p>
 <dl class="function">
@@ -209,9 +207,9 @@
 </ul>
 </div></blockquote>
 <dl>
-<dt>Workflow Graph</dt><dd><div class="figure align-default">
+<dt>Workflow Graph</dt><dd><figure class="align-default">
 <img alt="../_images/smriprep-workflows-anatomical-1.png" src="../_images/smriprep-workflows-anatomical-1.png" />
-</div>
+</figure>
 <p>(<a class="reference external" href="../api/smriprep-workflows-anatomical-1.py">Source code</a>, <a class="reference external" href="../api/smriprep-workflows-anatomical-1.png">png</a>, <a class="reference external" href="../api/smriprep-workflows-anatomical-1.svg">svg</a>, <a class="reference external" href="../api/smriprep-workflows-anatomical-1.pdf">pdf</a>)</p>
 </dd>
 </dl>
@@ -229,8 +227,8 @@ at the very least)</p></li>
 <li><p><strong>t1w</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of T1-weighted structural images.</p></li>
 <li><p><strong>omp_nthreads</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Maximum number of threads an individual process may use</p></li>
 <li><p><strong>output_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Directory in which to save derivatives</p></li>
-<li><p><strong>skull_strip_template</strong> (<a class="reference external" href="https://nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.Reference" title="(in niworkflows v1.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Reference</span></code></a>) – Spatial reference to use in atlas-based brain extraction.</p></li>
-<li><p><strong>spaces</strong> (<a class="reference external" href="https://nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.SpatialReferences" title="(in niworkflows v1.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpatialReferences</span></code></a>) – Object containing standard and nonstandard space specifications.</p></li>
+<li><p><strong>skull_strip_template</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.Reference" title="(in niworkflows v1.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Reference</span></code></a>) – Spatial reference to use in atlas-based brain extraction.</p></li>
+<li><p><strong>spaces</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.SpatialReferences" title="(in niworkflows v1.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpatialReferences</span></code></a>) – Object containing standard and nonstandard space specifications.</p></li>
 <li><p><strong>debug</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Enable debugging outputs</p></li>
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – Workflow name (default: anat_preproc_wf)</p></li>
 <li><p><strong>skull_strip_mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Determiner for T1-weighted skull stripping (<cite>force</cite> ensures skull stripping,
@@ -280,7 +278,7 @@ subject space to T1w</p></li>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://nipreps.org/niworkflows/api/niworkflows.anat.ants.html#niworkflows.anat.ants.init_brain_extraction_wf" title="(in niworkflows v1.4.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_brain_extraction_wf()</span></code></a></p></li>
+<li><p><a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.anat.ants.html#niworkflows.anat.ants.init_brain_extraction_wf" title="(in niworkflows v1.4.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_brain_extraction_wf()</span></code></a></p></li>
 <li><p><a class="reference internal" href="smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_surface_recon_wf" title="smriprep.workflows.surfaces.init_surface_recon_wf"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_surface_recon_wf()</span></code></a></p></li>
 </ul>
 </div>
@@ -291,9 +289,9 @@ subject space to T1w</p></li>
 <code class="sig-prename descclassname">smriprep.workflows.anatomical.</code><code class="sig-name descname">init_anat_template_wf</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">longitudinal</em>, <em class="sig-param">omp_nthreads</em>, <em class="sig-param">num_t1w</em>, <em class="sig-param">name='anat_template_wf'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/smriprep/workflows/anatomical.html#init_anat_template_wf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.workflows.anatomical.init_anat_template_wf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a canonically-oriented, structural average from all input T1w images.</p>
 <dl>
-<dt>Workflow Graph</dt><dd><div class="figure align-default">
+<dt>Workflow Graph</dt><dd><figure class="align-default">
 <img alt="../_images/smriprep-workflows-anatomical-2.png" src="../_images/smriprep-workflows-anatomical-2.png" />
-</div>
+</figure>
 <p>(<a class="reference external" href="../api/smriprep-workflows-anatomical-2.py">Source code</a>, <a class="reference external" href="../api/smriprep-workflows-anatomical-2.png">png</a>, <a class="reference external" href="../api/smriprep-workflows-anatomical-2.svg">svg</a>, <a class="reference external" href="../api/smriprep-workflows-anatomical-2.pdf">pdf</a>)</p>
 </dd>
 </dl>
@@ -320,7 +318,7 @@ subject space to T1w</p></li>
 </dl>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
@@ -360,7 +358,7 @@ subject space to T1w</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Other Versions</span>
-        v: 0.8.0rc2
+        v: master
         <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
