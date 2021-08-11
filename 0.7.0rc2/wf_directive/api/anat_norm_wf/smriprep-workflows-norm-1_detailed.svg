@@ -5,507 +5,507 @@
  -->
 <!-- Title: structs Pages: 1 -->
 <svg width="1642pt" height="1068pt"
- viewBox="0.00 0.00 1641.79 1068.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 1642.49 1068.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1064)">
 <title>structs</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1064 1637.7868,-1064 1637.7868,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1064 1638.4918,-1064 1638.4918,4 -4,4"/>
 <!-- anat_norm_wfinputnode -->
 <g id="node1" class="node">
 <title>anat_norm_wfinputnode</title>
-<polygon fill="none" stroke="#000000" points="220.2868,-898.5 220.2868,-1059.5 518.2868,-1059.5 518.2868,-898.5 220.2868,-898.5"/>
-<text text-anchor="middle" x="237.7868" y="-975.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="255.2868,-898.5 255.2868,-1059.5 "/>
-<text text-anchor="middle" x="299.7868" y="-1029.3" font-family="Times,serif" font-size="14.00" fill="#000000">inputnode</text>
-<polyline fill="none" stroke="#000000" points="255.2868,-1006.5 344.2868,-1006.5 "/>
-<text text-anchor="middle" x="299.7868" y="-975.8" font-family="Times,serif" font-size="14.00" fill="#000000">utility</text>
-<polyline fill="none" stroke="#000000" points="255.2868,-952.5 344.2868,-952.5 "/>
-<text text-anchor="middle" x="299.7868" y="-921.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="344.2868,-898.5 344.2868,-1059.5 "/>
-<text text-anchor="middle" x="431.2868" y="-1044.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="344.2868,-1036.5 518.2868,-1036.5 "/>
-<text text-anchor="middle" x="431.2868" y="-1021.3" font-family="Times,serif" font-size="14.00" fill="#000000">lesion_mask</text>
-<polyline fill="none" stroke="#000000" points="344.2868,-1013.5 518.2868,-1013.5 "/>
-<text text-anchor="middle" x="431.2868" y="-998.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_image</text>
-<polyline fill="none" stroke="#000000" points="344.2868,-990.5 518.2868,-990.5 "/>
-<text text-anchor="middle" x="431.2868" y="-975.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_mask</text>
-<polyline fill="none" stroke="#000000" points="344.2868,-967.5 518.2868,-967.5 "/>
-<text text-anchor="middle" x="431.2868" y="-952.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_segmentation</text>
-<polyline fill="none" stroke="#000000" points="344.2868,-944.5 518.2868,-944.5 "/>
-<text text-anchor="middle" x="431.2868" y="-929.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_tpms</text>
-<polyline fill="none" stroke="#000000" points="344.2868,-921.5 518.2868,-921.5 "/>
-<text text-anchor="middle" x="431.2868" y="-906.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
-</g>
-<!-- anat_norm_wftrunc_mov -->
-<g id="node2" class="node">
-<title>anat_norm_wftrunc_mov</title>
-<polygon fill="none" stroke="#000000" points="177.7868,-792.5 177.7868,-861.5 428.7868,-861.5 428.7868,-792.5 177.7868,-792.5"/>
-<text text-anchor="middle" x="199.2868" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="177.7868,-827.5 220.7868,-827.5 "/>
-<text text-anchor="middle" x="199.2868" y="-806.3" font-family="Times,serif" font-size="14.00" fill="#000000">op1</text>
-<polyline fill="none" stroke="#000000" points="220.7868,-792.5 220.7868,-861.5 "/>
-<text text-anchor="middle" x="267.2868" y="-846.3" font-family="Times,serif" font-size="14.00" fill="#000000">trunc_mov</text>
-<polyline fill="none" stroke="#000000" points="220.7868,-838.5 313.7868,-838.5 "/>
-<text text-anchor="middle" x="267.2868" y="-823.3" font-family="Times,serif" font-size="14.00" fill="#000000">ants</text>
-<polyline fill="none" stroke="#000000" points="220.7868,-815.5 313.7868,-815.5 "/>
-<text text-anchor="middle" x="267.2868" y="-800.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="313.7868,-792.5 313.7868,-861.5 "/>
-<text text-anchor="middle" x="371.2868" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="313.7868,-827.5 428.7868,-827.5 "/>
-<text text-anchor="middle" x="371.2868" y="-806.3" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
-</g>
-<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wftrunc_mov -->
-<g id="edge3" class="edge">
-<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wftrunc_mov:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-1002C564.5091,-1002 549.2076,-932.357 518.2868,-898 467.3129,-841.3614 228.2607,-918.6386 177.2868,-862 164.6045,-847.9083 157.1774,-821.9443 167.675,-813.0685"/>
-<polygon fill="#000000" stroke="#000000" points="168.825,-816.3755 177.2868,-810 166.696,-809.7071 168.825,-816.3755"/>
+<polygon fill="none" stroke="#000000" points="219.9918,-898.5 219.9918,-1059.5 517.9918,-1059.5 517.9918,-898.5 219.9918,-898.5"/>
+<text text-anchor="middle" x="237.4918" y="-975.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="254.9918,-898.5 254.9918,-1059.5 "/>
+<text text-anchor="middle" x="299.4918" y="-1029.3" font-family="Times,serif" font-size="14.00" fill="#000000">inputnode</text>
+<polyline fill="none" stroke="#000000" points="254.9918,-1006.5 343.9918,-1006.5 "/>
+<text text-anchor="middle" x="299.4918" y="-975.8" font-family="Times,serif" font-size="14.00" fill="#000000">utility</text>
+<polyline fill="none" stroke="#000000" points="254.9918,-952.5 343.9918,-952.5 "/>
+<text text-anchor="middle" x="299.4918" y="-921.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="343.9918,-898.5 343.9918,-1059.5 "/>
+<text text-anchor="middle" x="430.9918" y="-1044.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="343.9918,-1036.5 517.9918,-1036.5 "/>
+<text text-anchor="middle" x="430.9918" y="-1021.3" font-family="Times,serif" font-size="14.00" fill="#000000">lesion_mask</text>
+<polyline fill="none" stroke="#000000" points="343.9918,-1013.5 517.9918,-1013.5 "/>
+<text text-anchor="middle" x="430.9918" y="-998.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_image</text>
+<polyline fill="none" stroke="#000000" points="343.9918,-990.5 517.9918,-990.5 "/>
+<text text-anchor="middle" x="430.9918" y="-975.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_mask</text>
+<polyline fill="none" stroke="#000000" points="343.9918,-967.5 517.9918,-967.5 "/>
+<text text-anchor="middle" x="430.9918" y="-952.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_segmentation</text>
+<polyline fill="none" stroke="#000000" points="343.9918,-944.5 517.9918,-944.5 "/>
+<text text-anchor="middle" x="430.9918" y="-929.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_tpms</text>
+<polyline fill="none" stroke="#000000" points="343.9918,-921.5 517.9918,-921.5 "/>
+<text text-anchor="middle" x="430.9918" y="-906.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
 </g>
 <!-- anat_norm_wfsplit_desc -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>anat_norm_wfsplit_desc</title>
-<polygon fill="none" stroke="#000000" points="546.2868,-792.5 546.2868,-861.5 792.2868,-861.5 792.2868,-792.5 546.2868,-792.5"/>
-<text text-anchor="middle" x="586.2868" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="546.2868,-827.5 626.2868,-827.5 "/>
-<text text-anchor="middle" x="586.2868" y="-806.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
-<polyline fill="none" stroke="#000000" points="626.2868,-792.5 626.2868,-861.5 "/>
-<text text-anchor="middle" x="681.2868" y="-846.3" font-family="Times,serif" font-size="14.00" fill="#000000">split_desc</text>
-<polyline fill="none" stroke="#000000" points="626.2868,-838.5 736.2868,-838.5 "/>
-<text text-anchor="middle" x="681.2868" y="-823.3" font-family="Times,serif" font-size="14.00" fill="#000000">templateflow</text>
-<polyline fill="none" stroke="#000000" points="626.2868,-815.5 736.2868,-815.5 "/>
-<text text-anchor="middle" x="681.2868" y="-800.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="736.2868,-792.5 736.2868,-861.5 "/>
-<text text-anchor="middle" x="764.2868" y="-846.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="736.2868,-838.5 792.2868,-838.5 "/>
-<text text-anchor="middle" x="764.2868" y="-823.3" font-family="Times,serif" font-size="14.00" fill="#000000">name</text>
-<polyline fill="none" stroke="#000000" points="736.2868,-815.5 792.2868,-815.5 "/>
-<text text-anchor="middle" x="764.2868" y="-800.3" font-family="Times,serif" font-size="14.00" fill="#000000">spec</text>
+<polygon fill="none" stroke="#000000" points="545.9918,-792.5 545.9918,-861.5 791.9918,-861.5 791.9918,-792.5 545.9918,-792.5"/>
+<text text-anchor="middle" x="585.9918" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="545.9918,-827.5 625.9918,-827.5 "/>
+<text text-anchor="middle" x="585.9918" y="-806.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
+<polyline fill="none" stroke="#000000" points="625.9918,-792.5 625.9918,-861.5 "/>
+<text text-anchor="middle" x="680.9918" y="-846.3" font-family="Times,serif" font-size="14.00" fill="#000000">split_desc</text>
+<polyline fill="none" stroke="#000000" points="625.9918,-838.5 735.9918,-838.5 "/>
+<text text-anchor="middle" x="680.9918" y="-823.3" font-family="Times,serif" font-size="14.00" fill="#000000">templateflow</text>
+<polyline fill="none" stroke="#000000" points="625.9918,-815.5 735.9918,-815.5 "/>
+<text text-anchor="middle" x="680.9918" y="-800.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="735.9918,-792.5 735.9918,-861.5 "/>
+<text text-anchor="middle" x="763.9918" y="-846.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="735.9918,-838.5 791.9918,-838.5 "/>
+<text text-anchor="middle" x="763.9918" y="-823.3" font-family="Times,serif" font-size="14.00" fill="#000000">name</text>
+<polyline fill="none" stroke="#000000" points="735.9918,-815.5 791.9918,-815.5 "/>
+<text text-anchor="middle" x="763.9918" y="-800.3" font-family="Times,serif" font-size="14.00" fill="#000000">spec</text>
 </g>
 <!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfsplit_desc -->
 <g id="edge9" class="edge">
 <title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfsplit_desc:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-910C540.5091,-910 526.2868,-883.3969 532.2868,-862 537.5374,-843.2758 527.6978,-820.6503 536.661,-812.824"/>
-<polygon fill="#000000" stroke="#000000" points="537.6766,-816.1737 546.2868,-810 535.7059,-809.4567 537.6766,-816.1737"/>
+<path fill="none" stroke="#000000" d="M517.9918,-910C540.214,-910 525.9917,-883.3969 531.9918,-862 537.2423,-843.2758 527.4027,-820.6503 536.3659,-812.824"/>
+<polygon fill="#000000" stroke="#000000" points="537.3815,-816.1737 545.9918,-810 535.4109,-809.4567 537.3815,-816.1737"/>
+</g>
+<!-- anat_norm_wftrunc_mov -->
+<g id="node3" class="node">
+<title>anat_norm_wftrunc_mov</title>
+<polygon fill="none" stroke="#000000" points="177.4918,-792.5 177.4918,-861.5 428.4918,-861.5 428.4918,-792.5 177.4918,-792.5"/>
+<text text-anchor="middle" x="198.9918" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="177.4918,-827.5 220.4918,-827.5 "/>
+<text text-anchor="middle" x="198.9918" y="-806.3" font-family="Times,serif" font-size="14.00" fill="#000000">op1</text>
+<polyline fill="none" stroke="#000000" points="220.4918,-792.5 220.4918,-861.5 "/>
+<text text-anchor="middle" x="266.9918" y="-846.3" font-family="Times,serif" font-size="14.00" fill="#000000">trunc_mov</text>
+<polyline fill="none" stroke="#000000" points="220.4918,-838.5 313.4918,-838.5 "/>
+<text text-anchor="middle" x="266.9918" y="-823.3" font-family="Times,serif" font-size="14.00" fill="#000000">ants</text>
+<polyline fill="none" stroke="#000000" points="220.4918,-815.5 313.4918,-815.5 "/>
+<text text-anchor="middle" x="266.9918" y="-800.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="313.4918,-792.5 313.4918,-861.5 "/>
+<text text-anchor="middle" x="370.9918" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="313.4918,-827.5 428.4918,-827.5 "/>
+<text text-anchor="middle" x="370.9918" y="-806.3" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
+</g>
+<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wftrunc_mov -->
+<g id="edge3" class="edge">
+<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wftrunc_mov:w</title>
+<path fill="none" stroke="#000000" d="M517.9918,-1002C564.214,-1002 548.9125,-932.357 517.9918,-898 467.0178,-841.3614 227.9657,-918.6386 176.9918,-862 164.3094,-847.9083 156.8823,-821.9443 167.3799,-813.0685"/>
+<polygon fill="#000000" stroke="#000000" points="168.5299,-816.3755 176.9918,-810 166.401,-809.7071 168.5299,-816.3755"/>
 </g>
 <!-- anat_norm_wfregistration -->
-<g id="node4" class="node">
+<g id="node5" class="node">
 <title>anat_norm_wfregistration</title>
-<polygon fill="none" stroke="#000000" points="47.7868,-617.5 47.7868,-755.5 498.7868,-755.5 498.7868,-617.5 47.7868,-617.5"/>
-<text text-anchor="middle" x="108.2868" y="-740.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="47.7868,-732.5 168.7868,-732.5 "/>
-<text text-anchor="middle" x="108.2868" y="-717.3" font-family="Times,serif" font-size="14.00" fill="#000000">lesion_mask</text>
-<polyline fill="none" stroke="#000000" points="47.7868,-709.5 168.7868,-709.5 "/>
-<text text-anchor="middle" x="108.2868" y="-694.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_image</text>
-<polyline fill="none" stroke="#000000" points="47.7868,-686.5 168.7868,-686.5 "/>
-<text text-anchor="middle" x="108.2868" y="-671.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_mask</text>
-<polyline fill="none" stroke="#000000" points="47.7868,-663.5 168.7868,-663.5 "/>
-<text text-anchor="middle" x="108.2868" y="-648.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
-<polyline fill="none" stroke="#000000" points="47.7868,-640.5 168.7868,-640.5 "/>
-<text text-anchor="middle" x="108.2868" y="-625.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
-<polyline fill="none" stroke="#000000" points="168.7868,-617.5 168.7868,-755.5 "/>
-<text text-anchor="middle" x="219.2868" y="-728.8" font-family="Times,serif" font-size="14.00" fill="#000000">registration</text>
-<polyline fill="none" stroke="#000000" points="168.7868,-709.5 269.7868,-709.5 "/>
-<text text-anchor="middle" x="219.2868" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">norm</text>
-<polyline fill="none" stroke="#000000" points="168.7868,-663.5 269.7868,-663.5 "/>
-<text text-anchor="middle" x="219.2868" y="-636.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="269.7868,-617.5 269.7868,-755.5 "/>
-<text text-anchor="middle" x="384.2868" y="-728.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="269.7868,-709.5 498.7868,-709.5 "/>
-<text text-anchor="middle" x="384.2868" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">composite_transform</text>
-<polyline fill="none" stroke="#000000" points="269.7868,-663.5 498.7868,-663.5 "/>
-<text text-anchor="middle" x="384.2868" y="-636.8" font-family="Times,serif" font-size="14.00" fill="#000000">inverse_composite_transform</text>
+<polygon fill="none" stroke="#000000" points="47.4918,-617.5 47.4918,-755.5 498.4918,-755.5 498.4918,-617.5 47.4918,-617.5"/>
+<text text-anchor="middle" x="107.9918" y="-740.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="47.4918,-732.5 168.4918,-732.5 "/>
+<text text-anchor="middle" x="107.9918" y="-717.3" font-family="Times,serif" font-size="14.00" fill="#000000">lesion_mask</text>
+<polyline fill="none" stroke="#000000" points="47.4918,-709.5 168.4918,-709.5 "/>
+<text text-anchor="middle" x="107.9918" y="-694.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_image</text>
+<polyline fill="none" stroke="#000000" points="47.4918,-686.5 168.4918,-686.5 "/>
+<text text-anchor="middle" x="107.9918" y="-671.3" font-family="Times,serif" font-size="14.00" fill="#000000">moving_mask</text>
+<polyline fill="none" stroke="#000000" points="47.4918,-663.5 168.4918,-663.5 "/>
+<text text-anchor="middle" x="107.9918" y="-648.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
+<polyline fill="none" stroke="#000000" points="47.4918,-640.5 168.4918,-640.5 "/>
+<text text-anchor="middle" x="107.9918" y="-625.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
+<polyline fill="none" stroke="#000000" points="168.4918,-617.5 168.4918,-755.5 "/>
+<text text-anchor="middle" x="218.9918" y="-728.8" font-family="Times,serif" font-size="14.00" fill="#000000">registration</text>
+<polyline fill="none" stroke="#000000" points="168.4918,-709.5 269.4918,-709.5 "/>
+<text text-anchor="middle" x="218.9918" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">norm</text>
+<polyline fill="none" stroke="#000000" points="168.4918,-663.5 269.4918,-663.5 "/>
+<text text-anchor="middle" x="218.9918" y="-636.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="269.4918,-617.5 269.4918,-755.5 "/>
+<text text-anchor="middle" x="383.9918" y="-728.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="269.4918,-709.5 498.4918,-709.5 "/>
+<text text-anchor="middle" x="383.9918" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">composite_transform</text>
+<polyline fill="none" stroke="#000000" points="269.4918,-663.5 498.4918,-663.5 "/>
+<text text-anchor="middle" x="383.9918" y="-636.8" font-family="Times,serif" font-size="14.00" fill="#000000">inverse_composite_transform</text>
 </g>
 <!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfregistration -->
 <g id="edge1" class="edge">
 <title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfregistration:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-1025C574.7313,-1025 556.096,-939.9099 518.2868,-898 466.0607,-840.1096 240.8211,-893.0114 169.2868,-862 103.3835,-833.4298 77.0822,-821.3586 47.2868,-756 43.0632,-746.735 37.6874,-734.5613 39.0424,-727.4277"/>
-<polygon fill="#000000" stroke="#000000" points="41.2108,-730.1794 47.2868,-721.5 37.1244,-724.496 41.2108,-730.1794"/>
+<path fill="none" stroke="#000000" d="M517.9918,-1025C574.4362,-1025 555.801,-939.9099 517.9918,-898 465.7657,-840.1096 240.5261,-893.0114 168.9918,-862 103.0884,-833.4298 76.7871,-821.3586 46.9918,-756 42.7681,-746.735 37.3923,-734.5613 38.7473,-727.4277"/>
+<polygon fill="#000000" stroke="#000000" points="40.9157,-730.1794 46.9918,-721.5 36.8293,-724.496 40.9157,-730.1794"/>
 </g>
 <!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfregistration -->
 <g id="edge4" class="edge">
 <title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfregistration:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-979C554.2868,-979 529.7225,-932.1354 518.2868,-898 508.9124,-870.0173 464.0707,-806.3564 438.2868,-792 362.0513,-749.5521 106.09,-820.466 47.2868,-756 37.37,-745.1282 31.6119,-698.1203 39.5156,-680.8746"/>
-<polygon fill="#000000" stroke="#000000" points="41.7749,-683.5482 47.2868,-674.5 37.3354,-678.1361 41.7749,-683.5482"/>
-</g>
-<!-- anat_norm_wfstd_tpms -->
-<g id="node6" class="node">
-<title>anat_norm_wfstd_tpms</title>
-<polygon fill="none" stroke="#000000" points="1209.7868,-488.5 1209.7868,-580.5 1544.7868,-580.5 1544.7868,-488.5 1209.7868,-488.5"/>
-<text text-anchor="middle" x="1278.2868" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="1209.7868,-557.5 1346.7868,-557.5 "/>
-<text text-anchor="middle" x="1278.2868" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
-<polyline fill="none" stroke="#000000" points="1209.7868,-534.5 1346.7868,-534.5 "/>
-<text text-anchor="middle" x="1278.2868" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
-<polyline fill="none" stroke="#000000" points="1209.7868,-511.5 1346.7868,-511.5 "/>
-<text text-anchor="middle" x="1278.2868" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
-<polyline fill="none" stroke="#000000" points="1346.7868,-488.5 1346.7868,-580.5 "/>
-<text text-anchor="middle" x="1388.2868" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
-<polyline fill="none" stroke="#000000" points="1346.7868,-550.5 1429.7868,-550.5 "/>
-<text text-anchor="middle" x="1388.2868" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
-<polyline fill="none" stroke="#000000" points="1346.7868,-519.5 1429.7868,-519.5 "/>
-<text text-anchor="middle" x="1388.2868" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="1429.7868,-488.5 1429.7868,-580.5 "/>
-<text text-anchor="middle" x="1487.2868" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="1429.7868,-534.5 1544.7868,-534.5 "/>
-<text text-anchor="middle" x="1487.2868" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
-</g>
-<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfstd_tpms -->
-<g id="edge7" class="edge">
-<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfstd_tpms:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-933C670.9178,-933 716.4855,-927.6277 854.2868,-862 1033.4539,-776.6719 1096.0449,-749.2434 1201.2868,-581 1206.5692,-572.5555 1202.0665,-560.983 1202.0364,-553.623"/>
-<polygon fill="#000000" stroke="#000000" points="1204.6061,-556.0048 1209.2868,-546.5 1199.7005,-551.0113 1204.6061,-556.0048"/>
-</g>
-<!-- anat_norm_wfstd_dseg -->
-<g id="node7" class="node">
-<title>anat_norm_wfstd_dseg</title>
-<polygon fill="none" stroke="#000000" points="504.2868,-488.5 504.2868,-580.5 836.2868,-580.5 836.2868,-488.5 504.2868,-488.5"/>
-<text text-anchor="middle" x="572.7868" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="504.2868,-557.5 641.2868,-557.5 "/>
-<text text-anchor="middle" x="572.7868" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
-<polyline fill="none" stroke="#000000" points="504.2868,-534.5 641.2868,-534.5 "/>
-<text text-anchor="middle" x="572.7868" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
-<polyline fill="none" stroke="#000000" points="504.2868,-511.5 641.2868,-511.5 "/>
-<text text-anchor="middle" x="572.7868" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
-<polyline fill="none" stroke="#000000" points="641.2868,-488.5 641.2868,-580.5 "/>
-<text text-anchor="middle" x="681.2868" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
-<polyline fill="none" stroke="#000000" points="641.2868,-550.5 721.2868,-550.5 "/>
-<text text-anchor="middle" x="681.2868" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
-<polyline fill="none" stroke="#000000" points="641.2868,-519.5 721.2868,-519.5 "/>
-<text text-anchor="middle" x="681.2868" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="721.2868,-488.5 721.2868,-580.5 "/>
-<text text-anchor="middle" x="778.7868" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="721.2868,-534.5 836.2868,-534.5 "/>
-<text text-anchor="middle" x="778.7868" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
-</g>
-<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfstd_dseg -->
-<g id="edge6" class="edge">
-<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfstd_dseg:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-956C524.1404,-956 529.5392,-907.1536 508.2868,-617 507.4182,-605.1403 496.5574,-570.7687 498.1768,-554.8156"/>
-<polygon fill="#000000" stroke="#000000" points="501.1861,-556.631 504.2868,-546.5 495.5451,-552.4861 501.1861,-556.631"/>
-</g>
-<!-- anat_norm_wfstd_mask -->
-<g id="node8" class="node">
-<title>anat_norm_wfstd_mask</title>
-<polygon fill="none" stroke="#000000" points="854.7868,-488.5 854.7868,-580.5 1191.7868,-580.5 1191.7868,-488.5 854.7868,-488.5"/>
-<text text-anchor="middle" x="923.2868" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="854.7868,-557.5 991.7868,-557.5 "/>
-<text text-anchor="middle" x="923.2868" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
-<polyline fill="none" stroke="#000000" points="854.7868,-534.5 991.7868,-534.5 "/>
-<text text-anchor="middle" x="923.2868" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
-<polyline fill="none" stroke="#000000" points="854.7868,-511.5 991.7868,-511.5 "/>
-<text text-anchor="middle" x="923.2868" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
-<polyline fill="none" stroke="#000000" points="991.7868,-488.5 991.7868,-580.5 "/>
-<text text-anchor="middle" x="1034.2868" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
-<polyline fill="none" stroke="#000000" points="991.7868,-550.5 1076.7868,-550.5 "/>
-<text text-anchor="middle" x="1034.2868" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
-<polyline fill="none" stroke="#000000" points="991.7868,-519.5 1076.7868,-519.5 "/>
-<text text-anchor="middle" x="1034.2868" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="1076.7868,-488.5 1076.7868,-580.5 "/>
-<text text-anchor="middle" x="1134.2868" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="1076.7868,-534.5 1191.7868,-534.5 "/>
-<text text-anchor="middle" x="1134.2868" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
-</g>
-<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfstd_mask -->
-<g id="edge5" class="edge">
-<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfstd_mask:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-979C703.1084,-979 817.2889,-933.3562 869.2868,-756 886.6675,-696.7176 881.4025,-677.5781 869.2868,-617 865.8875,-600.0033 857.6862,-597.9967 854.2868,-581 852.3839,-571.4853 846.7491,-560.1971 846.7533,-553.1901"/>
-<polygon fill="#000000" stroke="#000000" points="849.1336,-555.7572 854.2868,-546.5 844.4855,-550.5231 849.1336,-555.7572"/>
+<path fill="none" stroke="#000000" d="M517.9918,-979C553.9918,-979 529.4274,-932.1354 517.9918,-898 508.6173,-870.0173 463.7756,-806.3564 437.9918,-792 361.7562,-749.5521 105.7949,-820.466 46.9918,-756 37.0749,-745.1282 31.3168,-698.1203 39.2205,-680.8746"/>
+<polygon fill="#000000" stroke="#000000" points="41.4799,-683.5482 46.9918,-674.5 37.0404,-678.1361 41.4799,-683.5482"/>
 </g>
 <!-- anat_norm_wftpl_moving -->
-<g id="node9" class="node">
+<g id="node6" class="node">
 <title>anat_norm_wftpl_moving</title>
-<polygon fill="none" stroke="#000000" points="138.2868,-488.5 138.2868,-580.5 486.2868,-580.5 486.2868,-488.5 138.2868,-488.5"/>
-<text text-anchor="middle" x="206.7868" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="138.2868,-557.5 275.2868,-557.5 "/>
-<text text-anchor="middle" x="206.7868" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
-<polyline fill="none" stroke="#000000" points="138.2868,-534.5 275.2868,-534.5 "/>
-<text text-anchor="middle" x="206.7868" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
-<polyline fill="none" stroke="#000000" points="138.2868,-511.5 275.2868,-511.5 "/>
-<text text-anchor="middle" x="206.7868" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
-<polyline fill="none" stroke="#000000" points="275.2868,-488.5 275.2868,-580.5 "/>
-<text text-anchor="middle" x="323.2868" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">tpl_moving</text>
-<polyline fill="none" stroke="#000000" points="275.2868,-550.5 371.2868,-550.5 "/>
-<text text-anchor="middle" x="323.2868" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
-<polyline fill="none" stroke="#000000" points="275.2868,-519.5 371.2868,-519.5 "/>
-<text text-anchor="middle" x="323.2868" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="371.2868,-488.5 371.2868,-580.5 "/>
-<text text-anchor="middle" x="428.7868" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="371.2868,-534.5 486.2868,-534.5 "/>
-<text text-anchor="middle" x="428.7868" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
+<polygon fill="none" stroke="#000000" points="138.9918,-488.5 138.9918,-580.5 486.9918,-580.5 486.9918,-488.5 138.9918,-488.5"/>
+<text text-anchor="middle" x="207.4918" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="138.9918,-557.5 275.9918,-557.5 "/>
+<text text-anchor="middle" x="207.4918" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
+<polyline fill="none" stroke="#000000" points="138.9918,-534.5 275.9918,-534.5 "/>
+<text text-anchor="middle" x="207.4918" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
+<polyline fill="none" stroke="#000000" points="138.9918,-511.5 275.9918,-511.5 "/>
+<text text-anchor="middle" x="207.4918" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
+<polyline fill="none" stroke="#000000" points="275.9918,-488.5 275.9918,-580.5 "/>
+<text text-anchor="middle" x="323.9918" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">tpl_moving</text>
+<polyline fill="none" stroke="#000000" points="275.9918,-550.5 371.9918,-550.5 "/>
+<text text-anchor="middle" x="323.9918" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
+<polyline fill="none" stroke="#000000" points="275.9918,-519.5 371.9918,-519.5 "/>
+<text text-anchor="middle" x="323.9918" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="371.9918,-488.5 371.9918,-580.5 "/>
+<text text-anchor="middle" x="429.4918" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="371.9918,-534.5 486.9918,-534.5 "/>
+<text text-anchor="middle" x="429.4918" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
 </g>
 <!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wftpl_moving -->
 <g id="edge2" class="edge">
 <title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wftpl_moving:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-1002C564.5091,-1002 549.6584,-931.9458 518.2868,-898 449.2968,-823.3487 138.8437,-928.8692 62.2868,-862 -43.6906,-769.4332 -7.83,-557.1974 127.9092,-546.8895"/>
-<polygon fill="#000000" stroke="#000000" points="128.4252,-550.3726 138.2868,-546.5 128.1626,-543.3776 128.4252,-550.3726"/>
+<path fill="none" stroke="#000000" d="M517.9918,-1002C564.214,-1002 549.3633,-931.9458 517.9918,-898 449.0017,-823.3487 138.5486,-928.8692 61.9918,-862 -44.0626,-769.366 -7.2767,-557.1941 128.6049,-546.8893"/>
+<polygon fill="#000000" stroke="#000000" points="129.1299,-550.3722 138.9918,-546.5 128.8676,-543.3771 129.1299,-550.3722"/>
+</g>
+<!-- anat_norm_wfstd_mask -->
+<g id="node7" class="node">
+<title>anat_norm_wfstd_mask</title>
+<polygon fill="none" stroke="#000000" points="855.4918,-488.5 855.4918,-580.5 1192.4918,-580.5 1192.4918,-488.5 855.4918,-488.5"/>
+<text text-anchor="middle" x="923.9918" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="855.4918,-557.5 992.4918,-557.5 "/>
+<text text-anchor="middle" x="923.9918" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
+<polyline fill="none" stroke="#000000" points="855.4918,-534.5 992.4918,-534.5 "/>
+<text text-anchor="middle" x="923.9918" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
+<polyline fill="none" stroke="#000000" points="855.4918,-511.5 992.4918,-511.5 "/>
+<text text-anchor="middle" x="923.9918" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
+<polyline fill="none" stroke="#000000" points="992.4918,-488.5 992.4918,-580.5 "/>
+<text text-anchor="middle" x="1034.9918" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
+<polyline fill="none" stroke="#000000" points="992.4918,-550.5 1077.4918,-550.5 "/>
+<text text-anchor="middle" x="1034.9918" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
+<polyline fill="none" stroke="#000000" points="992.4918,-519.5 1077.4918,-519.5 "/>
+<text text-anchor="middle" x="1034.9918" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="1077.4918,-488.5 1077.4918,-580.5 "/>
+<text text-anchor="middle" x="1134.9918" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="1077.4918,-534.5 1192.4918,-534.5 "/>
+<text text-anchor="middle" x="1134.9918" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
+</g>
+<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfstd_mask -->
+<g id="edge5" class="edge">
+<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfstd_mask:w</title>
+<path fill="none" stroke="#000000" d="M517.9918,-979C702.8133,-979 816.9938,-933.3562 868.9918,-756 886.3724,-696.7176 880.3826,-677.7185 868.9918,-617 865.8264,-600.1271 858.1571,-597.8729 854.9918,-581 853.2026,-571.4632 847.5376,-560.1809 847.5042,-553.1812"/>
+<polygon fill="#000000" stroke="#000000" points="849.8606,-555.7694 854.9918,-546.5 845.2,-550.5464 849.8606,-555.7694"/>
+</g>
+<!-- anat_norm_wfstd_dseg -->
+<g id="node8" class="node">
+<title>anat_norm_wfstd_dseg</title>
+<polygon fill="none" stroke="#000000" points="504.9918,-488.5 504.9918,-580.5 836.9918,-580.5 836.9918,-488.5 504.9918,-488.5"/>
+<text text-anchor="middle" x="573.4918" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="504.9918,-557.5 641.9918,-557.5 "/>
+<text text-anchor="middle" x="573.4918" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
+<polyline fill="none" stroke="#000000" points="504.9918,-534.5 641.9918,-534.5 "/>
+<text text-anchor="middle" x="573.4918" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
+<polyline fill="none" stroke="#000000" points="504.9918,-511.5 641.9918,-511.5 "/>
+<text text-anchor="middle" x="573.4918" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
+<polyline fill="none" stroke="#000000" points="641.9918,-488.5 641.9918,-580.5 "/>
+<text text-anchor="middle" x="681.9918" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
+<polyline fill="none" stroke="#000000" points="641.9918,-550.5 721.9918,-550.5 "/>
+<text text-anchor="middle" x="681.9918" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
+<polyline fill="none" stroke="#000000" points="641.9918,-519.5 721.9918,-519.5 "/>
+<text text-anchor="middle" x="681.9918" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="721.9918,-488.5 721.9918,-580.5 "/>
+<text text-anchor="middle" x="779.4918" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="721.9918,-534.5 836.9918,-534.5 "/>
+<text text-anchor="middle" x="779.4918" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
+</g>
+<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfstd_dseg -->
+<g id="edge6" class="edge">
+<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfstd_dseg:w</title>
+<path fill="none" stroke="#000000" d="M517.9918,-956C523.0182,-956 525.2346,-907.1536 507.9918,-617 507.2868,-605.1378 496.9223,-570.7675 498.7675,-554.8152"/>
+<polygon fill="#000000" stroke="#000000" points="501.8012,-556.603 504.9918,-546.5 496.1972,-552.4083 501.8012,-556.603"/>
+</g>
+<!-- anat_norm_wfstd_tpms -->
+<g id="node9" class="node">
+<title>anat_norm_wfstd_tpms</title>
+<polygon fill="none" stroke="#000000" points="1210.4918,-488.5 1210.4918,-580.5 1545.4918,-580.5 1545.4918,-488.5 1210.4918,-488.5"/>
+<text text-anchor="middle" x="1278.9918" y="-565.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="1210.4918,-557.5 1347.4918,-557.5 "/>
+<text text-anchor="middle" x="1278.9918" y="-542.3" font-family="Times,serif" font-size="14.00" fill="#000000">input_image</text>
+<polyline fill="none" stroke="#000000" points="1210.4918,-534.5 1347.4918,-534.5 "/>
+<text text-anchor="middle" x="1278.9918" y="-519.3" font-family="Times,serif" font-size="14.00" fill="#000000">reference_image</text>
+<polyline fill="none" stroke="#000000" points="1210.4918,-511.5 1347.4918,-511.5 "/>
+<text text-anchor="middle" x="1278.9918" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#000000">transforms</text>
+<polyline fill="none" stroke="#000000" points="1347.4918,-488.5 1347.4918,-580.5 "/>
+<text text-anchor="middle" x="1388.9918" y="-561.8" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
+<polyline fill="none" stroke="#000000" points="1347.4918,-550.5 1430.4918,-550.5 "/>
+<text text-anchor="middle" x="1388.9918" y="-531.3" font-family="Times,serif" font-size="14.00" fill="#000000">fixes</text>
+<polyline fill="none" stroke="#000000" points="1347.4918,-519.5 1430.4918,-519.5 "/>
+<text text-anchor="middle" x="1388.9918" y="-500.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="1430.4918,-488.5 1430.4918,-580.5 "/>
+<text text-anchor="middle" x="1487.9918" y="-553.8" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="1430.4918,-534.5 1545.4918,-534.5 "/>
+<text text-anchor="middle" x="1487.9918" y="-507.8" font-family="Times,serif" font-size="14.00" fill="#000000">output_image</text>
+</g>
+<!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfstd_tpms -->
+<g id="edge7" class="edge">
+<title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfstd_tpms:w</title>
+<path fill="none" stroke="#000000" d="M517.9918,-933C670.6227,-933 716.1443,-927.5307 853.9918,-862 1033.531,-776.6496 1096.448,-749.4622 1201.9918,-581 1207.28,-572.5592 1202.7758,-560.9857 1202.7437,-553.6245"/>
+<polygon fill="#000000" stroke="#000000" points="1205.3136,-556.0061 1209.9918,-546.5 1200.4066,-551.0139 1205.3136,-556.0061"/>
 </g>
 <!-- anat_norm_wfpoutputnode -->
 <g id="node10" class="node">
 <title>anat_norm_wfpoutputnode</title>
-<polygon fill="none" stroke="#000000" points="1014.7868,-244.5 1014.7868,-451.5 1363.7868,-451.5 1363.7868,-244.5 1014.7868,-244.5"/>
-<text text-anchor="middle" x="1075.2868" y="-436.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-428.5 1135.7868,-428.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-413.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat2std_xfm</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-405.5 1135.7868,-405.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-390.3" font-family="Times,serif" font-size="14.00" fill="#000000">standardized</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-382.5 1135.7868,-382.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-367.3" font-family="Times,serif" font-size="14.00" fill="#000000">std2anat_xfm</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-359.5 1135.7868,-359.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-344.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-336.5 1135.7868,-336.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-321.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-313.5 1135.7868,-313.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-290.5 1135.7868,-290.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
-<polyline fill="none" stroke="#000000" points="1014.7868,-267.5 1135.7868,-267.5 "/>
-<text text-anchor="middle" x="1075.2868" y="-252.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
-<polyline fill="none" stroke="#000000" points="1135.7868,-244.5 1135.7868,-451.5 "/>
-<text text-anchor="middle" x="1189.2868" y="-413.3" font-family="Times,serif" font-size="14.00" fill="#000000">poutputnode</text>
-<polyline fill="none" stroke="#000000" points="1135.7868,-382.5 1242.7868,-382.5 "/>
-<text text-anchor="middle" x="1189.2868" y="-344.3" font-family="Times,serif" font-size="14.00" fill="#000000">utility</text>
-<polyline fill="none" stroke="#000000" points="1135.7868,-313.5 1242.7868,-313.5 "/>
-<text text-anchor="middle" x="1189.2868" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-244.5 1242.7868,-451.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-436.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-428.5 1363.7868,-428.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-413.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat2std_xfm</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-405.5 1363.7868,-405.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-390.3" font-family="Times,serif" font-size="14.00" fill="#000000">standardized</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-382.5 1363.7868,-382.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-367.3" font-family="Times,serif" font-size="14.00" fill="#000000">std2anat_xfm</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-359.5 1363.7868,-359.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-344.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-336.5 1363.7868,-336.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-321.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-313.5 1363.7868,-313.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-290.5 1363.7868,-290.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
-<polyline fill="none" stroke="#000000" points="1242.7868,-267.5 1363.7868,-267.5 "/>
-<text text-anchor="middle" x="1303.2868" y="-252.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
+<polygon fill="none" stroke="#000000" points="1015.4918,-244.5 1015.4918,-451.5 1364.4918,-451.5 1364.4918,-244.5 1015.4918,-244.5"/>
+<text text-anchor="middle" x="1075.9918" y="-436.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-428.5 1136.4918,-428.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-413.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat2std_xfm</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-405.5 1136.4918,-405.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-390.3" font-family="Times,serif" font-size="14.00" fill="#000000">standardized</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-382.5 1136.4918,-382.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-367.3" font-family="Times,serif" font-size="14.00" fill="#000000">std2anat_xfm</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-359.5 1136.4918,-359.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-344.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-336.5 1136.4918,-336.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-321.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-313.5 1136.4918,-313.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-290.5 1136.4918,-290.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
+<polyline fill="none" stroke="#000000" points="1015.4918,-267.5 1136.4918,-267.5 "/>
+<text text-anchor="middle" x="1075.9918" y="-252.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
+<polyline fill="none" stroke="#000000" points="1136.4918,-244.5 1136.4918,-451.5 "/>
+<text text-anchor="middle" x="1189.9918" y="-413.3" font-family="Times,serif" font-size="14.00" fill="#000000">poutputnode</text>
+<polyline fill="none" stroke="#000000" points="1136.4918,-382.5 1243.4918,-382.5 "/>
+<text text-anchor="middle" x="1189.9918" y="-344.3" font-family="Times,serif" font-size="14.00" fill="#000000">utility</text>
+<polyline fill="none" stroke="#000000" points="1136.4918,-313.5 1243.4918,-313.5 "/>
+<text text-anchor="middle" x="1189.9918" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-244.5 1243.4918,-451.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-436.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-428.5 1364.4918,-428.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-413.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat2std_xfm</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-405.5 1364.4918,-405.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-390.3" font-family="Times,serif" font-size="14.00" fill="#000000">standardized</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-382.5 1364.4918,-382.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-367.3" font-family="Times,serif" font-size="14.00" fill="#000000">std2anat_xfm</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-359.5 1364.4918,-359.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-344.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-336.5 1364.4918,-336.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-321.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-313.5 1364.4918,-313.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-290.5 1364.4918,-290.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
+<polyline fill="none" stroke="#000000" points="1243.4918,-267.5 1364.4918,-267.5 "/>
+<text text-anchor="middle" x="1303.9918" y="-252.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
 </g>
 <!-- anat_norm_wfinputnode&#45;&gt;anat_norm_wfpoutputnode -->
 <g id="edge8" class="edge">
 <title>anat_norm_wfinputnode:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M518.2868,-910C612.0069,-910 846.8111,-886.4459 937.2868,-862 1237.1867,-780.9693 1407.4212,-841.0991 1577.2868,-581 1599.8879,-546.3931 1605.566,-518.1452 1577.2868,-488 1491.5143,-396.5677 1100.0594,-543.4323 1014.2868,-452 964.1474,-398.552 939.7368,-289.8279 1004.1337,-279.7524"/>
-<polygon fill="#000000" stroke="#000000" points="1004.5729,-283.2296 1014.2868,-279 1004.0555,-276.2487 1004.5729,-283.2296"/>
-</g>
-<!-- anat_norm_wftrunc_mov&#45;&gt;anat_norm_wfregistration -->
-<g id="edge37" class="edge">
-<title>anat_norm_wftrunc_mov:e&#45;&gt;anat_norm_wfregistration:w</title>
-<path fill="none" stroke="#000000" d="M429.2868,-810C437.2868,-810 434.6718,-797.9163 429.2868,-792 371.8934,-728.9435 104.6802,-819.0565 47.2868,-756 40.8361,-748.9128 36.874,-720.1126 40.6867,-706.1555"/>
-<polygon fill="#000000" stroke="#000000" points="43.4079,-708.3593 47.2868,-698.5 38.1062,-703.7884 43.4079,-708.3593"/>
-</g>
-<!-- anat_norm_wfsplit_desc&#45;&gt;anat_norm_wfregistration -->
-<g id="edge24" class="edge">
-<title>anat_norm_wfsplit_desc:e&#45;&gt;anat_norm_wfregistration:w</title>
-<path fill="none" stroke="#000000" d="M792.2868,-827C807.8424,-827 803.0175,-803.2618 792.2868,-792 735.1175,-732.0014 104.4562,-815.9986 47.2868,-756 40.7789,-749.17 37.1812,-684.4524 42.2888,-660.4235"/>
-<polygon fill="#000000" stroke="#000000" points="45.4537,-661.9351 47.2868,-651.5 39.3464,-658.5143 45.4537,-661.9351"/>
-</g>
-<!-- anat_norm_wfsplit_desc&#45;&gt;anat_norm_wfregistration -->
-<g id="edge27" class="edge">
-<title>anat_norm_wfsplit_desc:e&#45;&gt;anat_norm_wfregistration:w</title>
-<path fill="none" stroke="#000000" d="M792.2868,-804C797.6202,-804 795.9659,-795.8612 792.2868,-792 735.1175,-732.0014 104.4562,-815.9986 47.2868,-756 39.1175,-747.4264 34.7067,-664.0909 41.7547,-636.9772"/>
-<polygon fill="#000000" stroke="#000000" points="44.7528,-638.7873 47.2868,-628.5 38.8906,-634.9617 44.7528,-638.7873"/>
+<path fill="none" stroke="#000000" d="M517.9918,-910C611.7119,-910 846.509,-886.4199 936.9918,-862 1237.3078,-780.9494 1407.8288,-841.391 1577.9918,-581 1600.6028,-546.3996 1606.2709,-518.1452 1577.9918,-488 1492.2192,-396.5677 1100.7643,-543.4323 1014.9918,-452 964.8523,-398.552 940.4417,-289.8279 1004.8387,-279.7524"/>
+<polygon fill="#000000" stroke="#000000" points="1005.2778,-283.2296 1014.9918,-279 1004.7604,-276.2487 1005.2778,-283.2296"/>
 </g>
 <!-- anat_norm_wftf_select -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>anat_norm_wftf_select</title>
-<polygon fill="none" stroke="#000000" points="554.7868,-652 554.7868,-721 859.7868,-721 859.7868,-652 554.7868,-652"/>
-<text text-anchor="middle" x="615.2868" y="-705.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="554.7868,-698 675.7868,-698 "/>
-<text text-anchor="middle" x="615.2868" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
-<polyline fill="none" stroke="#000000" points="554.7868,-675 675.7868,-675 "/>
-<text text-anchor="middle" x="615.2868" y="-659.8" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
-<polyline fill="none" stroke="#000000" points="675.7868,-652 675.7868,-721 "/>
-<text text-anchor="middle" x="730.7868" y="-705.8" font-family="Times,serif" font-size="14.00" fill="#000000">tf_select</text>
-<polyline fill="none" stroke="#000000" points="675.7868,-698 785.7868,-698 "/>
-<text text-anchor="middle" x="730.7868" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">templateflow</text>
-<polyline fill="none" stroke="#000000" points="675.7868,-675 785.7868,-675 "/>
-<text text-anchor="middle" x="730.7868" y="-659.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="785.7868,-652 785.7868,-721 "/>
-<text text-anchor="middle" x="822.7868" y="-700.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="785.7868,-687 859.7868,-687 "/>
-<text text-anchor="middle" x="822.7868" y="-665.8" font-family="Times,serif" font-size="14.00" fill="#000000">t1w_file</text>
+<polygon fill="none" stroke="#000000" points="554.4918,-652 554.4918,-721 859.4918,-721 859.4918,-652 554.4918,-652"/>
+<text text-anchor="middle" x="614.9918" y="-705.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="554.4918,-698 675.4918,-698 "/>
+<text text-anchor="middle" x="614.9918" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
+<polyline fill="none" stroke="#000000" points="554.4918,-675 675.4918,-675 "/>
+<text text-anchor="middle" x="614.9918" y="-659.8" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
+<polyline fill="none" stroke="#000000" points="675.4918,-652 675.4918,-721 "/>
+<text text-anchor="middle" x="730.4918" y="-705.8" font-family="Times,serif" font-size="14.00" fill="#000000">tf_select</text>
+<polyline fill="none" stroke="#000000" points="675.4918,-698 785.4918,-698 "/>
+<text text-anchor="middle" x="730.4918" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">templateflow</text>
+<polyline fill="none" stroke="#000000" points="675.4918,-675 785.4918,-675 "/>
+<text text-anchor="middle" x="730.4918" y="-659.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="785.4918,-652 785.4918,-721 "/>
+<text text-anchor="middle" x="822.4918" y="-700.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="785.4918,-687 859.4918,-687 "/>
+<text text-anchor="middle" x="822.4918" y="-665.8" font-family="Times,serif" font-size="14.00" fill="#000000">t1w_file</text>
 </g>
 <!-- anat_norm_wfsplit_desc&#45;&gt;anat_norm_wftf_select -->
 <g id="edge25" class="edge">
 <title>anat_norm_wfsplit_desc:e&#45;&gt;anat_norm_wftf_select:w</title>
-<path fill="none" stroke="#000000" d="M792.2868,-827C807.8424,-827 801.5941,-804.464 792.2868,-792 726.2793,-703.6048 620.2944,-809.8952 554.2868,-721.5 547.8881,-712.931 542.9352,-699.6014 545.5193,-692.1072"/>
-<polygon fill="#000000" stroke="#000000" points="547.7481,-694.8364 554.2868,-686.5 543.9766,-688.9393 547.7481,-694.8364"/>
+<path fill="none" stroke="#000000" d="M791.9918,-827C807.5473,-827 801.299,-804.464 791.9918,-792 725.9842,-703.6048 619.9993,-809.8952 553.9918,-721.5 547.593,-712.931 542.6401,-699.6014 545.2242,-692.1072"/>
+<polygon fill="#000000" stroke="#000000" points="547.453,-694.8364 553.9918,-686.5 543.6815,-688.9393 547.453,-694.8364"/>
 </g>
 <!-- anat_norm_wfsplit_desc&#45;&gt;anat_norm_wftf_select -->
 <g id="edge28" class="edge">
 <title>anat_norm_wfsplit_desc:e&#45;&gt;anat_norm_wftf_select:w</title>
-<path fill="none" stroke="#000000" d="M792.2868,-804C797.6202,-804 795.4779,-796.2734 792.2868,-792 726.2793,-703.6048 620.2944,-809.8952 554.2868,-721.5 548.503,-713.7545 544.1449,-685.0023 547.7649,-671.1102"/>
-<polygon fill="#000000" stroke="#000000" points="550.4371,-673.3707 554.2868,-663.5 545.1219,-668.8156 550.4371,-673.3707"/>
+<path fill="none" stroke="#000000" d="M791.9918,-804C797.3251,-804 795.1828,-796.2734 791.9918,-792 725.9842,-703.6048 619.9993,-809.8952 553.9918,-721.5 548.208,-713.7545 543.8499,-685.0023 547.4698,-671.1102"/>
+<polygon fill="#000000" stroke="#000000" points="550.142,-673.3707 553.9918,-663.5 544.8268,-668.8156 550.142,-673.3707"/>
+</g>
+<!-- anat_norm_wfsplit_desc&#45;&gt;anat_norm_wfregistration -->
+<g id="edge24" class="edge">
+<title>anat_norm_wfsplit_desc:e&#45;&gt;anat_norm_wfregistration:w</title>
+<path fill="none" stroke="#000000" d="M791.9918,-827C807.5473,-827 802.7225,-803.2618 791.9918,-792 734.8224,-732.0014 104.1611,-815.9986 46.9918,-756 40.4839,-749.17 36.8861,-684.4524 41.9937,-660.4235"/>
+<polygon fill="#000000" stroke="#000000" points="45.1587,-661.9351 46.9918,-651.5 39.0514,-658.5143 45.1587,-661.9351"/>
+</g>
+<!-- anat_norm_wfsplit_desc&#45;&gt;anat_norm_wfregistration -->
+<g id="edge27" class="edge">
+<title>anat_norm_wfsplit_desc:e&#45;&gt;anat_norm_wfregistration:w</title>
+<path fill="none" stroke="#000000" d="M791.9918,-804C797.3251,-804 795.6709,-795.8612 791.9918,-792 734.8224,-732.0014 104.1611,-815.9986 46.9918,-756 38.8225,-747.4264 34.4117,-664.0909 41.4597,-636.9772"/>
+<polygon fill="#000000" stroke="#000000" points="44.4577,-638.7873 46.9918,-628.5 38.5955,-634.9617 44.4577,-638.7873"/>
 </g>
 <!-- anat_norm_wfsplit_desc&#45;&gt;anat_norm_wfpoutputnode -->
 <g id="edge26" class="edge">
 <title>anat_norm_wfsplit_desc:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M792.2868,-804C968.7225,-804 1448.4895,-722.1965 1554.2868,-581 1579.0718,-547.9221 1582.5251,-518.1835 1554.2868,-488 1472.1228,-400.1759 1096.4509,-539.8241 1014.2868,-452 957.2149,-390.9966 929.4933,-266.7442 1004.1413,-256.6543"/>
-<polygon fill="#000000" stroke="#000000" points="1004.5328,-260.1364 1014.2868,-256 1004.0823,-253.1509 1004.5328,-260.1364"/>
+<path fill="none" stroke="#000000" d="M791.9918,-804C968.6407,-804 1449.0415,-722.3485 1554.9918,-581 1579.7826,-547.9265 1583.23,-518.1835 1554.9918,-488 1472.8277,-400.1759 1097.1558,-539.8241 1014.9918,-452 957.9198,-390.9966 930.1982,-266.7442 1004.8462,-256.6543"/>
+<polygon fill="#000000" stroke="#000000" points="1005.2378,-260.1364 1014.9918,-256 1004.7872,-253.1509 1005.2378,-260.1364"/>
 </g>
-<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfstd_tpms -->
-<g id="edge21" class="edge">
-<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfstd_tpms:w</title>
-<path fill="none" stroke="#000000" d="M499.2868,-686.5C536.5758,-686.5 513.8445,-635.3838 546.2868,-617 609.7008,-581.0658 1148.6529,-631.421 1201.2868,-581 1211.7075,-571.0175 1199.189,-525.6194 1202.6329,-507.2497"/>
-<polygon fill="#000000" stroke="#000000" points="1205.428,-509.3671 1209.2868,-499.5 1200.117,-504.8071 1205.428,-509.3671"/>
-</g>
-<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfstd_dseg -->
-<g id="edge19" class="edge">
-<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfstd_dseg:w</title>
-<path fill="none" stroke="#000000" d="M499.2868,-686.5C517.3927,-686.5 491.9769,-544.6036 498.8623,-508.0209"/>
-<polygon fill="#000000" stroke="#000000" points="501.869,-509.8153 504.2868,-499.5 495.964,-506.0561 501.869,-509.8153"/>
-</g>
-<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfstd_mask -->
-<g id="edge20" class="edge">
-<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfstd_mask:w</title>
-<path fill="none" stroke="#000000" d="M499.2868,-686.5C536.5758,-686.5 514.4582,-636.427 546.2868,-617 603.4112,-582.1335 798.1976,-628.5549 845.2868,-581 855.5034,-570.6824 843.5818,-525.0552 847.5374,-506.9448"/>
-<polygon fill="#000000" stroke="#000000" points="850.1632,-509.2594 854.2868,-499.5 844.9772,-504.5578 850.1632,-509.2594"/>
-</g>
-<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wftpl_moving -->
-<g id="edge22" class="edge">
-<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wftpl_moving:w</title>
-<path fill="none" stroke="#000000" d="M499.2868,-686.5C514.7313,-686.5 509.6517,-628.4499 499.2868,-617 445.1821,-557.2314 192.3916,-640.7686 138.2868,-581 128.4113,-570.0907 122.6273,-523.1063 130.5199,-505.8706"/>
-<polygon fill="#000000" stroke="#000000" points="132.7747,-508.548 138.2868,-499.5 128.3353,-503.1358 132.7747,-508.548"/>
-</g>
-<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfpoutputnode -->
-<g id="edge18" class="edge">
-<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M499.2868,-686.5C514.7313,-686.5 509.7105,-628.3964 499.2868,-617 438.6036,-550.6543 156.97,-647.3457 96.2868,-581 68.3903,-550.5004 68.2092,-518.333 96.2868,-488 129.6092,-452.0009 896.2177,-419.7517 1004.1603,-417.1668"/>
-<polygon fill="#000000" stroke="#000000" points="1004.3459,-420.6644 1014.2868,-417 1004.2305,-413.6653 1004.3459,-420.6644"/>
-</g>
-<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfpoutputnode -->
-<g id="edge23" class="edge">
-<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M499.2868,-640.5C509.7313,-640.5 506.3055,-624.7347 499.2868,-617 443.7728,-555.8225 184.8008,-642.1775 129.2868,-581 101.511,-550.3904 102.0423,-519.0834 129.2868,-488 192.751,-415.5934 873.4474,-373.5125 1004.0015,-371.1089"/>
-<polygon fill="#000000" stroke="#000000" points="1004.3245,-374.6058 1014.2868,-371 1004.2503,-367.6062 1004.3245,-374.6058"/>
-</g>
-<!-- anat_norm_wftf_select&#45;&gt;anat_norm_wfstd_tpms -->
-<g id="edge34" class="edge">
-<title>anat_norm_wftf_select:e&#45;&gt;anat_norm_wfstd_tpms:w</title>
-<path fill="none" stroke="#000000" d="M860.2868,-669.5C938.5751,-669.5 1149.2898,-639.5266 1201.2868,-581 1207.6866,-573.7965 1201.9249,-545.6237 1203.6091,-531.1652"/>
-<polygon fill="#000000" stroke="#000000" points="1206.7337,-532.7826 1209.2868,-522.5 1200.8786,-528.9461 1206.7337,-532.7826"/>
-</g>
-<!-- anat_norm_wftf_select&#45;&gt;anat_norm_wfstd_dseg -->
-<g id="edge32" class="edge">
-<title>anat_norm_wftf_select:e&#45;&gt;anat_norm_wfstd_dseg:w</title>
-<path fill="none" stroke="#000000" d="M860.2868,-669.5C868.2868,-669.5 865.3646,-657.6819 860.2868,-651.5 757.9097,-526.8606 606.6639,-705.6394 504.2868,-581 498.0983,-573.4658 493.8801,-544.3266 497.6421,-530.228"/>
-<polygon fill="#000000" stroke="#000000" points="500.421,-532.3644 504.2868,-522.5 495.1133,-527.8006 500.421,-532.3644"/>
-</g>
-<!-- anat_norm_wftf_select&#45;&gt;anat_norm_wfstd_mask -->
-<g id="edge33" class="edge">
-<title>anat_norm_wftf_select:e&#45;&gt;anat_norm_wfstd_mask:w</title>
-<path fill="none" stroke="#000000" d="M860.2868,-669.5C888.894,-669.5 837.8136,-556.9531 846.4989,-528.8164"/>
-<polygon fill="#000000" stroke="#000000" points="848.7249,-531.5175 854.2868,-522.5 844.3154,-526.0808 848.7249,-531.5175"/>
+<!-- anat_norm_wftrunc_mov&#45;&gt;anat_norm_wfregistration -->
+<g id="edge37" class="edge">
+<title>anat_norm_wftrunc_mov:e&#45;&gt;anat_norm_wfregistration:w</title>
+<path fill="none" stroke="#000000" d="M428.9918,-810C436.9918,-810 434.3767,-797.9163 428.9918,-792 371.5984,-728.9435 104.3851,-819.0565 46.9918,-756 40.541,-748.9128 36.5789,-720.1126 40.3916,-706.1555"/>
+<polygon fill="#000000" stroke="#000000" points="43.1129,-708.3593 46.9918,-698.5 37.8112,-703.7884 43.1129,-708.3593"/>
 </g>
 <!-- anat_norm_wftf_select&#45;&gt;anat_norm_wftpl_moving -->
 <g id="edge35" class="edge">
 <title>anat_norm_wftf_select:e&#45;&gt;anat_norm_wftpl_moving:w</title>
-<path fill="none" stroke="#000000" d="M860.2868,-669.5C868.2868,-669.5 865.6607,-657.4263 860.2868,-651.5 806.1425,-591.7894 192.4523,-640.6914 138.2868,-581 131.7349,-573.7796 127.6983,-544.4836 131.574,-530.2868"/>
-<polygon fill="#000000" stroke="#000000" points="134.4083,-532.3594 138.2868,-522.5 129.1064,-527.7887 134.4083,-532.3594"/>
+<path fill="none" stroke="#000000" d="M859.9918,-669.5C867.9918,-669.5 865.3656,-657.4263 859.9918,-651.5 805.9217,-591.8713 193.0751,-640.6166 138.9918,-581 132.4407,-573.7787 128.4037,-544.4831 132.2791,-530.2866"/>
+<polygon fill="#000000" stroke="#000000" points="135.1132,-532.3594 138.9918,-522.5 129.8114,-527.7888 135.1132,-532.3594"/>
 </g>
-<!-- anat_norm_wfstd_tpms&#45;&gt;anat_norm_wfpoutputnode -->
-<g id="edge31" class="edge">
-<title>anat_norm_wfstd_tpms:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1545.2868,-511.5C1555.7313,-511.5 1552.418,-495.631 1545.2868,-488 1464.5346,-401.5877 1095.039,-538.4123 1014.2868,-452 971.2579,-405.9551 950.0062,-312.9215 1004.1268,-302.8836"/>
-<polygon fill="#000000" stroke="#000000" points="1004.6277,-306.3534 1014.2868,-302 1004.0211,-299.3797 1004.6277,-306.3534"/>
+<!-- anat_norm_wftf_select&#45;&gt;anat_norm_wfstd_mask -->
+<g id="edge33" class="edge">
+<title>anat_norm_wftf_select:e&#45;&gt;anat_norm_wfstd_mask:w</title>
+<path fill="none" stroke="#000000" d="M859.9918,-669.5C888.5916,-669.5 838.2887,-556.9531 847.1629,-528.8164"/>
+<polygon fill="#000000" stroke="#000000" points="849.4067,-531.5032 854.9918,-522.5 845.0112,-526.0553 849.4067,-531.5032"/>
 </g>
-<!-- anat_norm_wfstd_dseg&#45;&gt;anat_norm_wfpoutputnode -->
-<g id="edge29" class="edge">
-<title>anat_norm_wfstd_dseg:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M836.2868,-511.5C847.6376,-511.5 839.5156,-497.1099 846.2868,-488 902.1726,-412.8125 916.1068,-352.5009 1004.0755,-348.2406"/>
-<polygon fill="#000000" stroke="#000000" points="1004.3721,-351.7347 1014.2868,-348 1004.2071,-344.7367 1004.3721,-351.7347"/>
+<!-- anat_norm_wftf_select&#45;&gt;anat_norm_wfstd_dseg -->
+<g id="edge32" class="edge">
+<title>anat_norm_wftf_select:e&#45;&gt;anat_norm_wfstd_dseg:w</title>
+<path fill="none" stroke="#000000" d="M859.9918,-669.5C867.9918,-669.5 865.0679,-657.6833 859.9918,-651.5 757.9247,-527.1701 607.0588,-705.3299 504.9918,-581 498.8053,-573.4641 494.586,-544.3258 498.3474,-530.2276"/>
+<polygon fill="#000000" stroke="#000000" points="501.126,-532.3644 504.9918,-522.5 495.8182,-527.8007 501.126,-532.3644"/>
 </g>
-<!-- anat_norm_wfstd_mask&#45;&gt;anat_norm_wfpoutputnode -->
-<g id="edge30" class="edge">
-<title>anat_norm_wfstd_mask:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1192.2868,-511.5C1202.7313,-511.5 1198.8998,-496.0843 1192.2868,-488 1141.1832,-425.5261 1065.3905,-514.4739 1014.2868,-452 980.8523,-411.1264 960.574,-335.5747 1004.3176,-326.0054"/>
-<polygon fill="#000000" stroke="#000000" points="1004.6885,-329.4858 1014.2868,-325 1003.9861,-322.5211 1004.6885,-329.4858"/>
+<!-- anat_norm_wftf_select&#45;&gt;anat_norm_wfstd_tpms -->
+<g id="edge34" class="edge">
+<title>anat_norm_wftf_select:e&#45;&gt;anat_norm_wfstd_tpms:w</title>
+<path fill="none" stroke="#000000" d="M859.9918,-669.5C938.4951,-669.5 1149.831,-639.6688 1201.9918,-581 1208.3941,-573.7988 1202.6312,-545.6249 1204.3146,-531.1656"/>
+<polygon fill="#000000" stroke="#000000" points="1207.4393,-532.7828 1209.9918,-522.5 1201.584,-528.9467 1207.4393,-532.7828"/>
+</g>
+<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wftpl_moving -->
+<g id="edge22" class="edge">
+<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wftpl_moving:w</title>
+<path fill="none" stroke="#000000" d="M498.9918,-686.5C514.4362,-686.5 509.3551,-628.4513 498.9918,-617 445.0436,-557.388 192.9399,-640.612 138.9918,-581 129.1177,-570.0893 123.3328,-523.1058 131.225,-505.8705"/>
+<polygon fill="#000000" stroke="#000000" points="133.4796,-508.548 138.9918,-499.5 129.0403,-503.1357 133.4796,-508.548"/>
+</g>
+<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfstd_mask -->
+<g id="edge20" class="edge">
+<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfstd_mask:w</title>
+<path fill="none" stroke="#000000" d="M498.9918,-686.5C536.2807,-686.5 514.1593,-636.4207 545.9918,-617 603.3113,-582.0299 798.7379,-628.7023 845.9918,-581 856.2104,-570.6844 844.2875,-525.056 848.2426,-506.9451"/>
+<polygon fill="#000000" stroke="#000000" points="850.8685,-509.2596 854.9918,-499.5 845.6823,-504.5581 850.8685,-509.2596"/>
+</g>
+<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfstd_dseg -->
+<g id="edge19" class="edge">
+<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfstd_dseg:w</title>
+<path fill="none" stroke="#000000" d="M498.9918,-686.5C517.1005,-686.5 492.4389,-544.6036 499.5208,-508.0209"/>
+<polygon fill="#000000" stroke="#000000" points="502.5341,-509.8059 504.9918,-499.5 496.6437,-506.0239 502.5341,-509.8059"/>
+</g>
+<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfstd_tpms -->
+<g id="edge21" class="edge">
+<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfstd_tpms:w</title>
+<path fill="none" stroke="#000000" d="M498.9918,-686.5C536.2807,-686.5 513.5486,-635.3824 545.9918,-617 609.5038,-581.0137 1149.2756,-631.4955 1201.9918,-581 1212.4128,-571.0179 1199.8941,-525.6196 1203.3379,-507.2498"/>
+<polygon fill="#000000" stroke="#000000" points="1206.133,-509.3672 1209.9918,-499.5 1200.822,-504.8072 1206.133,-509.3672"/>
+</g>
+<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfpoutputnode -->
+<g id="edge18" class="edge">
+<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
+<path fill="none" stroke="#000000" d="M498.9918,-686.5C514.4362,-686.5 509.4142,-628.3975 498.9918,-617 438.4652,-550.811 157.5183,-647.189 96.9918,-581 69.0986,-550.4973 68.9142,-518.333 96.9918,-488 130.3142,-452.0009 896.9226,-419.7517 1004.8652,-417.1668"/>
+<polygon fill="#000000" stroke="#000000" points="1005.0508,-420.6644 1014.9918,-417 1004.9354,-413.6653 1005.0508,-420.6644"/>
+</g>
+<!-- anat_norm_wfregistration&#45;&gt;anat_norm_wfpoutputnode -->
+<g id="edge23" class="edge">
+<title>anat_norm_wfregistration:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
+<path fill="none" stroke="#000000" d="M498.9918,-640.5C509.4362,-640.5 506.0094,-624.7356 498.9918,-617 443.6343,-555.979 185.3492,-642.021 129.9918,-581 102.2199,-550.3868 102.7472,-519.0834 129.9918,-488 193.456,-415.5934 874.1523,-373.5125 1004.7064,-371.1089"/>
+<polygon fill="#000000" stroke="#000000" points="1005.0294,-374.6058 1014.9918,-371 1004.9552,-367.6062 1005.0294,-374.6058"/>
 </g>
 <!-- anat_norm_wftpl_moving&#45;&gt;anat_norm_wfpoutputnode -->
 <g id="edge36" class="edge">
 <title>anat_norm_wftpl_moving:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M486.2868,-511.5C497.471,-511.5 486.6761,-495.1374 495.2868,-488 583.0591,-415.2462 880.2046,-395.0916 1004.2446,-394.0438"/>
-<polygon fill="#000000" stroke="#000000" points="1004.3022,-397.5437 1014.2868,-394 1004.2716,-390.5438 1004.3022,-397.5437"/>
+<path fill="none" stroke="#000000" d="M486.9918,-511.5C498.176,-511.5 487.381,-495.1374 495.9918,-488 583.764,-415.2462 880.9096,-395.0916 1004.9495,-394.0438"/>
+<polygon fill="#000000" stroke="#000000" points="1005.0072,-397.5437 1014.9918,-394 1004.9765,-390.5438 1005.0072,-397.5437"/>
+</g>
+<!-- anat_norm_wfstd_mask&#45;&gt;anat_norm_wfpoutputnode -->
+<g id="edge30" class="edge">
+<title>anat_norm_wfstd_mask:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
+<path fill="none" stroke="#000000" d="M1192.9918,-511.5C1203.4362,-511.5 1199.6047,-496.0843 1192.9918,-488 1141.8881,-425.5261 1066.0954,-514.4739 1014.9918,-452 981.5572,-411.1264 961.2789,-335.5747 1005.0226,-326.0054"/>
+<polygon fill="#000000" stroke="#000000" points="1005.3934,-329.4858 1014.9918,-325 1004.691,-322.5211 1005.3934,-329.4858"/>
+</g>
+<!-- anat_norm_wfstd_dseg&#45;&gt;anat_norm_wfpoutputnode -->
+<g id="edge29" class="edge">
+<title>anat_norm_wfstd_dseg:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
+<path fill="none" stroke="#000000" d="M836.9918,-511.5C848.3425,-511.5 840.2205,-497.1099 846.9918,-488 902.8775,-412.8125 916.8118,-352.5009 1004.7804,-348.2406"/>
+<polygon fill="#000000" stroke="#000000" points="1005.077,-351.7347 1014.9918,-348 1004.912,-344.7367 1005.077,-351.7347"/>
+</g>
+<!-- anat_norm_wfstd_tpms&#45;&gt;anat_norm_wfpoutputnode -->
+<g id="edge31" class="edge">
+<title>anat_norm_wfstd_tpms:e&#45;&gt;anat_norm_wfpoutputnode:w</title>
+<path fill="none" stroke="#000000" d="M1545.9918,-511.5C1556.4362,-511.5 1553.1229,-495.631 1545.9918,-488 1465.2396,-401.5877 1095.7439,-538.4123 1014.9918,-452 971.9628,-405.9551 950.7111,-312.9215 1004.8318,-302.8836"/>
+<polygon fill="#000000" stroke="#000000" points="1005.3327,-306.3534 1014.9918,-302 1004.7261,-299.3797 1005.3327,-306.3534"/>
 </g>
 <!-- anat_norm_wfoutputnode -->
 <g id="node11" class="node">
 <title>anat_norm_wfoutputnode</title>
-<polygon fill="none" stroke="#000000" points="1364.7868,-.5 1364.7868,-207.5 1633.7868,-207.5 1633.7868,-.5 1364.7868,-.5"/>
-<text text-anchor="middle" x="1425.2868" y="-192.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-184.5 1485.7868,-184.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-169.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat2std_xfm</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-161.5 1485.7868,-161.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-146.3" font-family="Times,serif" font-size="14.00" fill="#000000">standardized</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-138.5 1485.7868,-138.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-123.3" font-family="Times,serif" font-size="14.00" fill="#000000">std2anat_xfm</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-115.5 1485.7868,-115.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-92.5 1485.7868,-92.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-77.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-69.5 1485.7868,-69.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-54.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-46.5 1485.7868,-46.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
-<polyline fill="none" stroke="#000000" points="1364.7868,-23.5 1485.7868,-23.5 "/>
-<text text-anchor="middle" x="1425.2868" y="-8.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
-<polyline fill="none" stroke="#000000" points="1485.7868,-.5 1485.7868,-207.5 "/>
-<text text-anchor="middle" x="1534.7868" y="-169.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode</text>
-<polyline fill="none" stroke="#000000" points="1485.7868,-138.5 1583.7868,-138.5 "/>
-<text text-anchor="middle" x="1534.7868" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">utility</text>
-<polyline fill="none" stroke="#000000" points="1485.7868,-69.5 1583.7868,-69.5 "/>
-<text text-anchor="middle" x="1534.7868" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="1583.7868,-.5 1583.7868,-207.5 "/>
-<text text-anchor="middle" x="1608.7868" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polygon fill="none" stroke="#000000" points="1365.4918,-.5 1365.4918,-207.5 1634.4918,-207.5 1634.4918,-.5 1365.4918,-.5"/>
+<text text-anchor="middle" x="1425.9918" y="-192.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-184.5 1486.4918,-184.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-169.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat2std_xfm</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-161.5 1486.4918,-161.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-146.3" font-family="Times,serif" font-size="14.00" fill="#000000">standardized</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-138.5 1486.4918,-138.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-123.3" font-family="Times,serif" font-size="14.00" fill="#000000">std2anat_xfm</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-115.5 1486.4918,-115.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-92.5 1486.4918,-92.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-77.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-69.5 1486.4918,-69.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-54.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-46.5 1486.4918,-46.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000">template</text>
+<polyline fill="none" stroke="#000000" points="1365.4918,-23.5 1486.4918,-23.5 "/>
+<text text-anchor="middle" x="1425.9918" y="-8.3" font-family="Times,serif" font-size="14.00" fill="#000000">template_spec</text>
+<polyline fill="none" stroke="#000000" points="1486.4918,-.5 1486.4918,-207.5 "/>
+<text text-anchor="middle" x="1535.4918" y="-169.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode</text>
+<polyline fill="none" stroke="#000000" points="1486.4918,-138.5 1584.4918,-138.5 "/>
+<text text-anchor="middle" x="1535.4918" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">utility</text>
+<polyline fill="none" stroke="#000000" points="1486.4918,-69.5 1584.4918,-69.5 "/>
+<text text-anchor="middle" x="1535.4918" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="1584.4918,-.5 1584.4918,-207.5 "/>
+<text text-anchor="middle" x="1609.4918" y="-100.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge10" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-417C1364.2868,-417 1364.2868,-229.3526 1364.2868,-183.1737"/>
-<polygon fill="#000000" stroke="#000000" points="1367.7869,-183 1364.2868,-173 1360.7869,-183 1367.7869,-183"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-417C1364.9918,-417 1364.9918,-229.3526 1364.9918,-183.1737"/>
+<polygon fill="#000000" stroke="#000000" points="1368.4919,-183 1364.9918,-173 1361.4919,-183 1368.4919,-183"/>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge11" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-394C1364.2868,-394 1364.2868,-206.3526 1364.2868,-160.1737"/>
-<polygon fill="#000000" stroke="#000000" points="1367.7869,-160 1364.2868,-150 1360.7869,-160 1367.7869,-160"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-394C1364.9918,-394 1364.9918,-206.3526 1364.9918,-160.1737"/>
+<polygon fill="#000000" stroke="#000000" points="1368.4919,-160 1364.9918,-150 1361.4919,-160 1368.4919,-160"/>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge12" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-371C1364.2868,-371 1364.2868,-183.3526 1364.2868,-137.1737"/>
-<polygon fill="#000000" stroke="#000000" points="1367.7869,-137 1364.2868,-127 1360.7869,-137 1367.7869,-137"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-371C1364.9918,-371 1364.9918,-183.3526 1364.9918,-137.1737"/>
+<polygon fill="#000000" stroke="#000000" points="1368.4919,-137 1364.9918,-127 1361.4919,-137 1368.4919,-137"/>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge13" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-348C1469.0247,-348 1270.2887,-120.3946 1354.2813,-104.8357"/>
-<polygon fill="#000000" stroke="#000000" points="1354.6129,-108.3203 1364.2868,-104 1354.0302,-101.3445 1354.6129,-108.3203"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-348C1469.7296,-348 1270.9936,-120.3946 1354.9862,-104.8357"/>
+<polygon fill="#000000" stroke="#000000" points="1355.3178,-108.3203 1364.9918,-104 1354.7351,-101.3445 1355.3178,-108.3203"/>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge14" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-325C1364.2868,-325 1364.2868,-137.3526 1364.2868,-91.1737"/>
-<polygon fill="#000000" stroke="#000000" points="1367.7869,-91 1364.2868,-81 1360.7869,-91 1367.7869,-91"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-325C1364.9918,-325 1364.9918,-137.3526 1364.9918,-91.1737"/>
+<polygon fill="#000000" stroke="#000000" points="1368.4919,-91 1364.9918,-81 1361.4919,-91 1368.4919,-91"/>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge15" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-302C1364.2868,-302 1364.2868,-114.3526 1364.2868,-68.1737"/>
-<polygon fill="#000000" stroke="#000000" points="1367.7869,-68 1364.2868,-58 1360.7869,-68 1367.7869,-68"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-302C1364.9918,-302 1364.9918,-114.3526 1364.9918,-68.1737"/>
+<polygon fill="#000000" stroke="#000000" points="1368.4919,-68 1364.9918,-58 1361.4919,-68 1368.4919,-68"/>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge16" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-279C1364.2868,-279 1364.2868,-91.3526 1364.2868,-45.1737"/>
-<polygon fill="#000000" stroke="#000000" points="1367.7869,-45 1364.2868,-35 1360.7869,-45 1367.7869,-45"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-279C1364.9918,-279 1364.9918,-91.3526 1364.9918,-45.1737"/>
+<polygon fill="#000000" stroke="#000000" points="1368.4919,-45 1364.9918,-35 1361.4919,-45 1368.4919,-45"/>
 </g>
 <!-- anat_norm_wfpoutputnode&#45;&gt;anat_norm_wfoutputnode -->
 <g id="edge17" class="edge">
 <title>anat_norm_wfpoutputnode:e&#45;&gt;anat_norm_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M1364.2868,-256C1364.2868,-256 1364.2868,-68.3526 1364.2868,-22.1737"/>
-<polygon fill="#000000" stroke="#000000" points="1367.7869,-22 1364.2868,-12 1360.7869,-22 1367.7869,-22"/>
+<path fill="none" stroke="#000000" d="M1364.9918,-256C1364.9918,-256 1364.9918,-68.3526 1364.9918,-22.1737"/>
+<polygon fill="#000000" stroke="#000000" points="1368.4919,-22 1364.9918,-12 1361.4919,-22 1368.4919,-22"/>
 </g>
 </g>
 </svg>

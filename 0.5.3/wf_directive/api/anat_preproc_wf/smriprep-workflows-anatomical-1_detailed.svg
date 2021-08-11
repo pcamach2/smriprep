@@ -35,8 +35,38 @@
 <polyline fill="none" stroke="#000000" points="254.0438,-2012.5 358.0438,-2012.5 "/>
 <text text-anchor="middle" x="306.0438" y="-1997.3" font-family="Times,serif" font-size="14.00" fill="#000000">t2w</text>
 </g>
-<!-- anat_preproc_wffs_isrunning -->
+<!-- anat_preproc_wfanat_template_wf -->
 <g id="node2" class="node">
+<title>anat_preproc_wfanat_template_wf</title>
+<polygon fill="none" stroke="#000000" points="424.0438,-1837.5 424.0438,-1952.5 910.0438,-1952.5 910.0438,-1837.5 424.0438,-1837.5"/>
+<text text-anchor="middle" x="484.0438" y="-1920.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
+<polyline fill="none" stroke="#000000" points="424.0438,-1895.5 544.0438,-1895.5 "/>
+<text text-anchor="middle" x="484.0438" y="-1862.8" font-family="Times,serif" font-size="14.00" fill="#000000">inputnode.t1w</text>
+<polyline fill="none" stroke="#000000" points="544.0438,-1837.5 544.0438,-1952.5 "/>
+<text text-anchor="middle" x="616.0438" y="-1929.8" font-family="Times,serif" font-size="14.00" fill="#000000">anat_template_wf</text>
+<polyline fill="none" stroke="#000000" points="544.0438,-1914.5 688.0438,-1914.5 "/>
+<text text-anchor="middle" x="616.0438" y="-1891.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="544.0438,-1876.5 688.0438,-1876.5 "/>
+<text text-anchor="middle" x="616.0438" y="-1853.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polyline fill="none" stroke="#000000" points="688.0438,-1837.5 688.0438,-1952.5 "/>
+<text text-anchor="middle" x="799.0438" y="-1937.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
+<polyline fill="none" stroke="#000000" points="688.0438,-1929.5 910.0438,-1929.5 "/>
+<text text-anchor="middle" x="799.0438" y="-1914.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.out_report</text>
+<polyline fill="none" stroke="#000000" points="688.0438,-1906.5 910.0438,-1906.5 "/>
+<text text-anchor="middle" x="799.0438" y="-1891.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.t1w_realign_xfm</text>
+<polyline fill="none" stroke="#000000" points="688.0438,-1883.5 910.0438,-1883.5 "/>
+<text text-anchor="middle" x="799.0438" y="-1868.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.t1w_ref</text>
+<polyline fill="none" stroke="#000000" points="688.0438,-1860.5 910.0438,-1860.5 "/>
+<text text-anchor="middle" x="799.0438" y="-1845.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.t1w_valid_list</text>
+</g>
+<!-- anat_preproc_wfinputnode&#45;&gt;anat_preproc_wfanat_template_wf -->
+<g id="edge36" class="edge">
+<title>anat_preproc_wfinputnode:e&#45;&gt;anat_preproc_wfanat_template_wf:w</title>
+<path fill="none" stroke="#000000" d="M358.0438,-2024C397.1575,-2024 394.9621,-1989.089 410.0438,-1953 416.1787,-1938.3199 408.6594,-1890.0614 416.1273,-1872.4805"/>
+<polygon fill="#000000" stroke="#000000" points="418.5229,-1875.0427 424.0438,-1866 414.0888,-1869.6261 418.5229,-1875.0427"/>
+</g>
+<!-- anat_preproc_wffs_isrunning -->
+<g id="node3" class="node">
 <title>anat_preproc_wffs_isrunning</title>
 <polygon fill="none" stroke="#000000" points="70.5438,-1860.5 70.5438,-1929.5 329.5438,-1929.5 329.5438,-1860.5 70.5438,-1860.5"/>
 <text text-anchor="middle" x="122.5438" y="-1914.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
@@ -66,36 +96,6 @@
 <title>anat_preproc_wfinputnode:e&#45;&gt;anat_preproc_wffs_isrunning:w</title>
 <path fill="none" stroke="#000000" d="M358.0438,-2047C383.8216,-2047 374.3401,-2008.9731 358.0438,-1989 275.4441,-1887.7633 152.6436,-2031.2367 70.0438,-1930 63.9328,-1922.5101 59.7383,-1893.63 63.4605,-1879.6581"/>
 <polygon fill="#000000" stroke="#000000" points="66.1791,-1881.8648 70.0438,-1872 60.8708,-1877.3016 66.1791,-1881.8648"/>
-</g>
-<!-- anat_preproc_wfanat_template_wf -->
-<g id="node3" class="node">
-<title>anat_preproc_wfanat_template_wf</title>
-<polygon fill="none" stroke="#000000" points="424.0438,-1837.5 424.0438,-1952.5 910.0438,-1952.5 910.0438,-1837.5 424.0438,-1837.5"/>
-<text text-anchor="middle" x="484.0438" y="-1920.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
-<polyline fill="none" stroke="#000000" points="424.0438,-1895.5 544.0438,-1895.5 "/>
-<text text-anchor="middle" x="484.0438" y="-1862.8" font-family="Times,serif" font-size="14.00" fill="#000000">inputnode.t1w</text>
-<polyline fill="none" stroke="#000000" points="544.0438,-1837.5 544.0438,-1952.5 "/>
-<text text-anchor="middle" x="616.0438" y="-1929.8" font-family="Times,serif" font-size="14.00" fill="#000000">anat_template_wf</text>
-<polyline fill="none" stroke="#000000" points="544.0438,-1914.5 688.0438,-1914.5 "/>
-<text text-anchor="middle" x="616.0438" y="-1891.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="544.0438,-1876.5 688.0438,-1876.5 "/>
-<text text-anchor="middle" x="616.0438" y="-1853.3" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-<polyline fill="none" stroke="#000000" points="688.0438,-1837.5 688.0438,-1952.5 "/>
-<text text-anchor="middle" x="799.0438" y="-1937.3" font-family="Times,serif" font-size="14.00" fill="#000000">OUT</text>
-<polyline fill="none" stroke="#000000" points="688.0438,-1929.5 910.0438,-1929.5 "/>
-<text text-anchor="middle" x="799.0438" y="-1914.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.out_report</text>
-<polyline fill="none" stroke="#000000" points="688.0438,-1906.5 910.0438,-1906.5 "/>
-<text text-anchor="middle" x="799.0438" y="-1891.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.t1w_realign_xfm</text>
-<polyline fill="none" stroke="#000000" points="688.0438,-1883.5 910.0438,-1883.5 "/>
-<text text-anchor="middle" x="799.0438" y="-1868.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.t1w_ref</text>
-<polyline fill="none" stroke="#000000" points="688.0438,-1860.5 910.0438,-1860.5 "/>
-<text text-anchor="middle" x="799.0438" y="-1845.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode.t1w_valid_list</text>
-</g>
-<!-- anat_preproc_wfinputnode&#45;&gt;anat_preproc_wfanat_template_wf -->
-<g id="edge36" class="edge">
-<title>anat_preproc_wfinputnode:e&#45;&gt;anat_preproc_wfanat_template_wf:w</title>
-<path fill="none" stroke="#000000" d="M358.0438,-2024C397.1575,-2024 394.9621,-1989.089 410.0438,-1953 416.1787,-1938.3199 408.6594,-1890.0614 416.1273,-1872.4805"/>
-<polygon fill="#000000" stroke="#000000" points="418.5229,-1875.0427 424.0438,-1866 414.0888,-1869.6261 418.5229,-1875.0427"/>
 </g>
 <!-- anat_preproc_wfsurface_recon_wf -->
 <g id="node6" class="node">
@@ -158,8 +158,8 @@
 <!-- anat_preproc_wfinputnode&#45;&gt;anat_preproc_wfsurface_recon_wf -->
 <g id="edge37" class="edge">
 <title>anat_preproc_wfinputnode:e&#45;&gt;anat_preproc_wfsurface_recon_wf:w</title>
-<path fill="none" stroke="#000000" d="M358.0438,-2001C363.3772,-2001 361.5801,-1992.9924 358.0438,-1989 270.1733,-1889.795 149.9144,-2052.205 62.0438,-1953 8.9939,-1893.1071 150.956,-1392.2082 304.8892,-1370.7128"/>
-<polygon fill="#000000" stroke="#000000" points="305.3135,-1374.1917 315.0438,-1370 304.8233,-1367.2089 305.3135,-1374.1917"/>
+<path fill="none" stroke="#000000" d="M358.0438,-2001C363.3772,-2001 361.5809,-1992.9917 358.0438,-1989 269.8607,-1889.4825 149.227,-2052.5175 61.0438,-1953 7.8961,-1893.0211 150.5942,-1392.2045 304.8674,-1370.7127"/>
+<polygon fill="#000000" stroke="#000000" points="305.3128,-1374.1902 315.0438,-1370 304.8237,-1367.2073 305.3128,-1374.1902"/>
 </g>
 <!-- anat_preproc_wfanat_norm_wf -->
 <g id="node11" class="node">
@@ -216,7 +216,7 @@
 <polygon fill="#000000" stroke="#000000" points="1115.0499,-926.8132 1119.0438,-917 1109.802,-922.1807 1115.0499,-926.8132"/>
 </g>
 <!-- anat_preproc_wfanat_reports_wf -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>anat_preproc_wfanat_reports_wf</title>
 <polygon fill="none" stroke="#000000" points="961.0438,-46.5 961.0438,-299.5 1383.0438,-299.5 1383.0438,-46.5 961.0438,-46.5"/>
 <text text-anchor="middle" x="1080.5438" y="-284.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
@@ -254,12 +254,6 @@
 <title>anat_preproc_wfinputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
 <path fill="none" stroke="#000000" d="M358.0438,-2024C373.5994,-2024 368.3937,-2000.6127 358.0438,-1989 311.607,-1936.8969 97.9416,-1999.6662 46.0438,-1953 -17.2965,-1896.0447 4.0438,-1851.1816 4.0438,-1766 4.0438,-1766 4.0438,-1766 4.0438,-1006 4.0438,-710.1188 7.3614,-569.7498 236.0438,-382 359.6503,-280.5183 780.5284,-265.5744 950.9196,-265.0168"/>
 <polygon fill="#000000" stroke="#000000" points="951.0497,-268.5167 961.0438,-265 951.038,-261.5167 951.0497,-268.5167"/>
-</g>
-<!-- anat_preproc_wffs_isrunning&#45;&gt;anat_preproc_wfsurface_recon_wf -->
-<g id="edge28" class="edge">
-<title>anat_preproc_wffs_isrunning:e&#45;&gt;anat_preproc_wfsurface_recon_wf:w</title>
-<path fill="none" stroke="#000000" d="M330.0438,-1878C377.8933,-1878 278.988,-1477.0051 306.7733,-1422.1816"/>
-<polygon fill="#000000" stroke="#000000" points="309.1293,-1424.7903 315.0438,-1416 304.9385,-1419.1834 309.1293,-1424.7903"/>
 </g>
 <!-- anat_preproc_wfanat_validate -->
 <g id="node4" class="node">
@@ -365,8 +359,14 @@
 <path fill="none" stroke="#000000" d="M910.0438,-1895C1134.9724,-1895 1352.0438,-1873.4285 1352.0438,-1648.5 1352.0438,-1648.5 1352.0438,-1648.5 1352.0438,-1287 1352.0438,-1217.2321 1338.1415,-1188.7996 1283.0438,-1146 1221.0217,-1097.8216 1165.2836,-1165.8253 1110.0438,-1110 1043.7701,-1043.0238 1121.3647,-980.3617 1069.0438,-902 1053.0269,-878.0113 1028.6543,-891.4314 1015.0438,-866 927.3631,-702.167 829.4176,-449.5822 1004.8017,-440.2653"/>
 <polygon fill="#000000" stroke="#000000" points="1005.1379,-443.7579 1015.0438,-440 1004.9565,-436.7602 1005.1379,-443.7579"/>
 </g>
+<!-- anat_preproc_wfanat_template_wf&#45;&gt;anat_preproc_wfanat_reports_wf -->
+<g id="edge12" class="edge">
+<title>anat_preproc_wfanat_template_wf:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
+<path fill="none" stroke="#000000" d="M910.0438,-1918C1030.2289,-1918 1051.8832,-1867.8405 1168.0438,-1837 1240.589,-1817.7393 1273.1805,-1846.2787 1333.0438,-1801 1677.5108,-1540.4561 1799.6513,-1322.7296 1702.0438,-902 1643.8722,-651.2554 1653.3511,-535.929 1447.0438,-382 1271.4747,-251.0051 1102.4669,-467.2834 961.0438,-300 920.3569,-251.8731 897.0193,-160.6938 950.9049,-150.865"/>
+<polygon fill="#000000" stroke="#000000" points="951.3776,-154.3374 961.0438,-150 950.7825,-147.3628 951.3776,-154.3374"/>
+</g>
 <!-- anat_preproc_wfanat_derivatives_wf -->
-<g id="node13" class="node">
+<g id="node14" class="node">
 <title>anat_preproc_wfanat_derivatives_wf</title>
 <polygon fill="none" stroke="#000000" points="1401.5438,-.5 1401.5438,-345.5 1832.5438,-345.5 1832.5438,-.5 1401.5438,-.5"/>
 <text text-anchor="middle" x="1512.0438" y="-330.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
@@ -413,11 +413,11 @@
 <path fill="none" stroke="#000000" d="M910.0438,-1849C915.3772,-1849 913.6755,-1840.9059 910.0438,-1837 835.0952,-1756.3907 514.6071,-1849.9944 416.0438,-1801 335.2495,-1760.8383 282.0438,-1738.7258 282.0438,-1648.5 282.0438,-1648.5 282.0438,-1648.5 282.0438,-1462 282.0438,-1341.2116 317.3758,-464.0232 406.0438,-382 486.5198,-307.5551 1311.7042,-420.592 1392.0438,-346 1402.5683,-336.2285 1390.6728,-291.0212 1394.3266,-272.7214"/>
 <polygon fill="#000000" stroke="#000000" points="1397.121,-274.8418 1401.0438,-265 1391.8397,-270.2474 1397.121,-274.8418"/>
 </g>
-<!-- anat_preproc_wfanat_template_wf&#45;&gt;anat_preproc_wfanat_reports_wf -->
-<g id="edge12" class="edge">
-<title>anat_preproc_wfanat_template_wf:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
-<path fill="none" stroke="#000000" d="M910.0438,-1918C1030.2289,-1918 1051.8832,-1867.8405 1168.0438,-1837 1240.589,-1817.7393 1273.1805,-1846.2787 1333.0438,-1801 1677.5108,-1540.4561 1799.6513,-1322.7296 1702.0438,-902 1643.8722,-651.2554 1653.3511,-535.929 1447.0438,-382 1271.4747,-251.0051 1102.4669,-467.2834 961.0438,-300 920.3569,-251.8731 897.0193,-160.6938 950.9049,-150.865"/>
-<polygon fill="#000000" stroke="#000000" points="951.3776,-154.3374 961.0438,-150 950.7825,-147.3628 951.3776,-154.3374"/>
+<!-- anat_preproc_wffs_isrunning&#45;&gt;anat_preproc_wfsurface_recon_wf -->
+<g id="edge28" class="edge">
+<title>anat_preproc_wffs_isrunning:e&#45;&gt;anat_preproc_wfsurface_recon_wf:w</title>
+<path fill="none" stroke="#000000" d="M330.0438,-1878C377.8933,-1878 278.988,-1477.0051 306.7733,-1422.1816"/>
+<polygon fill="#000000" stroke="#000000" points="309.1293,-1424.7903 315.0438,-1416 304.9385,-1419.1834 309.1293,-1424.7903"/>
 </g>
 <!-- anat_preproc_wfbrain_extraction_wf -->
 <g id="node5" class="node">
@@ -472,7 +472,7 @@
 <polygon fill="#000000" stroke="#000000" points="308.1564,-1539.0507 315.0438,-1531 304.6392,-1532.9984 308.1564,-1539.0507"/>
 </g>
 <!-- anat_preproc_wfapplyrefined -->
-<g id="node9" class="node">
+<g id="node7" class="node">
 <title>anat_preproc_wfapplyrefined</title>
 <polygon fill="none" stroke="#000000" points="948.0438,-1252.5 948.0438,-1321.5 1210.0438,-1321.5 1210.0438,-1252.5 948.0438,-1252.5"/>
 <text text-anchor="middle" x="990.5438" y="-1306.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
@@ -509,8 +509,14 @@
 <path fill="none" stroke="#000000" d="M976.0438,-1660.5C1234.9072,-1660.5 1412.265,-1346.9206 1249.0438,-1146 1199.7989,-1085.3808 1132.2014,-1165.2937 1077.0438,-1110 1010.3758,-1043.1675 1065.9463,-990.8451 1034.0438,-902 1027.9297,-884.9728 1019.3937,-883.561 1015.0438,-866 972.8209,-695.5386 841.2116,-471.9298 1004.9067,-463.2601"/>
 <polygon fill="#000000" stroke="#000000" points="1005.137,-466.7555 1015.0438,-463 1004.9573,-459.7578 1005.137,-466.7555"/>
 </g>
+<!-- anat_preproc_wfsurface_recon_wf&#45;&gt;anat_preproc_wfapplyrefined -->
+<g id="edge62" class="edge">
+<title>anat_preproc_wfsurface_recon_wf:e&#45;&gt;anat_preproc_wfapplyrefined:w</title>
+<path fill="none" stroke="#000000" d="M899.0438,-1462C963.181,-1462 918.7414,-1384.2849 934.0438,-1322 936.4165,-1312.3429 935.6469,-1284.5464 940.7076,-1271.2518"/>
+<polygon fill="#000000" stroke="#000000" points="943.3924,-1273.5192 948.0438,-1264 938.4714,-1268.5408 943.3924,-1273.5192"/>
+</g>
 <!-- anat_preproc_wflut_t1w_dseg -->
-<g id="node7" class="node">
+<g id="node8" class="node">
 <title>anat_preproc_wflut_t1w_dseg</title>
 <polygon fill="none" stroke="#000000" points="617.5438,-1252.5 617.5438,-1321.5 850.5438,-1321.5 850.5438,-1252.5 617.5438,-1252.5"/>
 <text text-anchor="middle" x="653.0438" y="-1300.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
@@ -533,14 +539,8 @@
 <path fill="none" stroke="#000000" d="M899.0438,-1485C955.4883,-1485 936.3435,-1400.364 899.0438,-1358 815.5488,-1263.1684 700.5389,-1416.8316 617.0438,-1322 604.5158,-1307.7709 596.9898,-1281.895 607.447,-1273.0552"/>
 <polygon fill="#000000" stroke="#000000" points="608.5768,-1276.3687 617.0438,-1270 606.4533,-1269.6985 608.5768,-1276.3687"/>
 </g>
-<!-- anat_preproc_wfsurface_recon_wf&#45;&gt;anat_preproc_wfapplyrefined -->
-<g id="edge62" class="edge">
-<title>anat_preproc_wfsurface_recon_wf:e&#45;&gt;anat_preproc_wfapplyrefined:w</title>
-<path fill="none" stroke="#000000" d="M899.0438,-1462C963.181,-1462 918.7414,-1384.2849 934.0438,-1322 936.4165,-1312.3429 935.6469,-1284.5464 940.7076,-1271.2518"/>
-<polygon fill="#000000" stroke="#000000" points="943.3924,-1273.5192 948.0438,-1264 938.4714,-1268.5408 943.3924,-1273.5192"/>
-</g>
 <!-- anat_preproc_wfbuffernode -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>anat_preproc_wfbuffernode</title>
 <polygon fill="none" stroke="#000000" points="936.5438,-1146.5 936.5438,-1215.5 1209.5438,-1215.5 1209.5438,-1146.5 936.5438,-1146.5"/>
 <text text-anchor="middle" x="981.0438" y="-1200.3" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
@@ -609,18 +609,6 @@
 <path fill="none" stroke="#000000" d="M899.0438,-1370C904.3772,-1370 902.6524,-1361.9272 899.0438,-1358 834.9132,-1288.2074 545.5315,-1384.2356 474.0438,-1322 403.5145,-1260.5988 399.8552,-982.1395 448.0438,-902 593.274,-660.4767 726.4465,-602.4072 1004.6626,-601.0255"/>
 <polygon fill="#000000" stroke="#000000" points="1005.0525,-604.5246 1015.0438,-601 1005.0353,-597.5247 1005.0525,-604.5246"/>
 </g>
-<!-- anat_preproc_wfsurface_recon_wf&#45;&gt;anat_preproc_wfanat_derivatives_wf -->
-<g id="edge57" class="edge">
-<title>anat_preproc_wfsurface_recon_wf:e&#45;&gt;anat_preproc_wfanat_derivatives_wf:w</title>
-<path fill="none" stroke="#000000" d="M899.0438,-1508C998.624,-1508 1649.5436,-1194.6164 1702.0438,-1110 1783.3522,-978.9526 1817.8998,-543.3686 1667.0438,-382 1585.5725,-294.8512 1479.5413,-435.8368 1401.0438,-346 1394.8447,-338.9053 1391.2212,-197.3562 1397.4104,-159.3331"/>
-<polygon fill="#000000" stroke="#000000" points="1400.6775,-160.5885 1401.0438,-150 1394.1543,-158.0489 1400.6775,-160.5885"/>
-</g>
-<!-- anat_preproc_wfsurface_recon_wf&#45;&gt;anat_preproc_wfanat_derivatives_wf -->
-<g id="edge59" class="edge">
-<title>anat_preproc_wfsurface_recon_wf:e&#45;&gt;anat_preproc_wfanat_derivatives_wf:w</title>
-<path fill="none" stroke="#000000" d="M899.0438,-1485C955.4883,-1485 937.3916,-1399.4177 899.0438,-1358 828.3291,-1281.6242 511.7282,-1388.9644 432.0438,-1322 382.5294,-1280.3895 396.0438,-1245.677 396.0438,-1181 396.0438,-1181 396.0438,-1181 396.0438,-1006 396.0438,-618.1663 649.679,-535.033 1006.0438,-382 1085.2037,-348.0066 1332.7284,-408.4781 1392.0438,-346 1399.3471,-338.3074 1391.516,-177.8386 1397.4246,-136.5956"/>
-<polygon fill="#000000" stroke="#000000" points="1400.7895,-137.5918 1401.0438,-127 1394.2399,-135.1214 1400.7895,-137.5918"/>
-</g>
 <!-- anat_preproc_wfsurface_recon_wf&#45;&gt;anat_preproc_wfanat_reports_wf -->
 <g id="edge64" class="edge">
 <title>anat_preproc_wfsurface_recon_wf:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
@@ -633,8 +621,26 @@
 <path fill="none" stroke="#000000" d="M899.0438,-1416C924.8216,-1416 916.6617,-1376.8177 899.0438,-1358 815.9385,-1269.2347 442.178,-1404.7096 353.0438,-1322 283.4975,-1257.4664 332.5042,-1204.7702 328.0438,-1110 312.8324,-786.8022 138.4842,-644.2124 328.0438,-382 412.882,-264.6459 795.1828,-177.0115 950.6901,-173.134"/>
 <polygon fill="#000000" stroke="#000000" points="951.09,-176.6292 961.0438,-173 950.9994,-169.6298 951.09,-176.6292"/>
 </g>
+<!-- anat_preproc_wfsurface_recon_wf&#45;&gt;anat_preproc_wfanat_derivatives_wf -->
+<g id="edge57" class="edge">
+<title>anat_preproc_wfsurface_recon_wf:e&#45;&gt;anat_preproc_wfanat_derivatives_wf:w</title>
+<path fill="none" stroke="#000000" d="M899.0438,-1508C998.624,-1508 1649.5436,-1194.6164 1702.0438,-1110 1783.3522,-978.9526 1817.8998,-543.3686 1667.0438,-382 1585.5725,-294.8512 1479.5413,-435.8368 1401.0438,-346 1394.8447,-338.9053 1391.2212,-197.3562 1397.4104,-159.3331"/>
+<polygon fill="#000000" stroke="#000000" points="1400.6775,-160.5885 1401.0438,-150 1394.1543,-158.0489 1400.6775,-160.5885"/>
+</g>
+<!-- anat_preproc_wfsurface_recon_wf&#45;&gt;anat_preproc_wfanat_derivatives_wf -->
+<g id="edge59" class="edge">
+<title>anat_preproc_wfsurface_recon_wf:e&#45;&gt;anat_preproc_wfanat_derivatives_wf:w</title>
+<path fill="none" stroke="#000000" d="M899.0438,-1485C955.4883,-1485 937.3916,-1399.4177 899.0438,-1358 828.3291,-1281.6242 511.7282,-1388.9644 432.0438,-1322 382.5294,-1280.3895 396.0438,-1245.677 396.0438,-1181 396.0438,-1181 396.0438,-1181 396.0438,-1006 396.0438,-618.1663 649.679,-535.033 1006.0438,-382 1085.2037,-348.0066 1332.7284,-408.4781 1392.0438,-346 1399.3471,-338.3074 1391.516,-177.8386 1397.4246,-136.5956"/>
+<polygon fill="#000000" stroke="#000000" points="1400.7895,-137.5918 1401.0438,-127 1394.2399,-135.1214 1400.7895,-137.5918"/>
+</g>
+<!-- anat_preproc_wfapplyrefined&#45;&gt;anat_preproc_wfbuffernode -->
+<g id="edge18" class="edge">
+<title>anat_preproc_wfapplyrefined:e&#45;&gt;anat_preproc_wfbuffernode:w</title>
+<path fill="none" stroke="#000000" d="M1210.0438,-1270C1218.0438,-1270 1215.3194,-1258.014 1210.0438,-1252 1129.0481,-1159.6663 1017.0396,-1308.3337 936.0438,-1216 928.8312,-1207.7777 924.0709,-1193.8145 927.2875,-1186.2486"/>
+<polygon fill="#000000" stroke="#000000" points="929.2661,-1189.1433 936.0438,-1181 925.6672,-1183.1392 929.2661,-1189.1433"/>
+</g>
 <!-- anat_preproc_wfsplit_seg -->
-<g id="node8" class="node">
+<g id="node10" class="node">
 <title>anat_preproc_wfsplit_seg</title>
 <polygon fill="none" stroke="#000000" points="652.0438,-1146.5 652.0438,-1215.5 842.0438,-1215.5 842.0438,-1146.5 652.0438,-1146.5"/>
 <text text-anchor="middle" x="682.0438" y="-1194.8" font-family="Times,serif" font-size="14.00" fill="#000000">IN</text>
@@ -669,24 +675,6 @@
 <path fill="none" stroke="#000000" d="M851.0438,-1270C859.0438,-1270 856.1958,-1258.1202 851.0438,-1252 790.625,-1180.2258 703.4627,-1287.7742 643.0438,-1216 623.0085,-1192.1991 634.9171,-1176.0309 643.0438,-1146 727.7639,-832.9303 688.0685,-515.8859 1004.6055,-509.1106"/>
 <polygon fill="#000000" stroke="#000000" points="1005.0815,-512.6058 1015.0438,-509 1005.0073,-505.6062 1005.0815,-512.6058"/>
 </g>
-<!-- anat_preproc_wfsplit_seg&#45;&gt;anat_preproc_wfanat_norm_wf -->
-<g id="edge54" class="edge">
-<title>anat_preproc_wfsplit_seg:e&#45;&gt;anat_preproc_wfanat_norm_wf:w</title>
-<path fill="none" stroke="#000000" d="M842.0438,-1164C852.1787,-1164 848.8299,-1153.1186 856.0438,-1146 957.9324,-1045.4573 971.8475,-951.5059 1108.9562,-947.1571"/>
-<polygon fill="#000000" stroke="#000000" points="1109.0996,-950.6554 1119.0438,-947 1108.9905,-943.6563 1109.0996,-950.6554"/>
-</g>
-<!-- anat_preproc_wfsplit_seg&#45;&gt;anat_preproc_wfoutputnode -->
-<g id="edge55" class="edge">
-<title>anat_preproc_wfsplit_seg:e&#45;&gt;anat_preproc_wfoutputnode:w</title>
-<path fill="none" stroke="#000000" d="M842.0438,-1164C871.5812,-1164 880.7691,-930.8632 887.0438,-902 933.6631,-687.5561 796.5081,-425.3365 1004.8591,-417.1945"/>
-<polygon fill="#000000" stroke="#000000" points="1005.1125,-420.6904 1015.0438,-417 1004.9788,-413.6916 1005.1125,-420.6904"/>
-</g>
-<!-- anat_preproc_wfapplyrefined&#45;&gt;anat_preproc_wfbuffernode -->
-<g id="edge18" class="edge">
-<title>anat_preproc_wfapplyrefined:e&#45;&gt;anat_preproc_wfbuffernode:w</title>
-<path fill="none" stroke="#000000" d="M1210.0438,-1270C1218.0438,-1270 1215.3194,-1258.014 1210.0438,-1252 1129.0481,-1159.6663 1017.0396,-1308.3337 936.0438,-1216 928.8312,-1207.7777 924.0709,-1193.8145 927.2875,-1186.2486"/>
-<polygon fill="#000000" stroke="#000000" points="929.2661,-1189.1433 936.0438,-1181 925.6672,-1183.1392 929.2661,-1189.1433"/>
-</g>
 <!-- anat_preproc_wfbuffernode&#45;&gt;anat_preproc_wfanat_norm_wf -->
 <g id="edge26" class="edge">
 <title>anat_preproc_wfbuffernode:e&#45;&gt;anat_preproc_wfanat_norm_wf:w</title>
@@ -704,6 +692,18 @@
 <title>anat_preproc_wfbuffernode:e&#45;&gt;anat_preproc_wfoutputnode:w</title>
 <path fill="none" stroke="#000000" d="M1210.0438,-1158C1215.3772,-1158 1213.5349,-1150.032 1210.0438,-1146 1136.8522,-1061.4654 1034.2355,-1194.5346 961.0438,-1110 901.556,-1041.293 929.3515,-530.5016 1005.0687,-488.7164"/>
 <polygon fill="#000000" stroke="#000000" points="1006.3148,-492.0046 1015.0438,-486 1004.4756,-485.2505 1006.3148,-492.0046"/>
+</g>
+<!-- anat_preproc_wfsplit_seg&#45;&gt;anat_preproc_wfanat_norm_wf -->
+<g id="edge54" class="edge">
+<title>anat_preproc_wfsplit_seg:e&#45;&gt;anat_preproc_wfanat_norm_wf:w</title>
+<path fill="none" stroke="#000000" d="M842.0438,-1164C852.1787,-1164 848.8299,-1153.1186 856.0438,-1146 957.9324,-1045.4573 971.8475,-951.5059 1108.9562,-947.1571"/>
+<polygon fill="#000000" stroke="#000000" points="1109.0996,-950.6554 1119.0438,-947 1108.9905,-943.6563 1109.0996,-950.6554"/>
+</g>
+<!-- anat_preproc_wfsplit_seg&#45;&gt;anat_preproc_wfoutputnode -->
+<g id="edge55" class="edge">
+<title>anat_preproc_wfsplit_seg:e&#45;&gt;anat_preproc_wfoutputnode:w</title>
+<path fill="none" stroke="#000000" d="M842.0438,-1164C871.5812,-1164 880.7691,-930.8632 887.0438,-902 933.6631,-687.5561 796.5081,-425.3365 1004.8591,-417.1945"/>
+<polygon fill="#000000" stroke="#000000" points="1005.1125,-420.6904 1015.0438,-417 1004.9788,-413.6916 1005.1125,-420.6904"/>
 </g>
 <!-- anat_preproc_wfanat_norm_wf&#45;&gt;anat_preproc_wfoutputnode -->
 <g id="edge2" class="edge">
@@ -747,6 +747,12 @@
 <path fill="none" stroke="#000000" d="M1693.0438,-937C1708.5994,-937 1703.7477,-913.2873 1693.0438,-902 1641.1336,-847.2603 1066.9541,-920.7397 1015.0438,-866 964.6163,-812.8238 940.4668,-703.8534 1004.8889,-693.7542"/>
 <polygon fill="#000000" stroke="#000000" points="1005.3306,-697.2311 1015.0438,-693 1004.8121,-690.2504 1005.3306,-697.2311"/>
 </g>
+<!-- anat_preproc_wfanat_norm_wf&#45;&gt;anat_preproc_wfanat_reports_wf -->
+<g id="edge11" class="edge">
+<title>anat_preproc_wfanat_norm_wf:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
+<path fill="none" stroke="#000000" d="M1693.0438,-914C1698.3772,-914 1696.5204,-906.0445 1693.0438,-902 1623.5944,-821.2047 1529.2419,-943.4155 1456.0438,-866 1381.8162,-787.4955 1483.0899,-461.605 1410.0438,-382 1272.8926,-232.5338 1090.9624,-455.7941 961.0438,-300 894.4474,-220.1397 856.0897,-68.5003 950.8097,-58.5185"/>
+<polygon fill="#000000" stroke="#000000" points="951.2338,-62.0016 961.0438,-58 950.8795,-55.0106 951.2338,-62.0016"/>
+</g>
 <!-- anat_preproc_wfanat_norm_wf&#45;&gt;anat_preproc_wfanat_derivatives_wf -->
 <g id="edge1" class="edge">
 <title>anat_preproc_wfanat_norm_wf:e&#45;&gt;anat_preproc_wfanat_derivatives_wf:w</title>
@@ -765,11 +771,35 @@
 <path fill="none" stroke="#000000" d="M1693.0438,-1029C1707.155,-1029 1701.7634,-913.0947 1693.0438,-902 1651.2133,-848.7748 1591.5345,-915.2071 1545.0438,-866 1394.8377,-707.0172 1577.1008,-564.1611 1456.0438,-382 1439.8737,-357.6678 1414.9379,-371.7 1401.0438,-346 1397.0883,-338.6834 1392.7685,-76.0547 1398.6011,-21.7608"/>
 <polygon fill="#000000" stroke="#000000" points="1402.0113,-22.5506 1401.0438,-12 1395.2208,-20.8511 1402.0113,-22.5506"/>
 </g>
-<!-- anat_preproc_wfanat_norm_wf&#45;&gt;anat_preproc_wfanat_reports_wf -->
-<g id="edge11" class="edge">
-<title>anat_preproc_wfanat_norm_wf:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
-<path fill="none" stroke="#000000" d="M1693.0438,-914C1698.3772,-914 1696.5204,-906.0445 1693.0438,-902 1623.5944,-821.2047 1529.2419,-943.4155 1456.0438,-866 1381.8162,-787.4955 1483.0899,-461.605 1410.0438,-382 1272.8926,-232.5338 1090.9624,-455.7941 961.0438,-300 894.4474,-220.1397 856.0897,-68.5003 950.8097,-58.5185"/>
-<polygon fill="#000000" stroke="#000000" points="951.2338,-62.0016 961.0438,-58 950.8795,-55.0106 951.2338,-62.0016"/>
+<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
+<g id="edge42" class="edge">
+<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
+<path fill="none" stroke="#000000" d="M1401.0438,-757C1442.7105,-757 1427.6713,-414.0483 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 947.273,-283.4257 938.512,-254.0317 951.0659,-244.8329"/>
+<polygon fill="#000000" stroke="#000000" points="952.38,-248.0982 961.0438,-242 950.4681,-241.3643 952.38,-248.0982"/>
+</g>
+<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
+<g id="edge43" class="edge">
+<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
+<path fill="none" stroke="#000000" d="M1401.0438,-713C1437.8216,-713 1424.547,-410.2879 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 940.554,-275.3389 928.006,-230.3551 950.9387,-220.81"/>
+<polygon fill="#000000" stroke="#000000" points="951.8176,-224.2083 961.0438,-219 950.5834,-217.318 951.8176,-224.2083"/>
+</g>
+<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
+<g id="edge47" class="edge">
+<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
+<path fill="none" stroke="#000000" d="M1401.0438,-580C1423.0438,-580 1415.1031,-398.9215 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 914.2106,-243.6324 886.8037,-137.5542 950.9125,-127.7332"/>
+<polygon fill="#000000" stroke="#000000" points="951.3226,-131.2128 961.0438,-127 950.8173,-124.231 951.3226,-131.2128"/>
+</g>
+<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
+<g id="edge49" class="edge">
+<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
+<path fill="none" stroke="#000000" d="M1401.0438,-536C1435.2661,-536 1422.9138,-408.3223 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 907.6581,-235.7459 876.5527,-114.4776 950.9169,-104.6379"/>
+<polygon fill="#000000" stroke="#000000" points="951.2837,-108.1218 961.0438,-104 950.8436,-101.1356 951.2837,-108.1218"/>
+</g>
+<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
+<g id="edge51" class="edge">
+<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
+<path fill="none" stroke="#000000" d="M1401.0438,-492C1425.4883,-492 1416.6653,-400.8016 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 901.0897,-227.8403 866.2847,-91.3256 951.0069,-81.5545"/>
+<polygon fill="#000000" stroke="#000000" points="951.2522,-85.0464 961.0438,-81 950.866,-78.057 951.2522,-85.0464"/>
 </g>
 <!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_derivatives_wf -->
 <g id="edge41" class="edge">
@@ -818,36 +848,6 @@
 <title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_derivatives_wf:w</title>
 <path fill="none" stroke="#000000" d="M1401.0438,-404C1401.0438,-404 1401.0438,-104.8505 1401.0438,-45.2543"/>
 <polygon fill="#000000" stroke="#000000" points="1404.5439,-45 1401.0438,-35 1397.5439,-45 1404.5439,-45"/>
-</g>
-<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
-<g id="edge42" class="edge">
-<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
-<path fill="none" stroke="#000000" d="M1401.0438,-757C1442.7105,-757 1427.6713,-414.0483 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 947.273,-283.4257 938.512,-254.0317 951.0659,-244.8329"/>
-<polygon fill="#000000" stroke="#000000" points="952.38,-248.0982 961.0438,-242 950.4681,-241.3643 952.38,-248.0982"/>
-</g>
-<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
-<g id="edge43" class="edge">
-<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
-<path fill="none" stroke="#000000" d="M1401.0438,-713C1437.8216,-713 1424.547,-410.2879 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 940.554,-275.3389 928.006,-230.3551 950.9387,-220.81"/>
-<polygon fill="#000000" stroke="#000000" points="951.8176,-224.2083 961.0438,-219 950.5834,-217.318 951.8176,-224.2083"/>
-</g>
-<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
-<g id="edge47" class="edge">
-<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
-<path fill="none" stroke="#000000" d="M1401.0438,-580C1423.0438,-580 1415.1031,-398.9215 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 914.2106,-243.6324 886.8037,-137.5542 950.9125,-127.7332"/>
-<polygon fill="#000000" stroke="#000000" points="951.3226,-131.2128 961.0438,-127 950.8173,-124.231 951.3226,-131.2128"/>
-</g>
-<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
-<g id="edge49" class="edge">
-<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
-<path fill="none" stroke="#000000" d="M1401.0438,-536C1435.2661,-536 1422.9138,-408.3223 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 907.6581,-235.7459 876.5527,-114.4776 950.9169,-104.6379"/>
-<polygon fill="#000000" stroke="#000000" points="951.2837,-108.1218 961.0438,-104 950.8436,-101.1356 951.2837,-108.1218"/>
-</g>
-<!-- anat_preproc_wfoutputnode&#45;&gt;anat_preproc_wfanat_reports_wf -->
-<g id="edge51" class="edge">
-<title>anat_preproc_wfoutputnode:e&#45;&gt;anat_preproc_wfanat_reports_wf:w</title>
-<path fill="none" stroke="#000000" d="M1401.0438,-492C1425.4883,-492 1416.6653,-400.8016 1401.0438,-382 1273.9208,-228.9971 1088.1669,-453.0029 961.0438,-300 901.0897,-227.8403 866.2847,-91.3256 951.0069,-81.5545"/>
-<polygon fill="#000000" stroke="#000000" points="951.2522,-85.0464 961.0438,-81 950.866,-78.057 951.2522,-85.0464"/>
 </g>
 </g>
 </svg>

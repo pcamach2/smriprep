@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>smriprep.interfaces.templateflow &mdash; smriprep 0.8.0rc2 documentation</title>
+  <title>smriprep.interfaces.templateflow &mdash; smriprep 0.8.0rc3 documentation</title>
   
 
   
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.8.0rc2
+                0.8.0rc3
               </div>
             
           
@@ -258,6 +258,10 @@
 <span class="sd">    &gt;&gt;&gt; result.outputs.t1w_file  # doctest: +ELLIPSIS</span>
 <span class="sd">    &#39;.../tpl-MNIPediatricAsym_cohort-5_res-1_T1w.nii.gz&#39;</span>
 
+<span class="sd">    &gt;&gt;&gt; select = TemplateFlowSelect()</span>
+<span class="sd">    &gt;&gt;&gt; select.inputs.template = &#39;UNCInfant:cohort-1&#39;</span>
+<span class="sd">    &gt;&gt;&gt; result = select.run()</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">input_spec</span> <span class="o">=</span> <span class="n">_TemplateFlowSelectInputSpec</span>
@@ -285,8 +289,9 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_results</span><span class="p">[</span><span class="s2">&quot;t1w_file&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">desc</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;T1w&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">specs</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">_results</span><span class="p">[</span><span class="s2">&quot;brain_mask&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-            <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;brain&quot;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;mask&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">specs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_results</span><span class="p">[</span><span class="s2">&quot;brain_mask&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">tf</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;brain&quot;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;mask&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">specs</span><span class="p">)</span>
+            <span class="ow">or</span> <span class="n">tf</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;brain&quot;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;mask&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">specs</span><span class="p">)</span>
         <span class="p">)</span>
         <span class="k">return</span> <span class="n">runtime</span></div>
 
@@ -406,9 +411,11 @@
             <dd><a href="../../../../0.8.0rc0/index.html">0.8.0rc0</a></dd>
             <dd><a href="templateflow.html">0.8.0rc1</a></dd>
             <dd><a href="../../../../0.8.0rc2/index.html">0.8.0rc2</a></dd>
+            <dd><a href="../../../../0.8.0rc3/index.html">0.8.0rc3</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="../../../../fix_tfselect-resless/index.html">fix/tfselect-resless</a></dd>
             <dd><a href="../../../../maint_0.4.x/index.html">maint/0.4.x</a></dd>
             <dd><a href="../../../../maint_0.5.x/index.html">maint/0.5.x</a></dd>
             <dd><a href="../../../../maint_0.6.x/index.html">maint/0.6.x</a></dd>
