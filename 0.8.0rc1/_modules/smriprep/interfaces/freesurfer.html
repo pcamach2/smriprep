@@ -1,74 +1,34 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>smriprep.interfaces.freesurfer &mdash; smriprep 0.8.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/banner.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>smriprep.interfaces.freesurfer &mdash; smriprep 0.7.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/banner.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
-
-    
+    <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../../index.html" class="icon icon-home"> smriprep
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                0.8.0
+                0.7.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,18 +36,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
@@ -95,71 +44,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../changes.html">What’s new?</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">smriprep</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="../../index.html">Module code</a> &raquo;</li>
-        
           <li><a href="../interfaces.html">smriprep.interfaces</a> &raquo;</li>
-        
       <li>smriprep.interfaces.freesurfer</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 
 
@@ -170,121 +79,97 @@
 
     <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for an old version of smriprep.</p>
 <h1>Source code for smriprep.interfaces.freesurfer</h1><div class="highlight"><pre>
-<span></span><span class="c1"># emacs: -*- mode: python; py-indent-offset: 4; indent-tabs-mode: nil -*-</span>
-<span class="c1"># vi: set ft=python sts=4 ts=4 sw=4 et:</span>
-<span class="c1">#</span>
-<span class="c1"># Copyright 2021 The NiPreps Developers &lt;nipreps@gmail.com&gt;</span>
-<span class="c1">#</span>
-<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
-<span class="c1"># you may not use this file except in compliance with the License.</span>
-<span class="c1"># You may obtain a copy of the License at</span>
-<span class="c1">#</span>
-<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-<span class="c1">#</span>
-<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
-<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
-<span class="c1"># See the License for the specific language governing permissions and</span>
-<span class="c1"># limitations under the License.</span>
-<span class="c1">#</span>
-<span class="c1"># We support and encourage derived works from this project, please read</span>
-<span class="c1"># about our expectations at</span>
-<span class="c1">#</span>
-<span class="c1">#     https://www.nipreps.org/community/licensing/</span>
-<span class="c1">#</span>
-<span class="sd">&quot;&quot;&quot;Nipype&#39;s recon-all replacement.&quot;&quot;&quot;</span>
+<span></span><span class="sd">&quot;&quot;&quot;Nipype&#39;s recon-all replacement.&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">nipype</span> <span class="kn">import</span> <span class="n">logging</span>
 <span class="kn">from</span> <span class="nn">nipype.utils.filemanip</span> <span class="kn">import</span> <span class="n">check_depends</span>
 <span class="kn">from</span> <span class="nn">nipype.interfaces.base</span> <span class="kn">import</span> <span class="n">traits</span><span class="p">,</span> <span class="n">InputMultiObject</span><span class="p">,</span> <span class="n">isdefined</span>
 <span class="kn">from</span> <span class="nn">nipype.interfaces</span> <span class="kn">import</span> <span class="n">freesurfer</span> <span class="k">as</span> <span class="n">fs</span>
 
-<span class="n">iflogger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;nipype.interface&quot;</span><span class="p">)</span>
+<span class="n">iflogger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">&#39;nipype.interface&#39;</span><span class="p">)</span>
 
 
 <span class="k">class</span> <span class="nc">_ReconAllInputSpec</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">preprocess</span><span class="o">.</span><span class="n">ReconAllInputSpec</span><span class="p">):</span>
     <span class="n">directive</span> <span class="o">=</span> <span class="n">traits</span><span class="o">.</span><span class="n">Enum</span><span class="p">(</span>
-        <span class="s2">&quot;all&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon1&quot;</span><span class="p">,</span>
+        <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon1&#39;</span><span class="p">,</span>
         <span class="c1"># autorecon2 variants</span>
-        <span class="s2">&quot;autorecon2&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon2-volonly&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon2-perhemi&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon2-inflate1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon2-cp&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon2-wm&quot;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon2&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon2-volonly&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon2-perhemi&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon2-inflate1&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon2-cp&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon2-wm&#39;</span><span class="p">,</span>
         <span class="c1"># autorecon3 variants</span>
-        <span class="s2">&quot;autorecon3&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon3-T2pial&quot;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon3&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon3-T2pial&#39;</span><span class="p">,</span>
         <span class="c1"># Mix of autorecon2 and autorecon3 steps</span>
-        <span class="s2">&quot;autorecon-pial&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;autorecon-hemi&quot;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon-pial&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;autorecon-hemi&#39;</span><span class="p">,</span>
         <span class="c1"># Not &quot;multi-stage flags&quot;</span>
-        <span class="s2">&quot;localGI&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;qcache&quot;</span><span class="p">,</span>
-        <span class="n">argstr</span><span class="o">=</span><span class="s2">&quot;-</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;process directive&quot;</span><span class="p">,</span>
+        <span class="s1">&#39;localGI&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;qcache&#39;</span><span class="p">,</span>
+        <span class="n">argstr</span><span class="o">=</span><span class="s1">&#39;-</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;process directive&#39;</span><span class="p">,</span>
         <span class="n">usedefault</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">xor</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;steps&quot;</span><span class="p">],</span>
-        <span class="n">position</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="p">)</span>
+        <span class="n">xor</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">],</span>
+        <span class="n">position</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">steps</span> <span class="o">=</span> <span class="n">InputMultiObject</span><span class="p">(</span>
         <span class="n">traits</span><span class="o">.</span><span class="n">Enum</span><span class="p">(</span>
             <span class="c1"># autorecon1</span>
-            <span class="s2">&quot;motioncor&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;talairach&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;nuintensitycor&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;normalization&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;skullstrip&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;motioncor&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;talairach&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;nuintensitycor&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;normalization&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;skullstrip&#39;</span><span class="p">,</span>
             <span class="c1"># autorecon2-volonly</span>
-            <span class="s2">&quot;gcareg&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;canorm&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;careg&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;careginv&quot;</span><span class="p">,</span>  <span class="c1"># 5.3</span>
-            <span class="s2">&quot;rmneck&quot;</span><span class="p">,</span>  <span class="c1"># 5.3</span>
-            <span class="s2">&quot;skull-lta&quot;</span><span class="p">,</span>  <span class="c1"># 5.3</span>
-            <span class="s2">&quot;calabel&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;normalization2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;maskbfs&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;segmentation&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;gcareg&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;canorm&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;careg&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;careginv&#39;</span><span class="p">,</span>     <span class="c1"># 5.3</span>
+            <span class="s1">&#39;rmneck&#39;</span><span class="p">,</span>       <span class="c1"># 5.3</span>
+            <span class="s1">&#39;skull-lta&#39;</span><span class="p">,</span>    <span class="c1"># 5.3</span>
+            <span class="s1">&#39;calabel&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;normalization2&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;maskbfs&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;segmentation&#39;</span><span class="p">,</span>
             <span class="c1"># autorecon2 per-hemi</span>
-            <span class="s2">&quot;tessellate&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;smooth1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;inflate1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;qsphere&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;fix&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;white&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;smooth2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;inflate2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;curvHK&quot;</span><span class="p">,</span>  <span class="c1"># 6.0</span>
-            <span class="s2">&quot;curvstats&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;tessellate&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;smooth1&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;inflate1&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;qsphere&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;fix&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;smooth2&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;inflate2&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;curvHK&#39;</span><span class="p">,</span>       <span class="c1"># 6.0</span>
+            <span class="s1">&#39;curvstats&#39;</span><span class="p">,</span>
             <span class="c1"># autorecon3 per-hemi</span>
-            <span class="s2">&quot;sphere&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;surfreg&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;jacobian_white&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;avgcurv&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;cortparc&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;pial&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;pctsurfcon&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;parcstats&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;cortparc2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;parcstats2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;cortparc3&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;parcstats3&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;label-exvivo-ec&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;sphere&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;surfreg&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;jacobian_white&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;avgcurv&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;cortparc&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;pial&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;pctsurfcon&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;parcstats&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;cortparc2&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;parcstats2&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;cortparc3&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;parcstats3&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;label-exvivo-ec&#39;</span><span class="p">,</span>
             <span class="c1"># autorecon vol</span>
-            <span class="s2">&quot;cortribbon&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;hyporelabel&quot;</span><span class="p">,</span>  <span class="c1"># 6.0</span>
-            <span class="s2">&quot;segstats&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;aparc2aseg&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;apas2aseg&quot;</span><span class="p">,</span>  <span class="c1"># 6.0</span>
-            <span class="s2">&quot;wmparc&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;balabels&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;cortribbon&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;hyporelabel&#39;</span><span class="p">,</span>  <span class="c1"># 6.0</span>
+            <span class="s1">&#39;segstats&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;aparc2aseg&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;apas2aseg&#39;</span><span class="p">,</span>    <span class="c1"># 6.0</span>
+            <span class="s1">&#39;wmparc&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;balabels&#39;</span><span class="p">,</span>
         <span class="p">),</span>
-        <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;specific process directives&quot;</span><span class="p">,</span>
-        <span class="n">xor</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;directive&quot;</span><span class="p">],</span>
-        <span class="n">position</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="p">)</span>
+        <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;specific process directives&#39;</span><span class="p">,</span>
+        <span class="n">xor</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;directive&#39;</span><span class="p">],</span>
+        <span class="n">position</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 
 <div class="viewcode-block" id="ReconAll"><a class="viewcode-back" href="../../../api/smriprep.interfaces.freesurfer.html#smriprep.interfaces.freesurfer.ReconAll">[docs]</a><span class="k">class</span> <span class="nc">ReconAll</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">ReconAll</span><span class="p">):</span>
@@ -310,26 +195,28 @@
             <span class="n">steps</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="k">if</span> <span class="n">isdefined</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">steps</span><span class="p">):</span>
                 <span class="n">steps</span> <span class="o">=</span> <span class="p">[</span><span class="n">step</span> <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_steps</span> <span class="k">if</span> <span class="n">step</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">steps</span><span class="p">]</span>
-        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s2">&quot;autorecon1&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s1">&#39;autorecon1&#39;</span><span class="p">:</span>
             <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon1_steps</span>
-        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s2">&quot;autorecon2-volonly&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s1">&#39;autorecon2-volonly&#39;</span><span class="p">:</span>
             <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_volonly_steps</span>
-        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s2">&quot;autorecon2-perhemi&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s1">&#39;autorecon2-perhemi&#39;</span><span class="p">:</span>
             <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_perhemi_steps</span>
-        <span class="k">elif</span> <span class="n">directive</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;autorecon2&quot;</span><span class="p">):</span>
+        <span class="k">elif</span> <span class="n">directive</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;autorecon2&#39;</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">isdefined</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span><span class="p">):</span>
-                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">==</span> <span class="s2">&quot;lh&quot;</span><span class="p">:</span>
-                    <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_volonly_steps</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_lh_steps</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">==</span> <span class="s1">&#39;lh&#39;</span><span class="p">:</span>
+                    <span class="n">steps</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_volonly_steps</span>
+                             <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_lh_steps</span><span class="p">)</span>
                 <span class="k">else</span><span class="p">:</span>
-                    <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_volonly_steps</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_rh_steps</span>
+                    <span class="n">steps</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_volonly_steps</span>
+                             <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_rh_steps</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon2_steps</span>
-        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s2">&quot;autorecon-hemi&quot;</span><span class="p">:</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">==</span> <span class="s2">&quot;lh&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s1">&#39;autorecon-hemi&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">==</span> <span class="s1">&#39;lh&#39;</span><span class="p">:</span>
                 <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon_lh_steps</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon_rh_steps</span>
-        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s2">&quot;autorecon3&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">directive</span> <span class="o">==</span> <span class="s1">&#39;autorecon3&#39;</span><span class="p">:</span>
             <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_autorecon3_steps</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">steps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_steps</span>
@@ -337,8 +224,8 @@
         <span class="n">no_run</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="n">flags</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">step</span><span class="p">,</span> <span class="n">outfiles</span><span class="p">,</span> <span class="n">infiles</span> <span class="ow">in</span> <span class="n">steps</span><span class="p">:</span>
-            <span class="n">flag</span> <span class="o">=</span> <span class="s2">&quot;-</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
-            <span class="n">noflag</span> <span class="o">=</span> <span class="s2">&quot;-no</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39;-</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
+            <span class="n">noflag</span> <span class="o">=</span> <span class="s1">&#39;-no</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">noflag</span> <span class="ow">in</span> <span class="n">cmd</span><span class="p">:</span>
                 <span class="k">continue</span>
             <span class="k">elif</span> <span class="n">flag</span> <span class="ow">in</span> <span class="n">cmd</span><span class="p">:</span>
@@ -346,10 +233,8 @@
                 <span class="k">continue</span>
 
             <span class="n">subj_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subjects_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">subject_id</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">check_depends</span><span class="p">(</span>
-                <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subj_dir</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">outfiles</span><span class="p">],</span>
-                <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subj_dir</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">infiles</span><span class="p">],</span>
-            <span class="p">):</span>
+            <span class="k">if</span> <span class="n">check_depends</span><span class="p">([</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subj_dir</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">outfiles</span><span class="p">],</span>
+                             <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subj_dir</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">infiles</span><span class="p">]):</span>
                 <span class="n">flags</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">noflag</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">if</span> <span class="n">isdefined</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">steps</span><span class="p">):</span>
@@ -357,42 +242,33 @@
                 <span class="n">no_run</span> <span class="o">=</span> <span class="kc">False</span>
 
         <span class="k">if</span> <span class="n">no_run</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">force_run</span><span class="p">:</span>
-            <span class="n">iflogger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;recon-all complete : Not running&quot;</span><span class="p">)</span>
+            <span class="n">iflogger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;recon-all complete : Not running&#39;</span><span class="p">)</span>
             <span class="k">return</span> <span class="s2">&quot;echo recon-all: nothing to do&quot;</span>
 
-        <span class="n">cmd</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flags</span><span class="p">)</span>
-        <span class="n">iflogger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;resume recon-all : </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cmd</span><span class="p">)</span>
+        <span class="n">cmd</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flags</span><span class="p">)</span>
+        <span class="n">iflogger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;resume recon-all : </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">cmd</span></div>
 </pre></div>
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright Copyright 2019, Center for Reproducible Neuroscience, Stanford University.
-
-    </p>
+    <p>&#169; Copyright Copyright 2019, Center for Reproducible Neuroscience, Stanford University.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
   
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -428,11 +304,13 @@
             <dd><a href="../../../../0.7.0rc1/index.html">0.7.0rc1</a></dd>
             <dd><a href="../../../../0.7.0rc2/index.html">0.7.0rc2</a></dd>
             <dd><a href="../../../../0.7.1/index.html">0.7.1</a></dd>
+            <dd><a href="../../../../0.7.2/index.html">0.7.2</a></dd>
             <dd><a href="../../../../0.8.0/index.html">0.8.0</a></dd>
             <dd><a href="../../../../0.8.0rc0/index.html">0.8.0rc0</a></dd>
             <dd><a href="freesurfer.html">0.8.0rc1</a></dd>
             <dd><a href="../../../../0.8.0rc2/index.html">0.8.0rc2</a></dd>
             <dd><a href="../../../../0.8.0rc3/index.html">0.8.0rc3</a></dd>
+            <dd><a href="../../../../0.8.1/index.html">0.8.1</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
@@ -442,23 +320,17 @@
             <dd><a href="../../../../maint_0.5.x/index.html">maint/0.5.x</a></dd>
             <dd><a href="../../../../maint_0.6.x/index.html">maint/0.6.x</a></dd>
             <dd><a href="../../../../maint_0.7.x/index.html">maint/0.7.x</a></dd>
+            <dd><a href="../../../../maint_0.8.x/index.html">maint/0.8.x</a></dd>
             <dd><a href="../../../../master/index.html">master</a></dd>
             <dd><a href="../../../../rel_0.8.0rc1/index.html">rel/0.8.0rc1</a></dd>
         </dl>
     </div>
 </div>
-
-
-  <script type="text/javascript">
+<script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

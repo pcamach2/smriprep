@@ -54,14 +54,14 @@
 <!-- anat_template_wf -->
 <g id="node5" class="node">
 <title>anat_template_wf</title>
-<ellipse fill="none" stroke="#000000" cx="465" cy="-738" rx="93.6835" ry="18"/>
-<text text-anchor="middle" x="465" y="-734.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat_template_wf</text>
+<ellipse fill="none" stroke="#000000" cx="464" cy="-738" rx="93.6835" ry="18"/>
+<text text-anchor="middle" x="464" y="-734.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat_template_wf</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;anat_template_wf -->
 <g id="edge3" class="edge">
 <title>inputnode (utility)&#45;&gt;anat_template_wf</title>
-<path fill="none" stroke="#000000" d="M730.9201,-796.3727C675.6165,-784.2329 594.6945,-766.4695 536.6591,-753.73"/>
-<polygon fill="#000000" stroke="#000000" points="537.3439,-750.2971 526.826,-751.5716 535.843,-757.1343 537.3439,-750.2971"/>
+<path fill="none" stroke="#000000" d="M730.7308,-796.3727C675.2586,-784.2329 594.0899,-766.4695 535.8776,-753.73"/>
+<polygon fill="#000000" stroke="#000000" points="536.5316,-750.2904 526.0145,-751.5716 535.035,-757.1286 536.5316,-750.2904"/>
 </g>
 <!-- anat_norm_wf -->
 <g id="node6" class="node">
@@ -102,32 +102,32 @@
 <!-- anat_template_wf&#45;&gt;outputnode (utility) -->
 <g id="edge9" class="edge">
 <title>anat_template_wf&#45;&gt;outputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M387.1781,-727.9809C264.0167,-709.9215 38,-666.8553 38,-594 38,-594 38,-594 38,-234 38,-156.7585 128.3542,-120.3888 200.8564,-103.6385"/>
+<path fill="none" stroke="#000000" d="M386.3604,-727.9467C263.4874,-709.8381 38,-666.7022 38,-594 38,-594 38,-594 38,-234 38,-156.7585 128.3542,-120.3888 200.8564,-103.6385"/>
 <polygon fill="#000000" stroke="#000000" points="201.9497,-106.9813 210.957,-101.4029 200.437,-100.1467 201.9497,-106.9813"/>
 </g>
 <!-- anat_template_wf&#45;&gt;anat_reports_wf -->
 <g id="edge10" class="edge">
 <title>anat_template_wf&#45;&gt;anat_reports_wf</title>
-<path fill="none" stroke="#000000" d="M511.5102,-722.3402C535.6991,-713.0855 565.1185,-700.0319 589,-684 665.1981,-632.8476 696.1147,-622.1651 737,-540 821.6213,-369.941 771.0334,-128.4505 749.9101,-46.4802"/>
+<path fill="none" stroke="#000000" d="M510.8909,-722.4002C535.2765,-713.1621 564.9328,-700.1053 589,-684 665.273,-632.9594 696.1147,-622.1651 737,-540 821.6213,-369.941 771.0334,-128.4505 749.9101,-46.4802"/>
 <polygon fill="#000000" stroke="#000000" points="753.1926,-45.2016 747.258,-36.4249 746.4241,-46.9869 753.1926,-45.2016"/>
 </g>
 <!-- anat_template_wf&#45;&gt;anat_derivatives_wf -->
 <g id="edge11" class="edge">
 <title>anat_template_wf&#45;&gt;anat_derivatives_wf</title>
-<path fill="none" stroke="#000000" d="M376.7224,-732.0172C281.2638,-724.3914 136.1503,-709.098 87,-684 37.4523,-658.6991 0,-649.6337 0,-594 0,-594 0,-594 0,-162 0,-98.5007 68.8896,-58.7134 122.1342,-37.4451"/>
+<path fill="none" stroke="#000000" d="M375.526,-731.9622C280.314,-724.3063 135.9446,-709.0044 87,-684 37.457,-658.6899 0,-649.6337 0,-594 0,-594 0,-594 0,-162 0,-98.5007 68.8896,-58.7134 122.1342,-37.4451"/>
 <polygon fill="#000000" stroke="#000000" points="123.4699,-40.6812 131.5373,-33.8133 120.9479,-34.1514 123.4699,-40.6812"/>
 </g>
-<!-- anat_validate (header) -->
+<!-- anat_validate (images) -->
 <g id="node9" class="node">
-<title>anat_validate (header)</title>
-<ellipse fill="none" stroke="#000000" cx="465" cy="-666" rx="115.0796" ry="18"/>
-<text text-anchor="middle" x="465" y="-662.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat_validate (header)</text>
+<title>anat_validate (images)</title>
+<ellipse fill="none" stroke="#000000" cx="464" cy="-666" rx="116.1796" ry="18"/>
+<text text-anchor="middle" x="464" y="-662.3" font-family="Times,serif" font-size="14.00" fill="#000000">anat_validate (images)</text>
 </g>
-<!-- anat_template_wf&#45;&gt;anat_validate (header) -->
+<!-- anat_template_wf&#45;&gt;anat_validate (images) -->
 <g id="edge8" class="edge">
-<title>anat_template_wf&#45;&gt;anat_validate (header)</title>
-<path fill="none" stroke="#000000" d="M465,-719.8314C465,-712.131 465,-702.9743 465,-694.4166"/>
-<polygon fill="#000000" stroke="#000000" points="468.5001,-694.4132 465,-684.4133 461.5001,-694.4133 468.5001,-694.4132"/>
+<title>anat_template_wf&#45;&gt;anat_validate (images)</title>
+<path fill="none" stroke="#000000" d="M464,-719.8314C464,-712.131 464,-702.9743 464,-694.4166"/>
+<polygon fill="#000000" stroke="#000000" points="467.5001,-694.4132 464,-684.4133 460.5001,-694.4133 467.5001,-694.4132"/>
 </g>
 <!-- anat_norm_wf&#45;&gt;outputnode (utility) -->
 <g id="edge12" class="edge">
@@ -195,11 +195,11 @@
 <path fill="none" stroke="#000000" d="M633.6178,-503.8928C631.2705,-484.2499 624.9553,-452.9049 608,-432 596.5051,-417.8274 580.257,-406.8167 564.2406,-398.5442"/>
 <polygon fill="#000000" stroke="#000000" points="565.3982,-395.2152 554.8748,-393.9867 562.3353,-401.5095 565.3982,-395.2152"/>
 </g>
-<!-- anat_validate (header)&#45;&gt;surface_recon_wf -->
+<!-- anat_validate (images)&#45;&gt;surface_recon_wf -->
 <g id="edge22" class="edge">
-<title>anat_validate (header)&#45;&gt;surface_recon_wf</title>
-<path fill="none" stroke="#000000" d="M509.1569,-649.2567C529.3966,-640.2058 552.8613,-627.6511 571,-612 591.6769,-594.1589 609.1581,-568.3083 620.5983,-548.8849"/>
-<polygon fill="#000000" stroke="#000000" points="623.6405,-550.6156 625.5679,-540.1975 617.5644,-547.1397 623.6405,-550.6156"/>
+<title>anat_validate (images)&#45;&gt;surface_recon_wf</title>
+<path fill="none" stroke="#000000" d="M508.5782,-649.3309C529.0099,-640.2962 552.6955,-627.7338 571,-612 591.7106,-594.1981 609.188,-568.3431 620.6183,-548.908"/>
+<polygon fill="#000000" stroke="#000000" points="623.663,-550.6342 625.5828,-540.2147 617.5843,-547.1628 623.663,-550.6342"/>
 </g>
 <!-- brain_extraction_wf -->
 <g id="node10" class="node">
@@ -207,11 +207,11 @@
 <ellipse fill="none" stroke="#000000" cx="458" cy="-594" rx="103.9815" ry="18"/>
 <text text-anchor="middle" x="458" y="-590.3" font-family="Times,serif" font-size="14.00" fill="#000000">brain_extraction_wf</text>
 </g>
-<!-- anat_validate (header)&#45;&gt;brain_extraction_wf -->
+<!-- anat_validate (images)&#45;&gt;brain_extraction_wf -->
 <g id="edge21" class="edge">
-<title>anat_validate (header)&#45;&gt;brain_extraction_wf</title>
-<path fill="none" stroke="#000000" d="M463.2336,-647.8314C462.485,-640.131 461.5947,-630.9743 460.7627,-622.4166"/>
-<polygon fill="#000000" stroke="#000000" points="464.2415,-622.0276 459.7902,-612.4133 457.2744,-622.7051 464.2415,-622.0276"/>
+<title>anat_validate (images)&#45;&gt;brain_extraction_wf</title>
+<path fill="none" stroke="#000000" d="M462.4859,-647.8314C461.8442,-640.131 461.0812,-630.9743 460.3681,-622.4166"/>
+<polygon fill="#000000" stroke="#000000" points="463.8529,-622.088 459.5344,-612.4133 456.8771,-622.6694 463.8529,-622.088"/>
 </g>
 <!-- brain_extraction_wf&#45;&gt;outputnode (utility) -->
 <g id="edge23" class="edge">

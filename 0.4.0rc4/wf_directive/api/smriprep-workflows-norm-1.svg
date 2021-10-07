@@ -8,228 +8,228 @@
  viewBox="0.00 0.00 829.17 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>%3</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-400 825.1678,-400 825.1678,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-400 825.173,-400 825.173,4 -4,4"/>
 <!-- inputnode (utility) -->
 <g id="node1" class="node">
 <title>inputnode (utility)</title>
-<ellipse fill="none" stroke="#000000" cx="534.1282" cy="-378" rx="94.7833" ry="18"/>
-<text text-anchor="middle" x="534.1282" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">inputnode (utility)</text>
+<ellipse fill="none" stroke="#000000" cx="535.1564" cy="-378" rx="94.7833" ry="18"/>
+<text text-anchor="middle" x="535.1564" y="-374.3" font-family="Times,serif" font-size="14.00" fill="#000000">inputnode (utility)</text>
 </g>
 <!-- split_desc (templateflow) -->
 <g id="node2" class="node">
 <title>split_desc (templateflow)</title>
-<ellipse fill="none" stroke="#000000" cx="239.1282" cy="-306" rx="128.0773" ry="18"/>
-<text text-anchor="middle" x="239.1282" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">split_desc (templateflow)</text>
+<ellipse fill="none" stroke="#000000" cx="240.1564" cy="-306" rx="128.0773" ry="18"/>
+<text text-anchor="middle" x="240.1564" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">split_desc (templateflow)</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;split_desc (templateflow) -->
 <g id="edge1" class="edge">
 <title>inputnode (utility)&#45;&gt;split_desc (templateflow)</title>
-<path fill="none" stroke="#000000" d="M475.8457,-363.7751C429.1708,-352.3833 363.404,-336.3317 313.033,-324.0378"/>
-<polygon fill="#000000" stroke="#000000" points="313.719,-320.6026 303.1743,-321.6316 312.0592,-327.4029 313.719,-320.6026"/>
+<path fill="none" stroke="#000000" d="M476.8739,-363.7751C430.199,-352.3833 364.4323,-336.3317 314.0612,-324.0378"/>
+<polygon fill="#000000" stroke="#000000" points="314.7473,-320.6026 304.2025,-321.6316 313.0875,-327.4029 314.7473,-320.6026"/>
 </g>
 <!-- poutputnode (utility) -->
 <g id="node3" class="node">
 <title>poutputnode (utility)</title>
-<ellipse fill="none" stroke="#000000" cx="486.1282" cy="-90" rx="107.4815" ry="18"/>
-<text text-anchor="middle" x="486.1282" y="-86.3" font-family="Times,serif" font-size="14.00" fill="#000000">poutputnode (utility)</text>
+<ellipse fill="none" stroke="#000000" cx="486.1564" cy="-90" rx="107.4815" ry="18"/>
+<text text-anchor="middle" x="486.1564" y="-86.3" font-family="Times,serif" font-size="14.00" fill="#000000">poutputnode (utility)</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;poutputnode (utility) -->
 <g id="edge2" class="edge">
 <title>inputnode (utility)&#45;&gt;poutputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M580.3759,-362.231C676.4805,-327.0905 882.4791,-238.0112 803.1282,-144 789.1073,-127.3887 674.8133,-111.0023 587.4459,-100.7156"/>
-<polygon fill="#000000" stroke="#000000" points="587.8097,-97.2343 577.4719,-99.5537 586.9997,-104.1873 587.8097,-97.2343"/>
+<path fill="none" stroke="#000000" d="M581.2513,-362.2012C677.0364,-327.0016 882.3395,-237.8124 803.1564,-144 789.1355,-127.3887 674.8415,-111.0023 587.4741,-100.7156"/>
+<polygon fill="#000000" stroke="#000000" points="587.8379,-97.2343 577.5001,-99.5537 587.0279,-104.1873 587.8379,-97.2343"/>
 </g>
 <!-- trunc_mov (ants) -->
 <g id="node4" class="node">
 <title>trunc_mov (ants)</title>
-<ellipse fill="none" stroke="#000000" cx="475.1282" cy="-306" rx="90.1842" ry="18"/>
-<text text-anchor="middle" x="475.1282" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">trunc_mov (ants)</text>
+<ellipse fill="none" stroke="#000000" cx="476.1564" cy="-306" rx="90.1842" ry="18"/>
+<text text-anchor="middle" x="476.1564" y="-302.3" font-family="Times,serif" font-size="14.00" fill="#000000">trunc_mov (ants)</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;trunc_mov (ants) -->
 <g id="edge3" class="edge">
 <title>inputnode (utility)&#45;&gt;trunc_mov (ants)</title>
-<path fill="none" stroke="#000000" d="M519.5439,-360.2022C512.5234,-351.6348 503.9734,-341.2009 496.2567,-331.7839"/>
-<polygon fill="#000000" stroke="#000000" points="498.7946,-329.359 489.7492,-323.8425 493.3802,-333.7957 498.7946,-329.359"/>
+<path fill="none" stroke="#000000" d="M520.5721,-360.2022C513.5516,-351.6348 505.0016,-341.2009 497.2849,-331.7839"/>
+<polygon fill="#000000" stroke="#000000" points="499.8228,-329.359 490.7774,-323.8425 494.4085,-333.7957 499.8228,-329.359"/>
 </g>
-<!-- registration (norm) -->
+<!-- registration (mni) -->
 <g id="node5" class="node">
-<title>registration (norm)</title>
-<ellipse fill="none" stroke="#000000" cx="491.1282" cy="-234" rx="100.1823" ry="18"/>
-<text text-anchor="middle" x="491.1282" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">registration (norm)</text>
+<title>registration (mni)</title>
+<ellipse fill="none" stroke="#000000" cx="490.1564" cy="-234" rx="92.8835" ry="18"/>
+<text text-anchor="middle" x="490.1564" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">registration (mni)</text>
 </g>
-<!-- inputnode (utility)&#45;&gt;registration (norm) -->
+<!-- inputnode (utility)&#45;&gt;registration (mni) -->
 <g id="edge4" class="edge">
-<title>inputnode (utility)&#45;&gt;registration (norm)</title>
-<path fill="none" stroke="#000000" d="M551.9877,-360.0139C568.0489,-341.5568 587.2537,-312.1984 574.1282,-288 566.8026,-274.4944 554.4755,-263.8371 541.5321,-255.6855"/>
-<polygon fill="#000000" stroke="#000000" points="542.9291,-252.4487 532.5267,-250.4382 539.4049,-258.4969 542.9291,-252.4487"/>
+<title>inputnode (utility)&#45;&gt;registration (mni)</title>
+<path fill="none" stroke="#000000" d="M553.07,-359.9844C569.1742,-341.5038 588.4128,-312.127 575.1564,-288 567.5597,-274.1738 554.7579,-263.3854 541.3641,-255.2112"/>
+<polygon fill="#000000" stroke="#000000" points="542.953,-252.0888 532.5258,-250.2114 539.5063,-258.1815 542.953,-252.0888"/>
 </g>
 <!-- tpl_moving (fixes) -->
 <g id="node6" class="node">
 <title>tpl_moving (fixes)</title>
-<ellipse fill="none" stroke="#000000" cx="683.1282" cy="-162" rx="94.4839" ry="18"/>
-<text text-anchor="middle" x="683.1282" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">tpl_moving (fixes)</text>
+<ellipse fill="none" stroke="#000000" cx="683.1564" cy="-162" rx="94.4839" ry="18"/>
+<text text-anchor="middle" x="683.1564" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">tpl_moving (fixes)</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;tpl_moving (fixes) -->
 <g id="edge5" class="edge">
 <title>inputnode (utility)&#45;&gt;tpl_moving (fixes)</title>
-<path fill="none" stroke="#000000" d="M566.9157,-360.9184C582.2322,-351.6443 599.7699,-338.9995 612.1282,-324 645.6619,-283.2996 666.1559,-224.3022 676.0143,-189.8725"/>
-<polygon fill="#000000" stroke="#000000" points="679.4459,-190.5946 678.735,-180.0237 672.6986,-188.7307 679.4459,-190.5946"/>
+<path fill="none" stroke="#000000" d="M566.6795,-360.9661C581.6814,-351.6251 598.9609,-338.9086 611.1564,-324 644.5345,-283.1965 665.4791,-224.4741 675.6861,-190.0764"/>
+<polygon fill="#000000" stroke="#000000" points="679.1178,-190.8064 678.511,-180.229 672.3892,-188.8762 679.1178,-190.8064"/>
 </g>
 <!-- std_mask (fixes) -->
 <g id="node7" class="node">
 <title>std_mask (fixes)</title>
-<ellipse fill="none" stroke="#000000" cx="110.1282" cy="-162" rx="87.1846" ry="18"/>
-<text text-anchor="middle" x="110.1282" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask (fixes)</text>
+<ellipse fill="none" stroke="#000000" cx="110.1564" cy="-162" rx="87.1846" ry="18"/>
+<text text-anchor="middle" x="110.1564" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_mask (fixes)</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;std_mask (fixes) -->
 <g id="edge6" class="edge">
 <title>inputnode (utility)&#45;&gt;std_mask (fixes)</title>
-<path fill="none" stroke="#000000" d="M442.6431,-373.205C320.0005,-365.8258 114.9471,-349.7764 92.1282,-324 59.2949,-286.9113 79.7774,-224.8024 96.0157,-189.2291"/>
-<polygon fill="#000000" stroke="#000000" points="99.2985,-190.4758 100.4354,-179.9421 92.9778,-187.4677 99.2985,-190.4758"/>
+<path fill="none" stroke="#000000" d="M443.6713,-373.205C321.0287,-365.8258 115.9753,-349.7764 93.1564,-324 60.3448,-286.9357 80.3518,-224.8179 96.2872,-189.2364"/>
+<polygon fill="#000000" stroke="#000000" points="99.5652,-190.4887 100.6265,-179.9472 93.2231,-187.5261 99.5652,-190.4887"/>
 </g>
 <!-- std_dseg (fixes) -->
 <g id="node8" class="node">
 <title>std_dseg (fixes)</title>
-<ellipse fill="none" stroke="#000000" cx="299.1282" cy="-162" rx="83.6854" ry="18"/>
-<text text-anchor="middle" x="299.1282" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg (fixes)</text>
+<ellipse fill="none" stroke="#000000" cx="299.1564" cy="-162" rx="83.6854" ry="18"/>
+<text text-anchor="middle" x="299.1564" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_dseg (fixes)</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;std_dseg (fixes) -->
 <g id="edge7" class="edge">
 <title>inputnode (utility)&#45;&gt;std_dseg (fixes)</title>
-<path fill="none" stroke="#000000" d="M442.9328,-372.9421C322.8635,-365.3352 124.294,-349.109 102.1282,-324 83.3022,-302.6742 109.198,-227.4681 120.1282,-216 135.1912,-200.1958 183.8498,-186.0904 226.6376,-176.2623"/>
-<polygon fill="#000000" stroke="#000000" points="227.521,-179.6511 236.5109,-174.0447 225.9869,-172.8213 227.521,-179.6511"/>
+<path fill="none" stroke="#000000" d="M443.9611,-372.9421C323.8917,-365.3352 125.3222,-349.109 103.1564,-324 81.2846,-299.224 118.1063,-224.8927 127.1564,-216 142.1088,-201.3077 188.5073,-187.2059 229.3488,-177.0994"/>
+<polygon fill="#000000" stroke="#000000" points="230.4232,-180.4403 239.3171,-174.6828 228.774,-173.6374 230.4232,-180.4403"/>
 </g>
 <!-- std_tpms (fixes) -->
 <g id="node9" class="node">
 <title>std_tpms (fixes)</title>
-<ellipse fill="none" stroke="#000000" cx="486.1282" cy="-162" rx="85.2851" ry="18"/>
-<text text-anchor="middle" x="486.1282" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms (fixes)</text>
+<ellipse fill="none" stroke="#000000" cx="486.1564" cy="-162" rx="85.2851" ry="18"/>
+<text text-anchor="middle" x="486.1564" y="-158.3" font-family="Times,serif" font-size="14.00" fill="#000000">std_tpms (fixes)</text>
 </g>
 <!-- inputnode (utility)&#45;&gt;std_tpms (fixes) -->
 <g id="edge8" class="edge">
 <title>inputnode (utility)&#45;&gt;std_tpms (fixes)</title>
-<path fill="none" stroke="#000000" d="M558.8129,-360.4636C570.2249,-350.9991 582.838,-338.3236 590.1282,-324 611.9938,-281.039 625.906,-256.734 600.1282,-216 589.3585,-198.9818 571.6152,-187.2219 553.2982,-179.1387"/>
-<polygon fill="#000000" stroke="#000000" points="554.5775,-175.8807 543.996,-175.349 551.9364,-182.3633 554.5775,-175.8807"/>
+<path fill="none" stroke="#000000" d="M560.9091,-360.5913C572.4295,-351.2398 584.8223,-338.6243 591.1564,-324 610.2347,-279.9521 617.2389,-256.9276 592.1564,-216 582.2768,-199.8792 565.9077,-188.3826 548.954,-180.2644"/>
+<polygon fill="#000000" stroke="#000000" points="550.0742,-176.933 539.5126,-176.094 547.2458,-183.3362 550.0742,-176.933"/>
 </g>
 <!-- split_desc (templateflow)&#45;&gt;poutputnode (utility) -->
 <g id="edge11" class="edge">
 <title>split_desc (templateflow)&#45;&gt;poutputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M180.0234,-289.9227C95.2783,-264.1201 -44.4309,-209.6406 14.1282,-144 37.5902,-117.7007 240.129,-102.4477 372.1593,-95.2142"/>
-<polygon fill="#000000" stroke="#000000" points="372.5335,-98.6992 382.3303,-94.6651 372.1561,-91.7094 372.5335,-98.6992"/>
+<path fill="none" stroke="#000000" d="M180.8107,-289.9699C95.7179,-264.2302 -44.5742,-209.8329 14.1564,-144 37.6184,-117.7007 240.1572,-102.4477 372.1875,-95.2142"/>
+<polygon fill="#000000" stroke="#000000" points="372.5617,-98.6992 382.3585,-94.6651 372.1843,-91.7094 372.5617,-98.6992"/>
 </g>
-<!-- split_desc (templateflow)&#45;&gt;registration (norm) -->
+<!-- split_desc (templateflow)&#45;&gt;registration (mni) -->
 <g id="edge10" class="edge">
-<title>split_desc (templateflow)&#45;&gt;registration (norm)</title>
-<path fill="none" stroke="#000000" d="M295.6819,-289.8418C334.9614,-278.6191 387.3354,-263.6551 427.98,-252.0423"/>
-<polygon fill="#000000" stroke="#000000" points="429.1269,-255.3548 437.7806,-249.2422 427.2038,-248.6241 429.1269,-255.3548"/>
+<title>split_desc (templateflow)&#45;&gt;registration (mni)</title>
+<path fill="none" stroke="#000000" d="M296.573,-289.752C335.8209,-278.4486 388.134,-263.3825 428.4835,-251.7618"/>
+<polygon fill="#000000" stroke="#000000" points="429.5655,-255.0925 438.2062,-248.9616 427.6282,-248.3659 429.5655,-255.0925"/>
 </g>
 <!-- tf_select (templateflow) -->
 <g id="node10" class="node">
 <title>tf_select (templateflow)</title>
-<ellipse fill="none" stroke="#000000" cx="251.1282" cy="-234" rx="121.5784" ry="18"/>
-<text text-anchor="middle" x="251.1282" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">tf_select (templateflow)</text>
+<ellipse fill="none" stroke="#000000" cx="258.1564" cy="-234" rx="121.5784" ry="18"/>
+<text text-anchor="middle" x="258.1564" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">tf_select (templateflow)</text>
 </g>
 <!-- split_desc (templateflow)&#45;&gt;tf_select (templateflow) -->
 <g id="edge9" class="edge">
 <title>split_desc (templateflow)&#45;&gt;tf_select (templateflow)</title>
-<path fill="none" stroke="#000000" d="M242.1563,-287.8314C243.4397,-280.131 244.9658,-270.9743 246.3921,-262.4166"/>
-<polygon fill="#000000" stroke="#000000" points="249.8676,-262.8526 248.0593,-252.4133 242.9629,-261.7018 249.8676,-262.8526"/>
+<path fill="none" stroke="#000000" d="M244.6986,-287.8314C246.6448,-280.0463 248.9632,-270.7729 251.1227,-262.1347"/>
+<polygon fill="#000000" stroke="#000000" points="254.5232,-262.9636 253.5531,-252.4133 247.7322,-261.2658 254.5232,-262.9636"/>
 </g>
 <!-- outputnode (utility) -->
 <g id="node11" class="node">
 <title>outputnode (utility)</title>
-<ellipse fill="none" stroke="#000000" cx="486.1282" cy="-18" rx="101.2821" ry="18"/>
-<text text-anchor="middle" x="486.1282" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode (utility)</text>
+<ellipse fill="none" stroke="#000000" cx="486.1564" cy="-18" rx="101.2821" ry="18"/>
+<text text-anchor="middle" x="486.1564" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">outputnode (utility)</text>
 </g>
 <!-- poutputnode (utility)&#45;&gt;outputnode (utility) -->
 <g id="edge12" class="edge">
 <title>poutputnode (utility)&#45;&gt;outputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M486.1282,-71.8314C486.1282,-64.131 486.1282,-54.9743 486.1282,-46.4166"/>
-<polygon fill="#000000" stroke="#000000" points="489.6283,-46.4132 486.1282,-36.4133 482.6283,-46.4133 489.6283,-46.4132"/>
+<path fill="none" stroke="#000000" d="M486.1564,-71.8314C486.1564,-64.131 486.1564,-54.9743 486.1564,-46.4166"/>
+<polygon fill="#000000" stroke="#000000" points="489.6565,-46.4132 486.1564,-36.4133 482.6565,-46.4133 489.6565,-46.4132"/>
 </g>
-<!-- trunc_mov (ants)&#45;&gt;registration (norm) -->
+<!-- trunc_mov (ants)&#45;&gt;registration (mni) -->
 <g id="edge13" class="edge">
-<title>trunc_mov (ants)&#45;&gt;registration (norm)</title>
-<path fill="none" stroke="#000000" d="M479.1657,-287.8314C480.8769,-280.131 482.9117,-270.9743 484.8134,-262.4166"/>
-<polygon fill="#000000" stroke="#000000" points="488.2836,-262.9344 487.0364,-252.4133 481.4503,-261.4159 488.2836,-262.9344"/>
+<title>trunc_mov (ants)&#45;&gt;registration (mni)</title>
+<path fill="none" stroke="#000000" d="M479.6892,-287.8314C481.1865,-280.131 482.967,-270.9743 484.631,-262.4166"/>
+<polygon fill="#000000" stroke="#000000" points="488.1029,-262.8975 486.5761,-252.4133 481.2316,-261.5614 488.1029,-262.8975"/>
 </g>
-<!-- registration (norm)&#45;&gt;poutputnode (utility) -->
+<!-- registration (mni)&#45;&gt;poutputnode (utility) -->
 <g id="edge18" class="edge">
-<title>registration (norm)&#45;&gt;poutputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M588.1151,-229.3203C664.1423,-223.3794 761.1251,-209.9954 786.1282,-180 796.3728,-167.7099 796.391,-156.275 786.1282,-144 762.3404,-115.5481 674.6759,-102.0642 600.2088,-95.687"/>
-<polygon fill="#000000" stroke="#000000" points="600.0493,-92.1623 589.7968,-94.8335 599.4774,-99.1389 600.0493,-92.1623"/>
+<title>registration (mni)&#45;&gt;poutputnode (utility)</title>
+<path fill="none" stroke="#000000" d="M580.6627,-229.8793C657.8482,-224.2417 760.3095,-210.9889 786.1564,-180 796.4047,-167.7129 796.4192,-156.275 786.1564,-144 762.3686,-115.5481 674.7041,-102.0642 600.237,-95.687"/>
+<polygon fill="#000000" stroke="#000000" points="600.0776,-92.1623 589.825,-94.8335 599.5056,-99.1389 600.0776,-92.1623"/>
 </g>
-<!-- registration (norm)&#45;&gt;tpl_moving (fixes) -->
+<!-- registration (mni)&#45;&gt;tpl_moving (fixes) -->
 <g id="edge14" class="edge">
-<title>registration (norm)&#45;&gt;tpl_moving (fixes)</title>
-<path fill="none" stroke="#000000" d="M534.696,-217.6621C563.1492,-206.9921 600.4668,-192.998 630.5656,-181.711"/>
-<polygon fill="#000000" stroke="#000000" points="631.9296,-184.9375 640.0639,-178.1491 629.4717,-178.3832 631.9296,-184.9375"/>
+<title>registration (mni)&#45;&gt;tpl_moving (fixes)</title>
+<path fill="none" stroke="#000000" d="M532.9894,-218.0209C561.7492,-207.2918 599.8339,-193.084 630.4525,-181.6616"/>
+<polygon fill="#000000" stroke="#000000" points="631.964,-184.8334 640.1099,-178.0588 629.5173,-178.2749 631.964,-184.8334"/>
 </g>
-<!-- registration (norm)&#45;&gt;std_mask (fixes) -->
+<!-- registration (mni)&#45;&gt;std_mask (fixes) -->
 <g id="edge15" class="edge">
-<title>registration (norm)&#45;&gt;std_mask (fixes)</title>
-<path fill="none" stroke="#000000" d="M421.6899,-220.8778C354.5895,-208.1974 253.2728,-189.051 184.5414,-176.0623"/>
-<polygon fill="#000000" stroke="#000000" points="185.1211,-172.61 174.6451,-174.1922 183.8213,-179.4883 185.1211,-172.61"/>
+<title>registration (mni)&#45;&gt;std_mask (fixes)</title>
+<path fill="none" stroke="#000000" d="M423.5306,-221.3762C356.6821,-208.7101 253.9363,-189.2425 184.4826,-176.0829"/>
+<polygon fill="#000000" stroke="#000000" points="184.9619,-172.6115 174.4851,-174.1886 183.6587,-179.4891 184.9619,-172.6115"/>
 </g>
-<!-- registration (norm)&#45;&gt;std_dseg (fixes) -->
+<!-- registration (mni)&#45;&gt;std_dseg (fixes) -->
 <g id="edge16" class="edge">
-<title>registration (norm)&#45;&gt;std_dseg (fixes)</title>
-<path fill="none" stroke="#000000" d="M447.5604,-217.6621C418.7078,-206.8424 380.7403,-192.6045 350.4277,-181.2373"/>
-<polygon fill="#000000" stroke="#000000" points="351.4685,-177.8897 340.8762,-177.6555 349.0106,-184.444 351.4685,-177.8897"/>
+<title>registration (mni)&#45;&gt;std_dseg (fixes)</title>
+<path fill="none" stroke="#000000" d="M447.2923,-217.8418C418.6103,-207.0297 380.7164,-192.7451 350.4351,-181.3302"/>
+<polygon fill="#000000" stroke="#000000" points="351.4842,-177.9853 340.8924,-177.7329 349.015,-184.5354 351.4842,-177.9853"/>
 </g>
-<!-- registration (norm)&#45;&gt;std_tpms (fixes) -->
+<!-- registration (mni)&#45;&gt;std_tpms (fixes) -->
 <g id="edge17" class="edge">
-<title>registration (norm)&#45;&gt;std_tpms (fixes)</title>
-<path fill="none" stroke="#000000" d="M489.8665,-215.8314C489.3317,-208.131 488.6959,-198.9743 488.1016,-190.4166"/>
-<polygon fill="#000000" stroke="#000000" points="491.5914,-190.1467 487.4069,-180.4133 484.6082,-190.6317 491.5914,-190.1467"/>
+<title>registration (mni)&#45;&gt;std_tpms (fixes)</title>
+<path fill="none" stroke="#000000" d="M489.147,-215.8314C488.7192,-208.131 488.2105,-198.9743 487.7351,-190.4166"/>
+<polygon fill="#000000" stroke="#000000" points="491.2288,-190.2037 487.1794,-180.4133 484.2396,-190.592 491.2288,-190.2037"/>
 </g>
 <!-- tpl_moving (fixes)&#45;&gt;poutputnode (utility) -->
 <g id="edge19" class="edge">
 <title>tpl_moving (fixes)&#45;&gt;poutputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M639.4075,-146.0209C610.2327,-135.358 571.6569,-121.2592 540.5037,-109.8733"/>
-<polygon fill="#000000" stroke="#000000" points="541.6863,-106.5791 531.0925,-106.4336 539.2833,-113.1538 541.6863,-106.5791"/>
+<path fill="none" stroke="#000000" d="M639.4357,-146.0209C610.261,-135.358 571.6851,-121.2592 540.532,-109.8733"/>
+<polygon fill="#000000" stroke="#000000" points="541.7145,-106.5791 531.1207,-106.4336 539.3116,-113.1538 541.7145,-106.5791"/>
 </g>
 <!-- std_mask (fixes)&#45;&gt;poutputnode (utility) -->
 <g id="edge20" class="edge">
 <title>std_mask (fixes)&#45;&gt;poutputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M174.3377,-149.7046C238.1104,-137.4928 336.0935,-118.73 405.1667,-105.5033"/>
-<polygon fill="#000000" stroke="#000000" points="405.9773,-108.9117 415.1405,-103.5934 404.6607,-102.0366 405.9773,-108.9117"/>
+<path fill="none" stroke="#000000" d="M174.3659,-149.7046C238.1386,-137.4928 336.1218,-118.73 405.1949,-105.5033"/>
+<polygon fill="#000000" stroke="#000000" points="406.0055,-108.9117 415.1688,-103.5934 404.6889,-102.0366 406.0055,-108.9117"/>
 </g>
 <!-- std_dseg (fixes)&#45;&gt;poutputnode (utility) -->
 <g id="edge21" class="edge">
 <title>std_dseg (fixes)&#45;&gt;poutputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M340.1661,-146.1993C367.718,-135.5911 404.2556,-121.5231 433.8818,-110.1163"/>
-<polygon fill="#000000" stroke="#000000" points="435.1631,-113.3735 443.2376,-106.514 432.6478,-106.841 435.1631,-113.3735"/>
+<path fill="none" stroke="#000000" d="M340.1944,-146.1993C367.7462,-135.5911 404.2839,-121.5231 433.91,-110.1163"/>
+<polygon fill="#000000" stroke="#000000" points="435.1913,-113.3735 443.2658,-106.514 432.676,-106.841 435.1913,-113.3735"/>
 </g>
 <!-- std_tpms (fixes)&#45;&gt;poutputnode (utility) -->
 <g id="edge22" class="edge">
 <title>std_tpms (fixes)&#45;&gt;poutputnode (utility)</title>
-<path fill="none" stroke="#000000" d="M486.1282,-143.8314C486.1282,-136.131 486.1282,-126.9743 486.1282,-118.4166"/>
-<polygon fill="#000000" stroke="#000000" points="489.6283,-118.4132 486.1282,-108.4133 482.6283,-118.4133 489.6283,-118.4132"/>
+<path fill="none" stroke="#000000" d="M486.1564,-143.8314C486.1564,-136.131 486.1564,-126.9743 486.1564,-118.4166"/>
+<polygon fill="#000000" stroke="#000000" points="489.6565,-118.4132 486.1564,-108.4133 482.6565,-118.4133 489.6565,-118.4132"/>
 </g>
 <!-- tf_select (templateflow)&#45;&gt;tpl_moving (fixes) -->
 <g id="edge23" class="edge">
 <title>tf_select (templateflow)&#45;&gt;tpl_moving (fixes)</title>
-<path fill="none" stroke="#000000" d="M333.6444,-220.6985C400.2093,-209.9099 496.2369,-194.2146 580.1282,-180 587.7418,-178.7099 595.6691,-177.3516 603.5957,-175.9833"/>
-<polygon fill="#000000" stroke="#000000" points="604.3556,-179.4039 613.612,-174.2492 603.1614,-172.5065 604.3556,-179.4039"/>
+<path fill="none" stroke="#000000" d="M339.237,-220.5606C404.3656,-209.7272 498.1667,-194.0389 580.1564,-180 587.7677,-178.6967 595.6936,-177.3296 603.6192,-175.9557"/>
+<polygon fill="#000000" stroke="#000000" points="604.381,-179.3759 613.6346,-174.2163 603.1831,-172.4792 604.381,-179.3759"/>
 </g>
 <!-- tf_select (templateflow)&#45;&gt;std_mask (fixes) -->
 <g id="edge24" class="edge">
 <title>tf_select (templateflow)&#45;&gt;std_mask (fixes)</title>
-<path fill="none" stroke="#000000" d="M216.996,-216.5708C197.401,-206.5648 172.6443,-193.9231 151.8942,-183.3273"/>
-<polygon fill="#000000" stroke="#000000" points="153.4729,-180.2036 142.9751,-178.7729 150.2895,-186.4379 153.4729,-180.2036"/>
+<path fill="none" stroke="#000000" d="M222.7067,-216.7542C201.9048,-206.6344 175.4642,-193.7713 153.4381,-183.0559"/>
+<polygon fill="#000000" stroke="#000000" points="154.8214,-179.8368 144.2979,-178.6094 151.7591,-186.1314 154.8214,-179.8368"/>
 </g>
 <!-- tf_select (templateflow)&#45;&gt;std_dseg (fixes) -->
 <g id="edge25" class="edge">
 <title>tf_select (templateflow)&#45;&gt;std_dseg (fixes)</title>
-<path fill="none" stroke="#000000" d="M263.2406,-215.8314C268.7969,-207.497 275.4904,-197.4567 281.5841,-188.3162"/>
-<polygon fill="#000000" stroke="#000000" points="284.5511,-190.1754 287.1859,-179.9134 278.7267,-186.2925 284.5511,-190.1754"/>
+<path fill="none" stroke="#000000" d="M268.5024,-215.8314C273.1506,-207.6688 278.7304,-197.87 283.8482,-188.8827"/>
+<polygon fill="#000000" stroke="#000000" points="287.0487,-190.3352 288.9557,-179.9134 280.9658,-186.8713 287.0487,-190.3352"/>
 </g>
 <!-- tf_select (templateflow)&#45;&gt;std_tpms (fixes) -->
 <g id="edge26" class="edge">
 <title>tf_select (templateflow)&#45;&gt;std_tpms (fixes)</title>
-<path fill="none" stroke="#000000" d="M304.1598,-217.752C340.9431,-206.4822 389.9347,-191.472 427.817,-179.8656"/>
-<polygon fill="#000000" stroke="#000000" points="429.1539,-183.1166 437.6898,-176.8407 427.1032,-176.4237 429.1539,-183.1166"/>
+<path fill="none" stroke="#000000" d="M309.8931,-217.6621C345.3519,-206.4646 392.4038,-191.6061 428.9747,-180.0574"/>
+<polygon fill="#000000" stroke="#000000" points="430.0301,-183.3945 438.512,-177.0456 427.9222,-176.7195 430.0301,-183.3945"/>
 </g>
 </g>
 </svg>

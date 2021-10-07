@@ -103,7 +103,7 @@
 <polyline fill="none" stroke="#000000" points="168.4918,-617.5 168.4918,-755.5 "/>
 <text text-anchor="middle" x="218.9918" y="-728.8" font-family="Times,serif" font-size="14.00" fill="#000000">registration</text>
 <polyline fill="none" stroke="#000000" points="168.4918,-709.5 269.4918,-709.5 "/>
-<text text-anchor="middle" x="218.9918" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">norm</text>
+<text text-anchor="middle" x="218.9918" y="-682.8" font-family="Times,serif" font-size="14.00" fill="#000000">mni</text>
 <polyline fill="none" stroke="#000000" points="168.4918,-663.5 269.4918,-663.5 "/>
 <text text-anchor="middle" x="218.9918" y="-636.8" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 <polyline fill="none" stroke="#000000" points="269.4918,-617.5 269.4918,-755.5 "/>

@@ -1,74 +1,34 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>smriprep.workflows.surfaces &mdash; smriprep 0.8.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/banner.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>smriprep.workflows.surfaces &mdash; smriprep 0.7.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/banner.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
-
-    
+    <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../../index.html" class="icon icon-home"> smriprep
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                0.8.0
+                0.7.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,18 +36,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
@@ -95,69 +44,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../changes.html">What’s new?</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">smriprep</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="../../index.html">Module code</a> &raquo;</li>
-        
       <li>smriprep.workflows.surfaces</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 
 
@@ -170,26 +80,6 @@
 <h1>Source code for smriprep.workflows.surfaces</h1><div class="highlight"><pre>
 <span></span><span class="c1"># emacs: -*- mode: python; py-indent-offset: 4; indent-tabs-mode: nil -*-</span>
 <span class="c1"># vi: set ft=python sts=4 ts=4 sw=4 et:</span>
-<span class="c1">#</span>
-<span class="c1"># Copyright 2021 The NiPreps Developers &lt;nipreps@gmail.com&gt;</span>
-<span class="c1">#</span>
-<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
-<span class="c1"># you may not use this file except in compliance with the License.</span>
-<span class="c1"># You may obtain a copy of the License at</span>
-<span class="c1">#</span>
-<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-<span class="c1">#</span>
-<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
-<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
-<span class="c1"># See the License for the specific language governing permissions and</span>
-<span class="c1"># limitations under the License.</span>
-<span class="c1">#</span>
-<span class="c1"># We support and encourage derived works from this project, please read</span>
-<span class="c1"># about our expectations at</span>
-<span class="c1">#</span>
-<span class="c1">#     https://www.nipreps.org/community/licensing/</span>
-<span class="c1">#</span>
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Surface preprocessing workflows.</span>
 
@@ -219,7 +109,7 @@
 <span class="kn">from</span> <span class="nn">niworkflows.interfaces.surf</span> <span class="kn">import</span> <span class="n">NormalizeSurf</span>
 
 
-<div class="viewcode-block" id="init_surface_recon_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_surface_recon_wf">[docs]</a><span class="k">def</span> <span class="nf">init_surface_recon_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">hires</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;surface_recon_wf&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="init_surface_recon_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_surface_recon_wf">[docs]</a><span class="k">def</span> <span class="nf">init_surface_recon_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">hires</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;surface_recon_wf&#39;</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Reconstruct anatomical surfaces using FreeSurfer&#39;s ``recon-all``.</span>
 
@@ -343,71 +233,43 @@
 <span class="s2">previously was refined with a custom variation of the method to reconcile</span>
 <span class="s2">ANTs-derived and FreeSurfer-derived segmentations of the cortical</span>
 <span class="s2">gray-matter of Mindboggle [RRID:SCR_002438, @mindboggle].</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-        <span class="n">fs_ver</span><span class="o">=</span><span class="n">fs</span><span class="o">.</span><span class="n">Info</span><span class="p">()</span><span class="o">.</span><span class="n">looseversion</span><span class="p">()</span> <span class="ow">or</span> <span class="s2">&quot;&lt;ver&gt;&quot;</span>
-    <span class="p">)</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fs_ver</span><span class="o">=</span><span class="n">fs</span><span class="o">.</span><span class="n">Info</span><span class="p">()</span><span class="o">.</span><span class="n">looseversion</span><span class="p">()</span> <span class="ow">or</span> <span class="s1">&#39;&lt;ver&gt;&#39;</span><span class="p">)</span>
 
     <span class="n">inputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
         <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">(</span>
-            <span class="n">fields</span><span class="o">=</span><span class="p">[</span>
-                <span class="s2">&quot;t1w&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;t2w&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;flair&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;skullstripped_t1&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;corrected_t1&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;ants_segs&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;subjects_dir&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;subject_id&quot;</span><span class="p">,</span>
-            <span class="p">]</span>
-        <span class="p">),</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;inputnode&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
+            <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;t1w&#39;</span><span class="p">,</span> <span class="s1">&#39;t2w&#39;</span><span class="p">,</span> <span class="s1">&#39;flair&#39;</span><span class="p">,</span> <span class="s1">&#39;skullstripped_t1&#39;</span><span class="p">,</span> <span class="s1">&#39;corrected_t1&#39;</span><span class="p">,</span> <span class="s1">&#39;ants_segs&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputnode&#39;</span><span class="p">)</span>
     <span class="n">outputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
         <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">(</span>
-            <span class="n">fields</span><span class="o">=</span><span class="p">[</span>
-                <span class="s2">&quot;subjects_dir&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;subject_id&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;t1w2fsnative_xfm&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;fsnative2t1w_xfm&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;surfaces&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;out_brainmask&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;out_aseg&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;out_aparc&quot;</span><span class="p">,</span>
-            <span class="p">]</span>
-        <span class="p">),</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;outputnode&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
+            <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">,</span> <span class="s1">&#39;t1w2fsnative_xfm&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;fsnative2t1w_xfm&#39;</span><span class="p">,</span> <span class="s1">&#39;surfaces&#39;</span><span class="p">,</span> <span class="s1">&#39;out_brainmask&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;out_aseg&#39;</span><span class="p">,</span> <span class="s1">&#39;out_aparc&#39;</span><span class="p">]),</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;outputnode&#39;</span><span class="p">)</span>
 
-    <span class="n">recon_config</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">FSDetectInputs</span><span class="p">(</span><span class="n">hires_enabled</span><span class="o">=</span><span class="n">hires</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;recon_config&quot;</span><span class="p">)</span>
+    <span class="n">recon_config</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">FSDetectInputs</span><span class="p">(</span><span class="n">hires_enabled</span><span class="o">=</span><span class="n">hires</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;recon_config&#39;</span><span class="p">)</span>
 
-    <span class="n">fov_check</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">Function</span><span class="p">(</span><span class="n">function</span><span class="o">=</span><span class="n">_check_cw256</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fov_check&quot;</span><span class="p">)</span>
+    <span class="n">fov_check</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">Function</span><span class="p">(</span><span class="n">function</span><span class="o">=</span><span class="n">_check_cw256</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;fov_check&#39;</span><span class="p">)</span>
 
     <span class="n">autorecon1</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="s2">&quot;autorecon1&quot;</span><span class="p">,</span> <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;autorecon1&quot;</span><span class="p">,</span>
-        <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span>
-        <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-    <span class="p">)</span>
+        <span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="s1">&#39;autorecon1&#39;</span><span class="p">,</span> <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autorecon1&#39;</span><span class="p">,</span> <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
     <span class="n">autorecon1</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">_can_resume</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="n">autorecon1</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">_always_run</span> <span class="o">=</span> <span class="kc">True</span>
 
-    <span class="n">skull_strip_extern</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">FSInjectBrainExtracted</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;skull_strip_extern&quot;</span><span class="p">)</span>
+    <span class="n">skull_strip_extern</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">FSInjectBrainExtracted</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;skull_strip_extern&#39;</span><span class="p">)</span>
 
-    <span class="n">fsnative2t1w_xfm</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">RobustRegister</span><span class="p">(</span><span class="n">auto_sens</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">est_int_scale</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fsnative2t1w_xfm&quot;</span>
-    <span class="p">)</span>
-    <span class="n">t1w2fsnative_xfm</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">LTAConvert</span><span class="p">(</span><span class="n">out_lta</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">invert</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;t1w2fsnative_xfm&quot;</span>
-    <span class="p">)</span>
+    <span class="n">fsnative2t1w_xfm</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">RobustRegister</span><span class="p">(</span><span class="n">auto_sens</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">est_int_scale</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;fsnative2t1w_xfm&#39;</span><span class="p">)</span>
+    <span class="n">t1w2fsnative_xfm</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">LTAConvert</span><span class="p">(</span><span class="n">out_lta</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">invert</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;t1w2fsnative_xfm&#39;</span><span class="p">)</span>
 
     <span class="n">autorecon_resume_wf</span> <span class="o">=</span> <span class="n">init_autorecon_resume_wf</span><span class="p">(</span><span class="n">omp_nthreads</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">)</span>
     <span class="n">gifti_surface_wf</span> <span class="o">=</span> <span class="n">init_gifti_surface_wf</span><span class="p">()</span>
 
     <span class="n">aseg_to_native_wf</span> <span class="o">=</span> <span class="n">init_segs_to_native_wf</span><span class="p">()</span>
-    <span class="n">aparc_to_native_wf</span> <span class="o">=</span> <span class="n">init_segs_to_native_wf</span><span class="p">(</span><span class="n">segmentation</span><span class="o">=</span><span class="s2">&quot;aparc_aseg&quot;</span><span class="p">)</span>
-    <span class="n">refine</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">RefineBrainMask</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;refine&quot;</span><span class="p">)</span>
+    <span class="n">aparc_to_native_wf</span> <span class="o">=</span> <span class="n">init_segs_to_native_wf</span><span class="p">(</span><span class="n">segmentation</span><span class="o">=</span><span class="s1">&#39;aparc_aseg&#39;</span><span class="p">)</span>
+    <span class="n">refine</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">RefineBrainMask</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;refine&#39;</span><span class="p">)</span>
 
-    <span class="c1"># fmt:off</span>
     <span class="n">workflow</span><span class="o">.</span><span class="n">connect</span><span class="p">([</span>
         <span class="c1"># Configuration</span>
         <span class="p">(</span><span class="n">inputnode</span><span class="p">,</span> <span class="n">recon_config</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;t1w&#39;</span><span class="p">,</span> <span class="s1">&#39;t1w_list&#39;</span><span class="p">),</span>
@@ -467,12 +329,11 @@
         <span class="p">(</span><span class="n">aseg_to_native_wf</span><span class="p">,</span> <span class="n">outputnode</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;outputnode.out_file&#39;</span><span class="p">,</span> <span class="s1">&#39;out_aseg&#39;</span><span class="p">)]),</span>
         <span class="p">(</span><span class="n">aparc_to_native_wf</span><span class="p">,</span> <span class="n">outputnode</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;outputnode.out_file&#39;</span><span class="p">,</span> <span class="s1">&#39;out_aparc&#39;</span><span class="p">)]),</span>
     <span class="p">])</span>
-    <span class="c1"># fmt:on</span>
 
     <span class="k">return</span> <span class="n">workflow</span></div>
 
 
-<div class="viewcode-block" id="init_autorecon_resume_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_autorecon_resume_wf">[docs]</a><span class="k">def</span> <span class="nf">init_autorecon_resume_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;autorecon_resume_wf&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="init_autorecon_resume_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_autorecon_resume_wf">[docs]</a><span class="k">def</span> <span class="nf">init_autorecon_resume_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autorecon_resume_wf&#39;</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Resume recon-all execution, assuming the `-autorecon1` stage has been completed.</span>
 
@@ -536,41 +397,28 @@
 
     <span class="n">inputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
         <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">(</span>
-            <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;subjects_dir&quot;</span><span class="p">,</span> <span class="s2">&quot;subject_id&quot;</span><span class="p">,</span> <span class="s2">&quot;use_T2&quot;</span><span class="p">,</span> <span class="s2">&quot;use_FLAIR&quot;</span><span class="p">]</span>
-        <span class="p">),</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;inputnode&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
+            <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">,</span> <span class="s1">&#39;use_T2&#39;</span><span class="p">,</span> <span class="s1">&#39;use_FLAIR&#39;</span><span class="p">]),</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputnode&#39;</span><span class="p">)</span>
 
     <span class="n">outputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;subjects_dir&quot;</span><span class="p">,</span> <span class="s2">&quot;subject_id&quot;</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;outputnode&quot;</span>
-    <span class="p">)</span>
+        <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">(</span>
+            <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">]),</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;outputnode&#39;</span><span class="p">)</span>
 
     <span class="n">autorecon2_vol</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="s2">&quot;autorecon2-volonly&quot;</span><span class="p">,</span> <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
-        <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span>
-        <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;autorecon2_vol&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
+        <span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="s1">&#39;autorecon2-volonly&#39;</span><span class="p">,</span> <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
+        <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autorecon2_vol&#39;</span><span class="p">)</span>
     <span class="n">autorecon2_vol</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">_always_run</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="n">autorecon_surfs</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">MapNode</span><span class="p">(</span>
         <span class="n">ReconAll</span><span class="p">(</span>
-            <span class="n">directive</span><span class="o">=</span><span class="s2">&quot;autorecon-hemi&quot;</span><span class="p">,</span>
-            <span class="n">flags</span><span class="o">=</span><span class="p">[</span>
-                <span class="s2">&quot;-noparcstats&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;-noparcstats2&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;-noparcstats3&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;-nohyporelabel&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;-nobalabels&quot;</span><span class="p">,</span>
-            <span class="p">],</span>
-            <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span>
-        <span class="p">),</span>
-        <span class="n">iterfield</span><span class="o">=</span><span class="s2">&quot;hemi&quot;</span><span class="p">,</span>
-        <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span>
-        <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;autorecon_surfs&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
-    <span class="n">autorecon_surfs</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lh&quot;</span><span class="p">,</span> <span class="s2">&quot;rh&quot;</span><span class="p">]</span>
+            <span class="n">directive</span><span class="o">=</span><span class="s1">&#39;autorecon-hemi&#39;</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;-noparcstats&#39;</span><span class="p">,</span> <span class="s1">&#39;-noparcstats2&#39;</span><span class="p">,</span> <span class="s1">&#39;-noparcstats3&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;-nohyporelabel&#39;</span><span class="p">,</span> <span class="s1">&#39;-nobalabels&#39;</span><span class="p">],</span>
+            <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
+        <span class="n">iterfield</span><span class="o">=</span><span class="s1">&#39;hemi&#39;</span><span class="p">,</span> <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autorecon_surfs&#39;</span><span class="p">)</span>
+    <span class="n">autorecon_surfs</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lh&#39;</span><span class="p">,</span> <span class="s1">&#39;rh&#39;</span><span class="p">]</span>
     <span class="n">autorecon_surfs</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">_always_run</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="c1"># -cortribbon is a prerequisite for -parcstats, -parcstats2, -parcstats3</span>
@@ -578,46 +426,38 @@
     <span class="c1"># if -T2pial or -FLAIRpial is enabled.</span>
     <span class="c1"># Parallelizing by hemisphere saves ~30 minutes over simply enabling</span>
     <span class="c1"># OpenMP on an 8 core machine.</span>
-    <span class="n">cortribbon</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="n">Undefined</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;cortribbon&quot;</span><span class="p">],</span> <span class="n">parallel</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-        <span class="n">n_procs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;cortribbon&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
+    <span class="n">cortribbon</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="n">Undefined</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;cortribbon&#39;</span><span class="p">],</span>
+                                  <span class="n">parallel</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+                         <span class="n">n_procs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;cortribbon&#39;</span><span class="p">)</span>
     <span class="n">cortribbon</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">_always_run</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="c1"># -parcstats* can be run per-hemisphere</span>
     <span class="c1"># -hyporelabel is volumetric, even though it&#39;s part of -autorecon-hemi</span>
     <span class="n">parcstats</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">MapNode</span><span class="p">(</span>
         <span class="n">ReconAll</span><span class="p">(</span>
-            <span class="n">directive</span><span class="o">=</span><span class="s2">&quot;autorecon-hemi&quot;</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;-nohyporelabel&quot;</span><span class="p">],</span> <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span>
-        <span class="p">),</span>
-        <span class="n">iterfield</span><span class="o">=</span><span class="s2">&quot;hemi&quot;</span><span class="p">,</span>
-        <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span>
-        <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;parcstats&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
-    <span class="n">parcstats</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lh&quot;</span><span class="p">,</span> <span class="s2">&quot;rh&quot;</span><span class="p">]</span>
+            <span class="n">directive</span><span class="o">=</span><span class="s1">&#39;autorecon-hemi&#39;</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;-nohyporelabel&#39;</span><span class="p">],</span>
+            <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
+        <span class="n">iterfield</span><span class="o">=</span><span class="s1">&#39;hemi&#39;</span><span class="p">,</span> <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;parcstats&#39;</span><span class="p">)</span>
+    <span class="n">parcstats</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">hemi</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lh&#39;</span><span class="p">,</span> <span class="s1">&#39;rh&#39;</span><span class="p">]</span>
     <span class="n">parcstats</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">_always_run</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="c1"># Runs: -hyporelabel -aparc2aseg -apas2aseg -segstats -wmparc</span>
     <span class="c1"># All volumetric, so don&#39;t</span>
     <span class="n">autorecon3</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="s2">&quot;autorecon3&quot;</span><span class="p">,</span> <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
-        <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span>
-        <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;autorecon3&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
+        <span class="n">ReconAll</span><span class="p">(</span><span class="n">directive</span><span class="o">=</span><span class="s1">&#39;autorecon3&#39;</span><span class="p">,</span> <span class="n">openmp</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">),</span>
+        <span class="n">n_procs</span><span class="o">=</span><span class="n">omp_nthreads</span><span class="p">,</span> <span class="n">mem_gb</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autorecon3&#39;</span><span class="p">)</span>
     <span class="n">autorecon3</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">_always_run</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="k">def</span> <span class="nf">_dedup</span><span class="p">(</span><span class="n">in_list</span><span class="p">):</span>
         <span class="n">vals</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">in_list</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-                <span class="s2">&quot;Non-identical values can&#39;t be deduplicated:</span><span class="se">\n</span><span class="si">{!r}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">in_list</span><span class="p">)</span>
-            <span class="p">)</span>
+                <span class="s2">&quot;Non-identical values can&#39;t be deduplicated:</span><span class="se">\n</span><span class="si">{!r}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">in_list</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">vals</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 
-    <span class="c1"># fmt:off</span>
     <span class="n">workflow</span><span class="o">.</span><span class="n">connect</span><span class="p">([</span>
         <span class="p">(</span><span class="n">inputnode</span><span class="p">,</span> <span class="n">cortribbon</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;use_T2&#39;</span><span class="p">,</span> <span class="s1">&#39;use_T2&#39;</span><span class="p">),</span>
                                  <span class="p">(</span><span class="s1">&#39;use_FLAIR&#39;</span><span class="p">,</span> <span class="s1">&#39;use_FLAIR&#39;</span><span class="p">)]),</span>
@@ -634,12 +474,11 @@
         <span class="p">(</span><span class="n">autorecon3</span><span class="p">,</span> <span class="n">outputnode</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subjects_dir&#39;</span><span class="p">),</span>
                                   <span class="p">(</span><span class="s1">&#39;subject_id&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">)]),</span>
     <span class="p">])</span>
-    <span class="c1"># fmt:on</span>
 
     <span class="k">return</span> <span class="n">workflow</span></div>
 
 
-<div class="viewcode-block" id="init_gifti_surface_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_gifti_surface_wf">[docs]</a><span class="k">def</span> <span class="nf">init_gifti_surface_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;gifti_surface_wf&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="init_gifti_surface_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_gifti_surface_wf">[docs]</a><span class="k">def</span> <span class="nf">init_gifti_surface_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;gifti_surface_wf&#39;</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Prepare GIFTI surfaces from a FreeSurfer subjects directory.</span>
 
@@ -677,35 +516,27 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">workflow</span> <span class="o">=</span> <span class="n">Workflow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
 
-    <span class="n">inputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">([</span><span class="s2">&quot;subjects_dir&quot;</span><span class="p">,</span> <span class="s2">&quot;subject_id&quot;</span><span class="p">,</span> <span class="s2">&quot;fsnative2t1w_xfm&quot;</span><span class="p">]),</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;inputnode&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
-    <span class="n">outputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">([</span><span class="s2">&quot;surfaces&quot;</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;outputnode&quot;</span><span class="p">)</span>
+    <span class="n">inputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">([</span><span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">,</span>
+                                               <span class="s1">&#39;fsnative2t1w_xfm&#39;</span><span class="p">]),</span>
+                        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputnode&#39;</span><span class="p">)</span>
+    <span class="n">outputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">([</span><span class="s1">&#39;surfaces&#39;</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;outputnode&#39;</span><span class="p">)</span>
 
-    <span class="n">get_surfaces</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">nio</span><span class="o">.</span><span class="n">FreeSurferSource</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;get_surfaces&quot;</span><span class="p">)</span>
+    <span class="n">get_surfaces</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">nio</span><span class="o">.</span><span class="n">FreeSurferSource</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;get_surfaces&#39;</span><span class="p">)</span>
 
     <span class="n">midthickness</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">MapNode</span><span class="p">(</span>
-        <span class="n">MakeMidthickness</span><span class="p">(</span><span class="n">thickness</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">out_name</span><span class="o">=</span><span class="s2">&quot;midthickness&quot;</span><span class="p">),</span>
-        <span class="n">iterfield</span><span class="o">=</span><span class="s2">&quot;in_file&quot;</span><span class="p">,</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;midthickness&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
+        <span class="n">MakeMidthickness</span><span class="p">(</span><span class="n">thickness</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">out_name</span><span class="o">=</span><span class="s1">&#39;midthickness&#39;</span><span class="p">),</span>
+        <span class="n">iterfield</span><span class="o">=</span><span class="s1">&#39;in_file&#39;</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;midthickness&#39;</span><span class="p">)</span>
 
-    <span class="n">save_midthickness</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">nio</span><span class="o">.</span><span class="n">DataSink</span><span class="p">(</span><span class="n">parameterization</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;save_midthickness&quot;</span>
-    <span class="p">)</span>
+    <span class="n">save_midthickness</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">nio</span><span class="o">.</span><span class="n">DataSink</span><span class="p">(</span><span class="n">parameterization</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+                                <span class="n">name</span><span class="o">=</span><span class="s1">&#39;save_midthickness&#39;</span><span class="p">)</span>
 
-    <span class="n">surface_list</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">niu</span><span class="o">.</span><span class="n">Merge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">ravel_inputs</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;surface_list&quot;</span><span class="p">,</span>
-        <span class="n">run_without_submitting</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="p">)</span>
-    <span class="n">fs2gii</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">MapNode</span><span class="p">(</span>
-        <span class="n">fs</span><span class="o">.</span><span class="n">MRIsConvert</span><span class="p">(</span><span class="n">out_datatype</span><span class="o">=</span><span class="s2">&quot;gii&quot;</span><span class="p">),</span> <span class="n">iterfield</span><span class="o">=</span><span class="s2">&quot;in_file&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fs2gii&quot;</span>
-    <span class="p">)</span>
-    <span class="n">fix_surfs</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">MapNode</span><span class="p">(</span><span class="n">NormalizeSurf</span><span class="p">(),</span> <span class="n">iterfield</span><span class="o">=</span><span class="s2">&quot;in_file&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fix_surfs&quot;</span><span class="p">)</span>
+    <span class="n">surface_list</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">Merge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">ravel_inputs</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+                           <span class="n">name</span><span class="o">=</span><span class="s1">&#39;surface_list&#39;</span><span class="p">,</span> <span class="n">run_without_submitting</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">fs2gii</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">MapNode</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">MRIsConvert</span><span class="p">(</span><span class="n">out_datatype</span><span class="o">=</span><span class="s1">&#39;gii&#39;</span><span class="p">),</span>
+                        <span class="n">iterfield</span><span class="o">=</span><span class="s1">&#39;in_file&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;fs2gii&#39;</span><span class="p">)</span>
+    <span class="n">fix_surfs</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">MapNode</span><span class="p">(</span><span class="n">NormalizeSurf</span><span class="p">(),</span> <span class="n">iterfield</span><span class="o">=</span><span class="s1">&#39;in_file&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;fix_surfs&#39;</span><span class="p">)</span>
 
-    <span class="c1"># fmt:off</span>
     <span class="n">workflow</span><span class="o">.</span><span class="n">connect</span><span class="p">([</span>
         <span class="p">(</span><span class="n">inputnode</span><span class="p">,</span> <span class="n">get_surfaces</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subjects_dir&#39;</span><span class="p">),</span>
                                    <span class="p">(</span><span class="s1">&#39;subject_id&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">)]),</span>
@@ -725,11 +556,10 @@
         <span class="p">(</span><span class="n">inputnode</span><span class="p">,</span> <span class="n">fix_surfs</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;fsnative2t1w_xfm&#39;</span><span class="p">,</span> <span class="s1">&#39;transform_file&#39;</span><span class="p">)]),</span>
         <span class="p">(</span><span class="n">fix_surfs</span><span class="p">,</span> <span class="n">outputnode</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;out_file&#39;</span><span class="p">,</span> <span class="s1">&#39;surfaces&#39;</span><span class="p">)]),</span>
     <span class="p">])</span>
-    <span class="c1"># fmt:on</span>
     <span class="k">return</span> <span class="n">workflow</span></div>
 
 
-<div class="viewcode-block" id="init_segs_to_native_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_segs_to_native_wf">[docs]</a><span class="k">def</span> <span class="nf">init_segs_to_native_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;segs_to_native&quot;</span><span class="p">,</span> <span class="n">segmentation</span><span class="o">=</span><span class="s2">&quot;aseg&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="init_segs_to_native_wf"><a class="viewcode-back" href="../../../api/smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_segs_to_native_wf">[docs]</a><span class="k">def</span> <span class="nf">init_segs_to_native_wf</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;segs_to_native&#39;</span><span class="p">,</span> <span class="n">segmentation</span><span class="o">=</span><span class="s1">&#39;aseg&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get a segmentation from FreeSurfer conformed space into native T1w space.</span>
 
@@ -763,41 +593,28 @@
 <span class="sd">        The selected segmentation, after resampling in native space</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">workflow</span> <span class="o">=</span> <span class="n">Workflow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">segmentation</span><span class="p">))</span>
+    <span class="n">workflow</span> <span class="o">=</span> <span class="n">Workflow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">segmentation</span><span class="p">))</span>
     <span class="n">inputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">(</span>
-            <span class="p">[</span><span class="s2">&quot;in_file&quot;</span><span class="p">,</span> <span class="s2">&quot;subjects_dir&quot;</span><span class="p">,</span> <span class="s2">&quot;subject_id&quot;</span><span class="p">,</span> <span class="s2">&quot;fsnative2t1w_xfm&quot;</span><span class="p">]</span>
-        <span class="p">),</span>
-        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;inputnode&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
-    <span class="n">outputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">([</span><span class="s2">&quot;out_file&quot;</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;outputnode&quot;</span><span class="p">)</span>
+        <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">([</span><span class="s1">&#39;in_file&#39;</span><span class="p">,</span> <span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subject_id&#39;</span><span class="p">,</span> <span class="s1">&#39;fsnative2t1w_xfm&#39;</span><span class="p">]),</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputnode&#39;</span><span class="p">)</span>
+    <span class="n">outputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">([</span><span class="s1">&#39;out_file&#39;</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;outputnode&#39;</span><span class="p">)</span>
     <span class="c1"># Extract the aseg and aparc+aseg outputs</span>
-    <span class="n">fssource</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">nio</span><span class="o">.</span><span class="n">FreeSurferSource</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fs_datasource&quot;</span><span class="p">)</span>
+    <span class="n">fssource</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="n">nio</span><span class="o">.</span><span class="n">FreeSurferSource</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;fs_datasource&#39;</span><span class="p">)</span>
     <span class="c1"># Resample from T1.mgz to T1w.nii.gz, applying any offset in fsnative2t1w_xfm,</span>
     <span class="c1"># and convert to NIfTI while we&#39;re at it</span>
     <span class="n">resample</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
-        <span class="n">fs</span><span class="o">.</span><span class="n">ApplyVolTransform</span><span class="p">(</span><span class="n">transformed_file</span><span class="o">=</span><span class="s2">&quot;seg.nii.gz&quot;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;resample&quot;</span>
-    <span class="p">)</span>
+        <span class="n">fs</span><span class="o">.</span><span class="n">ApplyVolTransform</span><span class="p">(</span><span class="n">transformed_file</span><span class="o">=</span><span class="s1">&#39;seg.nii.gz&#39;</span><span class="p">,</span> <span class="n">interp</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">),</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;resample&#39;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">segmentation</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;aparc&quot;</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">segmentation</span> <span class="o">==</span> <span class="s2">&quot;aparc_aseg&quot;</span><span class="p">:</span>
-
-            <span class="k">def</span> <span class="nf">_sel</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-                <span class="k">return</span> <span class="p">[</span><span class="n">parc</span> <span class="k">for</span> <span class="n">parc</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">if</span> <span class="s2">&quot;aparc+&quot;</span> <span class="ow">in</span> <span class="n">parc</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># noqa</span>
-
-        <span class="k">elif</span> <span class="n">segmentation</span> <span class="o">==</span> <span class="s2">&quot;aparc_a2009s&quot;</span><span class="p">:</span>
-
-            <span class="k">def</span> <span class="nf">_sel</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-                <span class="k">return</span> <span class="p">[</span><span class="n">parc</span> <span class="k">for</span> <span class="n">parc</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">if</span> <span class="s2">&quot;a2009s+&quot;</span> <span class="ow">in</span> <span class="n">parc</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># noqa</span>
-
-        <span class="k">elif</span> <span class="n">segmentation</span> <span class="o">==</span> <span class="s2">&quot;aparc_dkt&quot;</span><span class="p">:</span>
-
-            <span class="k">def</span> <span class="nf">_sel</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-                <span class="k">return</span> <span class="p">[</span><span class="n">parc</span> <span class="k">for</span> <span class="n">parc</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">if</span> <span class="s2">&quot;DKTatlas+&quot;</span> <span class="ow">in</span> <span class="n">parc</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># noqa</span>
-
+    <span class="k">if</span> <span class="n">segmentation</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;aparc&#39;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">segmentation</span> <span class="o">==</span> <span class="s1">&#39;aparc_aseg&#39;</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">_sel</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="p">[</span><span class="n">parc</span> <span class="k">for</span> <span class="n">parc</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">if</span> <span class="s1">&#39;aparc+&#39;</span> <span class="ow">in</span> <span class="n">parc</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># noqa</span>
+        <span class="k">elif</span> <span class="n">segmentation</span> <span class="o">==</span> <span class="s1">&#39;aparc_a2009s&#39;</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">_sel</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="p">[</span><span class="n">parc</span> <span class="k">for</span> <span class="n">parc</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">if</span> <span class="s1">&#39;a2009s+&#39;</span> <span class="ow">in</span> <span class="n">parc</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># noqa</span>
+        <span class="k">elif</span> <span class="n">segmentation</span> <span class="o">==</span> <span class="s1">&#39;aparc_dkt&#39;</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">_sel</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="p">[</span><span class="n">parc</span> <span class="k">for</span> <span class="n">parc</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">if</span> <span class="s1">&#39;DKTatlas+&#39;</span> <span class="ow">in</span> <span class="n">parc</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># noqa</span>
         <span class="n">segmentation</span> <span class="o">=</span> <span class="p">(</span><span class="n">segmentation</span><span class="p">,</span> <span class="n">_sel</span><span class="p">)</span>
 
-    <span class="c1"># fmt:off</span>
     <span class="n">workflow</span><span class="o">.</span><span class="n">connect</span><span class="p">([</span>
         <span class="p">(</span><span class="n">inputnode</span><span class="p">,</span> <span class="n">fssource</span><span class="p">,</span> <span class="p">[</span>
             <span class="p">(</span><span class="s1">&#39;subjects_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;subjects_dir&#39;</span><span class="p">),</span>
@@ -807,51 +624,40 @@
         <span class="p">(</span><span class="n">fssource</span><span class="p">,</span> <span class="n">resample</span><span class="p">,</span> <span class="p">[(</span><span class="n">segmentation</span><span class="p">,</span> <span class="s1">&#39;source_file&#39;</span><span class="p">)]),</span>
         <span class="p">(</span><span class="n">resample</span><span class="p">,</span> <span class="n">outputnode</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;transformed_file&#39;</span><span class="p">,</span> <span class="s1">&#39;out_file&#39;</span><span class="p">)]),</span>
     <span class="p">])</span>
-    <span class="c1"># fmt:on</span>
     <span class="k">return</span> <span class="n">workflow</span></div>
 
 
 <span class="k">def</span> <span class="nf">_check_cw256</span><span class="p">(</span><span class="n">in_files</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
     <span class="kn">from</span> <span class="nn">nibabel.funcs</span> <span class="kn">import</span> <span class="n">concat_images</span>
-
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">in_files</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
         <span class="n">in_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">in_files</span><span class="p">]</span>
     <span class="n">summary_img</span> <span class="o">=</span> <span class="n">concat_images</span><span class="p">(</span><span class="n">in_files</span><span class="p">)</span>
     <span class="n">fov</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">summary_img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span> <span class="o">*</span> <span class="n">summary_img</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">get_zooms</span><span class="p">()[:</span><span class="mi">3</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">fov</span> <span class="o">&gt;</span> <span class="mi">256</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;-noskullstrip&quot;</span><span class="p">,</span> <span class="s2">&quot;-cw256&quot;</span><span class="p">]</span>
-    <span class="k">return</span> <span class="s2">&quot;-noskullstrip&quot;</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;-noskullstrip&#39;</span><span class="p">,</span> <span class="s1">&#39;-cw256&#39;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="s1">&#39;-noskullstrip&#39;</span>
 </pre></div>
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright Copyright 2019, Center for Reproducible Neuroscience, Stanford University.
-
-    </p>
+    <p>&#169; Copyright Copyright 2019, Center for Reproducible Neuroscience, Stanford University.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
   
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -887,11 +693,13 @@
             <dd><a href="../../../../0.7.0rc1/index.html">0.7.0rc1</a></dd>
             <dd><a href="../../../../0.7.0rc2/index.html">0.7.0rc2</a></dd>
             <dd><a href="../../../../0.7.1/index.html">0.7.1</a></dd>
+            <dd><a href="../../../../0.7.2/index.html">0.7.2</a></dd>
             <dd><a href="../../../../0.8.0/index.html">0.8.0</a></dd>
             <dd><a href="../../../../0.8.0rc0/index.html">0.8.0rc0</a></dd>
             <dd><a href="../../../../0.8.0rc1/index.html">0.8.0rc1</a></dd>
             <dd><a href="../../../../0.8.0rc2/index.html">0.8.0rc2</a></dd>
             <dd><a href="../../../../0.8.0rc3/index.html">0.8.0rc3</a></dd>
+            <dd><a href="../../../../0.8.1/index.html">0.8.1</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
@@ -901,23 +709,17 @@
             <dd><a href="../../../../maint_0.5.x/index.html">maint/0.5.x</a></dd>
             <dd><a href="../../../../maint_0.6.x/index.html">maint/0.6.x</a></dd>
             <dd><a href="../../../../maint_0.7.x/index.html">maint/0.7.x</a></dd>
+            <dd><a href="../../../../maint_0.8.x/index.html">maint/0.8.x</a></dd>
             <dd><a href="../../../../master/index.html">master</a></dd>
             <dd><a href="../../../../rel_0.8.0rc1/index.html">rel/0.8.0rc1</a></dd>
         </dl>
     </div>
 </div>
-
-
-  <script type="text/javascript">
+<script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
