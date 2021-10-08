@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>smriprep.interfaces.templateflow module &mdash; smriprep 0.7.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>smriprep.interfaces.templateflow module &mdash; smriprep 0.8.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/banner.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> smriprep
           </a>
               <div class="version">
-                0.7.2
+                0.8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -175,6 +175,11 @@ with iterables and JoinNodes.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result</span><span class="o">.</span><span class="n">outputs</span><span class="o">.</span><span class="n">t1w_file</span>  
 <span class="go">&#39;.../tpl-MNIPediatricAsym_cohort-5_res-1_T1w.nii.gz&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select</span> <span class="o">=</span> <span class="n">TemplateFlowSelect</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">select</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">template</span> <span class="o">=</span> <span class="s1">&#39;UNCInfant:cohort-1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>  
 </pre></div>
 </div>
 <dl class="attribute">

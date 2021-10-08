@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>smriprep.workflows.anatomical module &mdash; smriprep 0.7.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>smriprep.workflows.anatomical module &mdash; smriprep 0.8.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/banner.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> smriprep
           </a>
               <div class="version">
-                0.7.2
+                0.8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -133,8 +133,8 @@ at the very least)</p></li>
 <li><p><strong>t1w</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of T1-weighted structural images.</p></li>
 <li><p><strong>omp_nthreads</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Maximum number of threads an individual process may use</p></li>
 <li><p><strong>output_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Directory in which to save derivatives</p></li>
-<li><p><strong>skull_strip_template</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.Reference" title="(in niworkflows v1.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Reference</span></code></a>) – Spatial reference to use in atlas-based brain extraction.</p></li>
-<li><p><strong>spaces</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.SpatialReferences" title="(in niworkflows v1.4.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpatialReferences</span></code></a>) – Object containing standard and nonstandard space specifications.</p></li>
+<li><p><strong>skull_strip_template</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.Reference" title="(in niworkflows v1.4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Reference</span></code></a>) – Spatial reference to use in atlas-based brain extraction.</p></li>
+<li><p><strong>spaces</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.SpatialReferences" title="(in niworkflows v1.4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpatialReferences</span></code></a>) – Object containing standard and nonstandard space specifications.</p></li>
 <li><p><strong>debug</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Enable debugging outputs</p></li>
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – Workflow name (default: anat_preproc_wf)</p></li>
 <li><p><strong>skull_strip_mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Determiner for T1-weighted skull stripping (<cite>force</cite> ensures skull stripping,
@@ -184,7 +184,7 @@ subject space to T1w</p></li>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.anat.ants.html#niworkflows.anat.ants.init_brain_extraction_wf" title="(in niworkflows v1.4.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_brain_extraction_wf()</span></code></a></p></li>
+<li><p><a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.anat.ants.html#niworkflows.anat.ants.init_brain_extraction_wf" title="(in niworkflows v1.4.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_brain_extraction_wf()</span></code></a></p></li>
 <li><p><a class="reference internal" href="smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_surface_recon_wf" title="smriprep.workflows.surfaces.init_surface_recon_wf"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_surface_recon_wf()</span></code></a></p></li>
 </ul>
 </div>

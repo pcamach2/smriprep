@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>smriprep.interfaces.templateflow module &mdash; smriprep 0.7.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>smriprep.interfaces.templateflow module &mdash; smriprep 0.8.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/banner.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> smriprep
           </a>
               <div class="version">
-                0.7.2
+                0.8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -101,7 +101,7 @@
 <p>Interfaces to get templates from TemplateFlow.</p>
 <dl class="class">
 <dt id="smriprep.interfaces.templateflow.TemplateDesc">
-<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateDesc</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateDesc</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/smriprep/interfaces/templateflow.html#TemplateDesc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">nipype.interfaces.base.core.SimpleInterface</span></code></p>
 <p>Select template description and name pairs.</p>
 <p>This interface is necessary to ensure the good functioning
@@ -126,23 +126,22 @@ with iterables and JoinNodes.</p>
 <span class="go">{&#39;cohort&#39;: &#39;2&#39;}</span>
 </pre></div>
 </div>
-<dl class="attribute">
-<dt id="smriprep.interfaces.templateflow.TemplateDesc.input_spec">
-<code class="sig-name descname">input_spec</code><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc.input_spec" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateDescInputSpec</span></code></p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="smriprep.interfaces.templateflow.TemplateDesc.output_spec">
-<code class="sig-name descname">output_spec</code><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc.output_spec" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateDescOutputSpec</span></code></p>
-</dd></dl>
-
+<dl class="field-list simple">
+<dt class="field-odd">Mandatory Inputs</dt>
+<dd class="field-odd"><p><strong>template</strong> (<em>a string</em>) – Univocal template identifier.</p>
+</dd>
+<dt class="field-even">Outputs</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>name</strong> (<em>a string</em>) – Template identifier.</p></li>
+<li><p><strong>spec</strong> (<em>a dictionary with keys which are any value and with values which are any value</em>) – Template arguments.</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="class">
 <dt id="smriprep.interfaces.templateflow.TemplateFlowSelect">
-<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateFlowSelect</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateFlowSelect</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/smriprep/interfaces/templateflow.html#TemplateFlowSelect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">nipype.interfaces.base.core.SimpleInterface</span></code></p>
 <p>Select TemplateFlow elements.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select</span> <span class="o">=</span> <span class="n">TemplateFlowSelect</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -180,18 +179,31 @@ with iterables and JoinNodes.</p>
 <span class="go">&#39;.../tpl-MNIPediatricAsym_cohort-5_res-1_T1w.nii.gz&#39;</span>
 </pre></div>
 </div>
-<dl class="attribute">
-<dt id="smriprep.interfaces.templateflow.TemplateFlowSelect.input_spec">
-<code class="sig-name descname">input_spec</code><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect.input_spec" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateFlowSelectInputSpec</span></code></p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="smriprep.interfaces.templateflow.TemplateFlowSelect.output_spec">
-<code class="sig-name descname">output_spec</code><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect.output_spec" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateFlowSelectOutputSpec</span></code></p>
-</dd></dl>
-
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select</span> <span class="o">=</span> <span class="n">TemplateFlowSelect</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">select</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">template</span> <span class="o">=</span> <span class="s1">&#39;UNCInfant:cohort-1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>  
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Mandatory Inputs</dt>
+<dd class="field-odd"><p><strong>template</strong> (<em>a string</em>) – Template ID.</p>
+</dd>
+<dt class="field-even">Optional Inputs</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>atlas</strong> (<em>a list of items which are a string</em>) – Specify an atlas.</p></li>
+<li><p><strong>cohort</strong> (<em>a list of items which are a string or an integer</em>) – Specify a cohort.</p></li>
+<li><p><strong>resolution</strong> (<em>a list of items which are an integer</em>) – Specify a template resolution index.</p></li>
+<li><p><strong>template_spec</strong> (<em>a dictionary with keys which are a value of class ‘str’ and with values which are any value</em>) – Template specifications.
+(Nipype <strong>default</strong> value: <code class="docutils literal notranslate"><span class="pre">{'atlas':</span> <span class="pre">None,</span> <span class="pre">'cohort':</span> <span class="pre">None}</span></code>)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Outputs</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>brain_mask</strong> (<em>a pathlike object or string representing an existing file</em>) – Template’s brain mask.</p></li>
+<li><p><strong>t1w_file</strong> (<em>a pathlike object or string representing an existing file</em>) – T1w template.</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -224,7 +236,7 @@ with iterables and JoinNodes.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Other Versions</span>
-        v: 0.7.2
+        v: 0.8.1
         <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">

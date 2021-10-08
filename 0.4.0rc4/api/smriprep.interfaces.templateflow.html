@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>smriprep.interfaces.templateflow module &mdash; smriprep 0.7.2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>smriprep.interfaces.templateflow module &mdash; smriprep 0.8.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/banner.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> smriprep
           </a>
               <div class="version">
-                0.7.2
+                0.8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -98,7 +98,7 @@
 <p>Interfaces to get templates from TemplateFlow.</p>
 <dl class="class">
 <dt id="smriprep.interfaces.templateflow.TemplateDesc">
-<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateDesc</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/nipreps/smriprep/blob/d3fcf22b8c28e5dc3fb523ebf19b75d7f461a9bc/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateDesc</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/nipreps/smriprep/blob/cff38381cdea7518ae7c99824517b3e07991cf5b/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">nipype.interfaces.base.core.SimpleInterface</span></code></p>
 <p>Select template description and name pairs.</p>
 <p>This interface is necessary to ensure the good functioning
@@ -125,13 +125,13 @@ with iterables and JoinNodes.</p>
 </div>
 <dl class="attribute">
 <dt id="smriprep.interfaces.templateflow.TemplateDesc.input_spec">
-<code class="sig-name descname">input_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/d3fcf22b8c28e5dc3fb523ebf19b75d7f461a9bc/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc.input_spec" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">input_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/cff38381cdea7518ae7c99824517b3e07991cf5b/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc.input_spec" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateDescInputSpec</span></code></p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="smriprep.interfaces.templateflow.TemplateDesc.output_spec">
-<code class="sig-name descname">output_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/d3fcf22b8c28e5dc3fb523ebf19b75d7f461a9bc/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc.output_spec" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">output_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/cff38381cdea7518ae7c99824517b3e07991cf5b/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateDesc.output_spec" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateDescOutputSpec</span></code></p>
 </dd></dl>
 
@@ -139,7 +139,7 @@ with iterables and JoinNodes.</p>
 
 <dl class="class">
 <dt id="smriprep.interfaces.templateflow.TemplateFlowSelect">
-<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateFlowSelect</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/nipreps/smriprep/blob/d3fcf22b8c28e5dc3fb523ebf19b75d7f461a9bc/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">smriprep.interfaces.templateflow.</code><code class="sig-name descname">TemplateFlowSelect</code><span class="sig-paren">(</span><em class="sig-param">from_file=None</em>, <em class="sig-param">resource_monitor=None</em>, <em class="sig-param">**inputs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/nipreps/smriprep/blob/cff38381cdea7518ae7c99824517b3e07991cf5b/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">nipype.interfaces.base.core.SimpleInterface</span></code></p>
 <p>Select TemplateFlow elements.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select</span> <span class="o">=</span> <span class="n">TemplateFlowSelect</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -177,15 +177,20 @@ with iterables and JoinNodes.</p>
 <span class="go">&#39;.../tpl-MNIPediatricAsym_cohort-5_res-1_T1w.nii.gz&#39;</span>
 </pre></div>
 </div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select</span> <span class="o">=</span> <span class="n">TemplateFlowSelect</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">select</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">template</span> <span class="o">=</span> <span class="s1">&#39;UNCInfant:cohort-1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">select</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>  
+</pre></div>
+</div>
 <dl class="attribute">
 <dt id="smriprep.interfaces.templateflow.TemplateFlowSelect.input_spec">
-<code class="sig-name descname">input_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/d3fcf22b8c28e5dc3fb523ebf19b75d7f461a9bc/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect.input_spec" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">input_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/cff38381cdea7518ae7c99824517b3e07991cf5b/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect.input_spec" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateFlowSelectInputSpec</span></code></p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="smriprep.interfaces.templateflow.TemplateFlowSelect.output_spec">
-<code class="sig-name descname">output_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/d3fcf22b8c28e5dc3fb523ebf19b75d7f461a9bc/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect.output_spec" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">output_spec</code><a class="reference external" href="https://github.com/nipreps/smriprep/blob/cff38381cdea7518ae7c99824517b3e07991cf5b/smriprep/interfaces/templateflow.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#smriprep.interfaces.templateflow.TemplateFlowSelect.output_spec" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">_TemplateFlowSelectOutputSpec</span></code></p>
 </dd></dl>
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>What’s new? &mdash; smriprep 0.7.2 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>What’s new? &mdash; smriprep 0.8.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/banner.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -29,7 +29,7 @@
             <a href="index.html" class="icon icon-home"> smriprep
           </a>
               <div class="version">
-                0.7.2
+                0.8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -44,6 +44,8 @@
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Library API (application program interface)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">What’s new?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#october-08-2021">0.8.1 (October 08, 2021)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#september-1-2021">0.8.0 (September 1, 2021)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#october-07-2021">0.7.2 (October 07, 2021)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#november-18-2020">0.7.1 (November 18, 2020)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#september-27-2020">0.7.0 (September 27, 2020)</a></li>
@@ -116,6 +118,39 @@
     <p class="scv-banner scv-sphinx_rtd_theme"><a href="master/changes.html"><b>Warning:</b> This document is for an old version of smriprep. The main version is master.</a></p>
 <section id="what-s-new">
 <h1>What’s new?<a class="headerlink" href="#what-s-new" title="Permalink to this headline">¶</a></h1>
+<section id="october-08-2021">
+<h2>0.8.1 (October 08, 2021)<a class="headerlink" href="#october-08-2021" title="Permalink to this headline">¶</a></h2>
+<p>Bug-fix release in the 0.8.x series.</p>
+<p>All releases since 0.5.3 have incorrectly resampled the (aparc+)aseg
+segmentations with trilinear interpolation, rather than nearest-neighbor.
+This fix has also been applied in 0.7.2,
+to provide a fix in the fMRIPrep LTS series.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>FIX: Resample aseg with nearest-neighbor interpolation (#268)</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="september-1-2021">
+<h2>0.8.0 (September 1, 2021)<a class="headerlink" href="#september-1-2021" title="Permalink to this headline">¶</a></h2>
+<p>A new minor release incorporating small iterations and improvements on
+<em>NiWorkflows</em>, and including some bug-fixes/enhancements.</p>
+<ul class="simple">
+<li><p>DOC: Ensure copyright notice is found in all Python files (#248)</p></li>
+<li><p>FIX: Revert to FAST for tissue probability segmentations (#263)</p></li>
+<li><p>FIX: Sturdier version check of sMRIPrep-wrapper package (#245)</p></li>
+<li><p>FIX: Do not use deprecated <code class="docutils literal notranslate"><span class="pre">--filter</span> <span class="pre">pandoc-citeproc</span></code> generating boilerplate (e72eea5)</p></li>
+<li><p>FIX: Mask T1w images before transforming to template (#237)</p></li>
+<li><p>FIX: Account for label entity when querying brain mask (#257)</p></li>
+<li><p>MAINT: Run pytest on GitHub Actions (#262)</p></li>
+<li><p>MAINT: Mount TemplateFlow’s home directory in CircleCI tests (#246)</p></li>
+<li><p>MAINT: Run <code class="docutils literal notranslate"><span class="pre">black</span></code> at the top level of the repo (#241)</p></li>
+<li><p>MAINT: Update to new API of <em>NiWorkflows</em> (#239)</p></li>
+<li><p>MAINT: Refactor <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> and move tests from TravisCI to GHA (#240)</p></li>
+<li><p>MAINT: Use separate fallback cache for maint/0.7.x (#250)</p></li>
+<li><p>MAINT: CircleCI housekeeping (#258) (#259)</p></li>
+</ul>
+</section>
 <section id="october-07-2021">
 <h2>0.7.2 (October 07, 2021)<a class="headerlink" href="#october-07-2021" title="Permalink to this headline">¶</a></h2>
 <p>Bug-fix release in the 0.7.x series.</p>
@@ -438,7 +473,7 @@ in <a class="reference external" href="https://github.com/nipreps/fmriprep/issue
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Other Versions</span>
-        v: 0.7.2
+        v: 0.8.1
         <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
