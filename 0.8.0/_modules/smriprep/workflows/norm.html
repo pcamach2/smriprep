@@ -238,7 +238,7 @@
                 <span class="n">template_name</span><span class="o">=</span><span class="n">template_meta</span><span class="p">[</span><span class="s2">&quot;Name&quot;</span><span class="p">],</span>
                 <span class="n">template_refs</span><span class="o">=</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">template_refs</span><span class="p">),</span>
             <span class="p">)</span>
-            <span class="n">workflow</span><span class="o">.</span><span class="n">__desc__</span> <span class="o">+=</span> <span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="n">template</span> <span class="o">==</span> <span class="n">templates</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span>
+            <span class="n">workflow</span><span class="o">.</span><span class="n">__desc__</span> <span class="o">+=</span> <span class="s2">&quot;.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">template</span> <span class="o">==</span> <span class="n">templates</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="s2">&quot;, &quot;</span>
 
     <span class="n">inputnode</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span>
         <span class="n">niu</span><span class="o">.</span><span class="n">IdentityInterface</span><span class="p">(</span>
@@ -430,6 +430,7 @@
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="../../../../dep_fsl6/index.html">dep/fsl6</a></dd>
             <dd><a href="../../../../enh_calabel/index.html">enh/calabel</a></dd>
             <dd><a href="../../../../fix_tfselect-resless/index.html">fix/tfselect-resless</a></dd>
             <dd><a href="../../../../maint_0.4.x/index.html">maint/0.4.x</a></dd>

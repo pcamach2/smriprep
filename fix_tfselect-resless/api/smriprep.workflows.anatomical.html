@@ -136,8 +136,8 @@ at the very least)</p></li>
 <li><p><strong>t1w</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of T1-weighted structural images.</p></li>
 <li><p><strong>omp_nthreads</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Maximum number of threads an individual process may use</p></li>
 <li><p><strong>output_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Directory in which to save derivatives</p></li>
-<li><p><strong>skull_strip_template</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.Reference" title="(in niworkflows v1.4.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Reference</span></code></a>) – Spatial reference to use in atlas-based brain extraction.</p></li>
-<li><p><strong>spaces</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.SpatialReferences" title="(in niworkflows v1.4.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpatialReferences</span></code></a>) – Object containing standard and nonstandard space specifications.</p></li>
+<li><p><strong>skull_strip_template</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.Reference" title="(in niworkflows v1.4.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Reference</span></code></a>) – Spatial reference to use in atlas-based brain extraction.</p></li>
+<li><p><strong>spaces</strong> (<a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.utils.spaces.html#niworkflows.utils.spaces.SpatialReferences" title="(in niworkflows v1.4.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpatialReferences</span></code></a>) – Object containing standard and nonstandard space specifications.</p></li>
 <li><p><strong>debug</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – Enable debugging outputs</p></li>
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – Workflow name (default: anat_preproc_wf)</p></li>
 <li><p><strong>skull_strip_mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Determiner for T1-weighted skull stripping (<cite>force</cite> ensures skull stripping,
@@ -187,7 +187,7 @@ subject space to T1w</p></li>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.anat.ants.html#niworkflows.anat.ants.init_brain_extraction_wf" title="(in niworkflows v1.4.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_brain_extraction_wf()</span></code></a></p></li>
+<li><p><a class="reference external" href="https://www.nipreps.org/niworkflows/api/niworkflows.anat.ants.html#niworkflows.anat.ants.init_brain_extraction_wf" title="(in niworkflows v1.4.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_brain_extraction_wf()</span></code></a></p></li>
 <li><p><a class="reference internal" href="smriprep.workflows.surfaces.html#smriprep.workflows.surfaces.init_surface_recon_wf" title="smriprep.workflows.surfaces.init_surface_recon_wf"><code class="xref py py-func docutils literal notranslate"><span class="pre">init_surface_recon_wf()</span></code></a></p></li>
 </ul>
 </div>
@@ -297,6 +297,7 @@ subject space to T1w</p></li>
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="../../dep_fsl6/api/smriprep.workflows.anatomical.html">dep/fsl6</a></dd>
             <dd><a href="../../enh_calabel/api/smriprep.workflows.anatomical.html">enh/calabel</a></dd>
             <dd><a href="smriprep.workflows.anatomical.html">fix/tfselect-resless</a></dd>
             <dd><a href="../../maint_0.4.x/api/smriprep.workflows.anatomical.html">maint/0.4.x</a></dd>
