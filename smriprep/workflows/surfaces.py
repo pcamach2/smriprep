@@ -48,6 +48,44 @@ from niworkflows.interfaces.freesurfer import (
 )
 from niworkflows.interfaces.surf import NormalizeSurf
 
+from ..interfaces import fastsurfer as fasts
+
+def init_surface_recon_fastsurfer_wf(*, omp_nthreads, hires, name="surface_recon_wf"):
+     
+    workflow = Workflow(name=name)
+    
+    inputnode = pe.Node(
+        niu.IdentityInterface(
+            fields=[
+                "t1w",
+                "subjects_dir",
+                "subject_id",
+            ]
+        ),
+        name="inputnode",
+    )
+    outputnode = pe.Node(
+        niu.IdentityInterface(
+            fields=[
+                "subjects_dir",
+                "subject_id",
+            ]
+        ),
+        name="outputnode",
+    )
+    
+    reconsurf = pe.Node(
+        fasts.FastSCommand(sd=subjects_dir, sid=subject_id, t1=t1w, fs_license="/fs60/license"),
+        name="reconsurf",
+    )
+    workflow.connect([
+        (inputnode, reconsurf, [('subjects_dir', 'sd'),
+                                ('subject_id', 'sid'),
+                                ('t1w','t1')]),
+        (reconsurf, outputnode, [('outputnode.subjects_dir', 'subjects_dir'),
+                                 ('outputnode.subject_id', 'subject_id')]),
+    ])
+
 
 def init_surface_recon_wf(*, omp_nthreads, hires, name="surface_recon_wf"):
     r"""
