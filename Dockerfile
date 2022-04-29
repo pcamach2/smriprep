@@ -45,6 +45,7 @@ RUN apt-get update && \
                     build-essential \
                     bzip2 \
                     ca-certificates \
+                    locales \
                     curl \
                     git \
                     libtool \
